@@ -1,0 +1,446 @@
+{
+  "Navigation": {
+    "nav": {
+      "home": "Startseite",
+      "about": "Über mich",
+      "projects": "Projekte",
+      "skills": "Skills",
+      "contact": "Kontakt"
+    },
+    "home": {
+      "title": "Fullstack Webdeveloper",
+      "subtitle": "Ich entwickle moderne Webanwendungen mit Leidenschaft für sauberen Code und benutzerfreundliche Interfaces.",
+      "cta": "Jetzt kontaktieren",
+      "aboutPreview": "Mein Weg",
+      "aboutDescription": "Von den ersten Programmierzeilen bis heute - entdecken Sie meine Reise als Entwickler.",
+      "projectsPreview": "Meine Projekte",
+      "projectsDescription": "Eine Auswahl meiner besten Arbeiten und Projekte, die meine Fähigkeiten demonstrieren.",
+      "skillsPreview": "Meine Skills",
+      "skillsDescription": "Die Technologien und Tools, mit denen ich täglich arbeite und meine Expertise.",
+      "contactPreview": "Kontakt",
+      "contactDescription": "Lassen Sie uns über Ihr nächstes Projekt sprechen. Ich freue mich auf Ihre Nachricht.",
+      "projectsCta": "Projekte ansehen",
+      "explorePortfolio": "Entdecken Sie mein Portfolio",
+      "explorePortfolioDescription": "Erfahren Sie mehr über mich, meine Projekte und Fähigkeiten",
+      "viewMore": "Mehr erfahren",
+      "CTASection": {
+        "title": "Bereit für Ihr nächstes Projekt?",
+        "subtitle": "Lassen Sie uns gemeinsam Ihre Ideen in die Realität umsetzen. Kontaktieren Sie mich für ein unverbindliches Gespräch.",
+        "button": "Mehr über mich"
+      }
+    }
+  },
+  "About": {
+    "title": "Mein Weg als Entwickler",
+    "subtitle": "Eine Reise durch meine berufliche Entwicklung",
+    "cta": "Jetzt kontaktieren",
+    "timelineEvents": [
+      {
+        "year": "2018",
+        "title": "Erste Schritte in der Programmierung",
+        "description": "Beginn meiner Reise mit HTML, CSS und JavaScript. Erste kleine Projekte und das Entdecken der Leidenschaft für Webentwicklung.",
+        "location": "Selbststudium",
+        "image": "/person-learning-to-code-at-computer.jpg",
+        "tags": ["HTML", "CSS", "JavaScript"]
+      },
+      {
+        "year": "2019",
+        "title": "Frontend-Spezialisierung",
+        "description": "Vertiefung in moderne Frontend-Frameworks wie React und Vue.js. Erste kommerzielle Projekte und Freelance-Arbeiten.",
+        "location": "Freelance",
+        "image": "/modern-web-development-workspace-with-multiple-mon.jpg",
+        "tags": ["React", "Vue.js", "SASS", "Webpack"]
+      },
+      {
+        "year": "2020",
+        "title": "Fullstack-Entwicklung",
+        "description": "Erweiterung der Kenntnisse auf Backend-Technologien. Node.js, Express und Datenbankdesign wurden zu wichtigen Bausteinen.",
+        "location": "Remote Work",
+        "image": "/fullstack-developer-working-on-backend-code.jpg",
+        "tags": ["Node.js", "Express", "MongoDB", "PostgreSQL"]
+      },
+      {
+        "year": "2021",
+        "title": "Cloud & DevOps",
+        "description": "Fokus auf moderne Deployment-Strategien und Cloud-Technologien. CI/CD-Pipelines und containerisierte Anwendungen.",
+        "location": "Tech Startup",
+        "image": "/cloud-infrastructure-and-devops-dashboard.jpg",
+        "tags": ["Docker", "AWS", "CI/CD", "Kubernetes"]
+      },
+      {
+        "year": "2022",
+        "title": "Team Leadership",
+        "description": "Übernahme von Führungsverantwortung in Entwicklungsteams. Mentoring von Junior-Entwicklern und Projektmanagement.",
+        "location": "Senior Position",
+        "image": "/team-meeting-with-developers-discussing-code.jpg",
+        "tags": ["Leadership", "Mentoring", "Agile", "Scrum"]
+      },
+      {
+        "year": "2023-2024",
+        "title": "Moderne Technologien",
+        "description": "Spezialisierung auf Next.js, TypeScript und moderne AI-Integration. Fokus auf Performance und Benutzererfahrung.",
+        "location": "Freelance & Consulting",
+        "image": "/modern-web-development-with-ai-tools-and-next-js.jpg",
+        "tags": ["Next.js", "TypeScript", "AI Integration", "Performance"]
+      }
+    ],
+    "CTASection": {
+      "title": "Interessiert an einer Zusammenarbeit?",
+      "subtitle": "Meine Erfahrung und Leidenschaft für sauberen Code können Ihr nächstes Projekt zum Erfolg führen.",
+      "button": "Projekte ansehen"
+    }
+  },
+  "Projects": {
+    "title": "Meine Projekte",
+    "subtitle": "Eine Auswahl meiner besten Arbeiten",
+    "cta": "Jetzt kontaktieren",
+    "highlights": "Highlights",
+    "projectCta": "Live Demo",
+    "codeCta": "Code",
+    "CTASection": {
+      "title": "Haben Sie ein ähnliches Projekt im Kopf?",
+      "subtitle": "Lassen Sie uns gemeinsam Ihre Idee in die Realität umsetzen. Ich bringe die Erfahrung und das Know-how mit, um Ihr Projekt erfolgreich zu realisieren.",
+      "button": "Meine Skills ansehen"
+    },
+    "categories": [
+      "Alle",
+      "Fullstack",
+      "Frontend",
+      "Backend",
+      "Mobile",
+      "AI/ML"
+    ],
+    "projects": [
+      {
+        "title": "E-Commerce Platform",
+        "description": "Eine vollständige E-Commerce-Lösung mit Next.js, Stripe-Integration und Admin-Dashboard. Unterstützt mehrere Zahlungsmethoden und bietet eine intuitive Benutzererfahrung.",
+        "image": "/modern-ecommerce-interface.png",
+        "technologies": [
+          "Next.js",
+          "TypeScript",
+          "Stripe",
+          "PostgreSQL",
+          "Tailwind CSS"
+        ],
+        "category": "Fullstack",
+        "year": "2024",
+        "team": "3 Entwickler",
+        "duration": "4 Monate",
+        "status": "Live",
+        "links": {
+          "demo": "https://example.com",
+          "github": "https://github.com/example/ecommerce"
+        },
+        "highlights": [
+          "Über 10.000 aktive Nutzer",
+          "99.9% Uptime",
+          "Mobile-first Design",
+          "SEO-optimiert"
+        ]
+      },
+      {
+        "title": "Task Management App",
+        "description": "Eine kollaborative Projektmanagement-Anwendung mit Echtzeit-Updates, Drag-and-Drop-Funktionalität und Team-Collaboration-Features.",
+        "image": "/project-management-dashboard.png",
+        "technologies": [
+          "React",
+          "Node.js",
+          "Socket.io",
+          "MongoDB",
+          "Material-UI"
+        ],
+        "category": "Fullstack",
+        "year": "2023",
+        "team": "2 Entwickler",
+        "duration": "3 Monate",
+        "status": "Live",
+        "links": {
+          "demo": "https://example.com",
+          "github": "https://github.com/example/taskmanager"
+        },
+        "highlights": [
+          "Echtzeit-Synchronisation",
+          "Offline-Funktionalität",
+          "Team-Collaboration",
+          "Mobile App verfügbar"
+        ]
+      },
+      {
+        "title": "AI-Powered Analytics Dashboard",
+        "description": "Ein intelligentes Analytics-Dashboard mit KI-gestützten Insights und automatisierten Reports für Unternehmen.",
+        "image": "/ai-analytics-dashboard.png",
+        "technologies": [
+          "Vue.js",
+          "Python",
+          "TensorFlow",
+          "FastAPI",
+          "Chart.js"
+        ],
+        "category": "AI/ML",
+        "year": "2023",
+        "team": "4 Entwickler",
+        "duration": "6 Monate",
+        "status": "Live",
+        "links": {
+          "demo": "https://example.com",
+          "github": "https://github.com/example/ai-dashboard"
+        },
+        "highlights": [
+          "Machine Learning Integration",
+          "Predictive Analytics",
+          "Automatisierte Reports",
+          "Enterprise-ready"
+        ]
+      },
+      {
+        "title": "Restaurant Booking System",
+        "description": "Ein umfassendes Reservierungssystem für Restaurants mit Online-Buchung, Tischverwaltung und Kundenverwaltung.",
+        "image": "/restaurant-booking-system-interface.jpg",
+        "technologies": [
+          "Angular",
+          "NestJS",
+          "PostgreSQL",
+          "Redis",
+          "Bootstrap"
+        ],
+        "category": "Fullstack",
+        "year": "2022",
+        "team": "Solo-Projekt",
+        "duration": "2 Monate",
+        "status": "Live",
+        "links": {
+          "demo": "https://example.com",
+          "github": "https://github.com/example/restaurant-booking"
+        },
+        "highlights": [
+          "Automatische Bestätigungen",
+          "Wartelisten-Management",
+          "Multi-Restaurant Support",
+          "SMS/Email Benachrichtigungen"
+        ]
+      },
+      {
+        "title": "Fitness Tracking App",
+        "description": "Eine mobile-first Fitness-App mit Workout-Tracking, Ernährungsplanung und sozialen Features für Motivation.",
+        "image": "/fitness-tracking-app.png",
+        "technologies": [
+          "React Native",
+          "Express.js",
+          "MongoDB",
+          "AWS S3",
+          "Expo"
+        ],
+        "category": "Mobile",
+        "year": "2022",
+        "team": "3 Entwickler",
+        "duration": "5 Monate",
+        "status": "Live",
+        "links": {
+          "demo": "https://example.com",
+          "github": "https://github.com/example/fitness-app"
+        },
+        "highlights": [
+          "Cross-Platform App",
+          "Offline-Synchronisation",
+          "Social Features",
+          "50k+ Downloads"
+        ]
+      },
+      {
+        "title": "Content Management System",
+        "description": "Ein flexibles CMS mit Drag-and-Drop-Editor, Multi-Site-Management und erweiterbarer Plugin-Architektur.",
+        "image": "/cms-interface.png",
+        "technologies": ["Laravel", "Vue.js", "MySQL", "Docker", "AWS"],
+        "category": "Backend",
+        "year": "2021",
+        "team": "5 Entwickler",
+        "duration": "8 Monate",
+        "status": "Live",
+        "links": {
+          "demo": "https://example.com",
+          "github": "https://github.com/example/cms"
+        },
+        "highlights": [
+          "Plugin-System",
+          "Multi-Tenant Architektur",
+          "SEO-Tools integriert",
+          "White-Label Lösung"
+        ]
+      }
+    ]
+  },
+  "Skills": {
+    "title": "Meine Skills",
+    "cta": "Jetzt kontaktieren",
+    "subtitle": "Technologien und Tools, die ich beherrsche",
+    "yearsOfExperience": "Jahre Erfahrung",
+    "yearsOfExperienceCount": "6+",
+    "projectsCompletedCount": "50+",
+    "projectsCompleted": "Projekte abgeschlossen",
+    "technologiesCount": "20+",
+    "knownTechnologies": "Technologien beherrscht",
+    "knowledge": "Kenntnisstand",
+    "year": "Jahr",
+    "years": "Jahre",
+    "projects": "Projekte",
+    "certificates": "Zertifikate",
+    "certificatesDescription": "Kontinuierliche Weiterbildung und anerkannte Qualifikationen",
+    "CTASection": {
+      "title": "Suchen Sie einen Entwickler mit diesen Skills?",
+      "subtitle": "Meine vielfältigen Fähigkeiten und jahrelange Erfahrung können Ihr Projekt zum Erfolg führen. Lassen Sie uns über Ihre Anforderungen sprechen.",
+      "button": "Projekte ansehen"
+    },
+    "skillCategories": [
+      {
+        "title": "Frontend Development",
+        "icon": "🎨",
+        "description": "Moderne Benutzeroberflächen und interaktive Webanwendungen",
+        "skills": [
+          { "name": "React", "level": 95, "years": 5, "projects": 25 },
+          { "name": "Next.js", "level": 90, "years": 3, "projects": 15 },
+          { "name": "TypeScript", "level": 88, "years": 4, "projects": 20 },
+          { "name": "Tailwind CSS", "level": 92, "years": 3, "projects": 18 },
+          { "name": "Vue.js", "level": 85, "years": 3, "projects": 12 },
+          { "name": "Angular", "level": 80, "years": 2, "projects": 8 }
+        ]
+      },
+      {
+        "title": "Backend Development",
+        "icon": "⚙️",
+        "description": "Robuste Server-Architekturen und APIs",
+        "skills": [
+          { "name": "Node.js", "level": 90, "years": 4, "projects": 22 },
+          { "name": "Express.js", "level": 88, "years": 4, "projects": 20 },
+          { "name": "NestJS", "level": 85, "years": 2, "projects": 10 },
+          { "name": "Python", "level": 82, "years": 3, "projects": 15 },
+          { "name": "PHP/Laravel", "level": 80, "years": 3, "projects": 12 },
+          { "name": "GraphQL", "level": 78, "years": 2, "projects": 8 }
+        ]
+      },
+      {
+        "title": "Database & Cloud",
+        "icon": "☁️",
+        "description": "Datenmanagement und Cloud-Infrastruktur",
+        "skills": [
+          { "name": "PostgreSQL", "level": 88, "years": 4, "projects": 18 },
+          { "name": "MongoDB", "level": 85, "years": 3, "projects": 15 },
+          { "name": "AWS", "level": 82, "years": 3, "projects": 12 },
+          { "name": "Docker", "level": 80, "years": 3, "projects": 14 },
+          { "name": "Redis", "level": 78, "years": 2, "projects": 10 },
+          { "name": "Kubernetes", "level": 75, "years": 2, "projects": 6 }
+        ]
+      },
+      {
+        "title": "Tools & Workflow",
+        "icon": "🛠️",
+        "description": "Entwicklungstools und Projektmanagement",
+        "skills": [
+          { "name": "Git/GitHub", "level": 95, "years": 6, "projects": 30 },
+          { "name": "VS Code", "level": 92, "years": 5, "projects": 30 },
+          { "name": "Figma", "level": 85, "years": 3, "projects": 20 },
+          { "name": "Jest/Testing", "level": 82, "years": 3, "projects": 15 },
+          { "name": "CI/CD", "level": 80, "years": 2, "projects": 12 },
+          { "name": "Agile/Scrum", "level": 88, "years": 4, "projects": 25 }
+        ]
+      }
+    ],
+    "certifications": [
+      {
+        "title": "AWS Certified Developer",
+        "issuer": "Amazon Web Services",
+        "year": "2023",
+        "badge": "aws"
+      },
+      {
+        "title": "React Professional Certificate",
+        "issuer": "Meta",
+        "year": "2022",
+        "badge": "react"
+      },
+      {
+        "title": "Google Cloud Professional",
+        "issuer": "Google Cloud",
+        "year": "2023",
+        "badge": "gcp"
+      }
+    ]
+  },
+  "Contact": {
+    "title": "Kontakt",
+    "subtitle": "Lassen Sie uns zusammenarbeiten",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Ihr vollständiger Name",
+      "email": "E-Mail",
+      "emailPlaceholder": "ihre.email@beispiel.com",
+      "message": "Nachricht",
+      "messagePlaceholder": "Beschreiben Sie Ihr Projekt oder Ihre Anfrage...",
+      "send": "Nachricht senden",
+      "sending": "Wird gesendet...",
+      "success": "Nachricht erfolgreich gesendet!",
+      "error": "Fehler beim Senden der Nachricht."
+    },
+    "rightSection": {
+      "title": "Kontaktinformationen",
+      "description": "Erreichen Sie mich über diese Kanäle",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "location": "Standort",
+      "contactinfo": [
+        {
+          "icon": "Mail",
+          "label": "E-Mail",
+          "value": "hello@developer.com",
+          "href": "mailto:hello@developer.com",
+          "color": "text-blue-600 dark:text-blue-400"
+        },
+        {
+          "icon": "Phone",
+          "label": "Telefon",
+          "value": "+49 123 456 7890",
+          "href": "tel:+491234567890",
+          "color": "text-green-600 dark:text-green-400"
+        },
+        {
+          "icon": "MapPin",
+          "label": "Standort",
+          "value": "Deutschland",
+          "href": null,
+          "color": "text-orange-600 dark:text-orange-400"
+        }
+      ],
+      "socials": [
+        {
+          "icon": "Github",
+          "label": "GitHub",
+          "href": "https://github.com/developer",
+          "color": "hover:text-gray-900 dark:hover:text-gray-100"
+        },
+        {
+          "icon": "Linkedin",
+          "label": "LinkedIn",
+          "href": "https://linkedin.com/in/developer",
+          "color": "hover:text-blue-600"
+        },
+        {
+          "icon": "Twitter",
+          "label": "Twitter",
+          "href": "https://twitter.com/developer",
+          "color": "hover:text-blue-400"
+        }
+      ],
+      "availability": {
+        "title": "Verfügbarkeit",
+        "description1": "Verfügbar für neue Projekte",
+        "description2": "Ausgestattetes Homeoffice vorhanden",
+        "description3": "Antwort innerhalb von 24h"
+      }
+    },
+    "CTASection": {
+      "title": "Bereit für den nächsten Schritt?",
+      "subtitle": "Schauen Sie sich meine bisherigen Arbeiten an oder erfahren Sie mehr über meine Fähigkeiten.",
+      "button1": "Projekte ansehen",
+      "button2": "Skills entdecken"
+    }
+  }
+}

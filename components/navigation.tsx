@@ -7,25 +7,25 @@ import { Menu, X, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { ThemeToggle } from '@/components/theme-toggle';
 import { LocaleToggle } from '@/components/locale-toggle';
-import { useLocale } from '@/hooks/use-locale';
-import { translations } from '@/lib/i18n';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
 import { useTheme } from '@/hooks/use-theme';
+import { useTranslations } from 'next-intl';
 
 export function Navigation() {
   const pathname = usePathname();
-  const { locale } = useLocale();
   const { theme } = useTheme();
-  const t = translations[locale];
+
+  const t = useTranslations('Navigation');
+
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { href: '/', label: t.nav.home },
-    { href: '/about', label: t.nav.about },
-    { href: '/projects', label: t.nav.projects },
-    { href: '/skills', label: t.nav.skills },
-    { href: '/contact', label: t.nav.contact },
+    { href: '/', label: t('nav.home') },
+    { href: '/about', label: t('nav.about') },
+    { href: '/projects', label: t('nav.projects') },
+    { href: '/skills', label: t('nav.skills') },
+    { href: '/contact', label: t('nav.contact') },
   ];
 
   const toggleMobileMenu = () => {
@@ -56,12 +56,10 @@ export function Navigation() {
           <Image
             src={'/logo-color-full.png'}
             alt='Kevin Poppe Logo'
-            width={32}
-            height={32}
+            width={200}
+            height={200}
             className='w-auto h-12 hidden lg:inline-block'
           />
-          {/* <span className="font-bold text-xl hidden xl:inline-block">Kevin Poppe - Fullstack Web Developer</span> */}
-          {/* <span className="font-bold text-xl xl:hidden">Kevin Poppe</span> */}
         </Link>
 
         {/* Desktop Navigation */}
@@ -90,7 +88,7 @@ export function Navigation() {
           <Button asChild size='sm' className='font-medium'>
             <Link href='/contact'>
               <Mail className='h-4 w-4 mr-2' />
-              {t.home.cta}
+              {t('home.cta')}
             </Link>
           </Button>
           <LocaleToggle />
@@ -143,7 +141,7 @@ export function Navigation() {
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   <Mail className='h-4 w-4 mr-2' />
-                  {t.home.cta}
+                  {t('home.cta')}
                 </Link>
               </Button>
             </div>
