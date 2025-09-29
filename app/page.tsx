@@ -1,7 +1,8 @@
 "use client"
 
 import Link from "next/link"
-import { ArrowRight, Code, User, Briefcase, Award, Mail } from "lucide-react"
+import Image from "next/image"
+import { ArrowRight, User, Briefcase, Award, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { useLocale } from "@/hooks/use-locale"
@@ -44,28 +45,42 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
       <section className="relative py-20 lg:py-32 bg-gradient-to-br from-background via-background to-muted/20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="mb-8">
-              <div className="w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                <Code className="w-16 h-16 text-primary" />
+          <div className="max-w-7xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              {/* Text Content */}
+              <div className="text-center lg:text-left">
+                <h1 className="text-4xl lg:text-6xl font-bold mb-6 text-balance">{t.home.title}</h1>
+                <p className="text-xl lg:text-2xl text-muted-foreground mb-8 text-pretty">{t.home.subtitle}</p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                  <Button asChild size="lg" className="text-lg px-8">
+                    <Link href="/contact">
+                      {t.home.cta}
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </Link>
+                  </Button>
+                  <Button asChild variant="outline" size="lg" className="text-lg px-8 bg-transparent">
+                    <Link href="/projects">Projekte ansehen</Link>
+                  </Button>
+                </div>
               </div>
-              <h1 className="text-4xl lg:text-6xl font-bold mb-6 text-balance">{t.home.title}</h1>
-              <p className="text-xl lg:text-2xl text-muted-foreground mb-8 text-pretty max-w-3xl mx-auto">
-                {t.home.subtitle}
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button asChild size="lg" className="text-lg px-8">
-                  <Link href="/contact">
-                    {t.home.cta}
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Link>
-                </Button>
-                <Button asChild variant="outline" size="lg" className="text-lg px-8 bg-transparent">
-                  <Link href="/projects">Projekte ansehen</Link>
-                </Button>
+
+              {/* Portrait Image */}
+              <div className="flex justify-center lg:justify-end">
+                <div className="relative">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl transform rotate-3"></div>
+                  <div className="relative bg-background rounded-2xl p-2 shadow-2xl">
+                    <Image
+                      src="/guru.png"
+                      alt="Kevin Poppe - Fullstack Web Developer"
+                      width={400}
+                      height={600}
+                      className="rounded-xl object-cover w-full max-w-sm lg:max-w-md"
+                      priority
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
