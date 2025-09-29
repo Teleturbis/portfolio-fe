@@ -1,7 +1,5 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { GeistSans } from "geist/font/sans"
-import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { Navigation } from "@/components/navigation"
@@ -9,12 +7,6 @@ import { Footer } from "@/components/footer"
 import { FloatingCTA } from "@/components/floating-cta"
 import { Toaster } from "@/components/ui/toaster"
 import { Suspense } from "react"
-import { Geist as V0_Font_Geist, Geist_Mono as V0_Font_Geist_Mono, Source_Serif_4 as V0_Font_Source_Serif_4 } from 'next/font/google'
-
-// Initialize fonts
-V0_Font_Geist({ weight: ["100","200","300","400","500","600","700","800","900"] })
-V0_Font_Geist_Mono({ weight: ["100","200","300","400","500","600","700","800","900"] })
-V0_Font_Source_Serif_4({ weight: ["200","300","400","500","600","700","800","900"] })
 
 export const metadata: Metadata = {
   title: "Portfolio - Fullstack Web Developer",
@@ -26,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "de_DE",
-    url: "https://portfolio.example.com",
+    url: "https://kevinpoppe.com",
     title: "Portfolio - Fullstack Web Developer",
     description: "Professional portfolio showcasing modern web development projects and skills.",
     siteName: "Developer Portfolio",
@@ -58,7 +50,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} antialiased`}>
+      <body className="font-sans antialiased">
         <Navigation />
         <main className="min-h-screen">
           <Suspense>{children}</Suspense>
