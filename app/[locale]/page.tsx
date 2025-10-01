@@ -85,9 +85,9 @@ export default function HomePage() {
                   <div className='absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl transform rotate-3'></div>
                   <div className='relative bg-background rounded-2xl p-2 shadow-2xl'>
                     <Image
-                      src='/guru.png'
+                      src='https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:500/plain/https://s3-api.teleturbis.de/portfolio/guru.png'
                       alt='Kevin Poppe - Fullstack Web Developer'
-                      width={400}
+                      width={500}
                       height={600}
                       className='rounded-xl object-cover w-full max-w-sm lg:max-w-md'
                       priority

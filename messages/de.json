@@ -36,52 +36,90 @@
     "cta": "Jetzt kontaktieren",
     "timelineEvents": [
       {
-        "year": "2018",
-        "title": "Erste Schritte in der Programmierung",
-        "description": "Beginn meiner Reise mit HTML, CSS und JavaScript. Erste kleine Projekte und das Entdecken der Leidenschaft für Webentwicklung.",
+        "year": "vor 2014",
+        "title": "Hobbyprogrammierer & Techniknerd",
+        "description": "Erste Jahre mit Java/C++ und Web – aus Neugier, nicht als Job. Technik, Tüftelei und Clean-Code-Denken werden zur Gewohnheit.",
         "location": "Selbststudium",
-        "image": "/person-learning-to-code-at-computer.jpg",
-        "tags": ["HTML", "CSS", "JavaScript"]
+        "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:500/plain/https://s3-api.teleturbis.de/portfolio/timeline/hobby-coding.jpg",
+        "tags": ["Java", "C++", "HTML", "CSS", "JavaScript"]
       },
       {
-        "year": "2019",
-        "title": "Frontend-Spezialisierung",
-        "description": "Vertiefung in moderne Frontend-Frameworks wie React und Vue.js. Erste kommerzielle Projekte und Freelance-Arbeiten.",
-        "location": "Freelance",
-        "image": "/modern-web-development-workspace-with-multiple-mon.jpg",
-        "tags": ["React", "Vue.js", "SASS", "Webpack"]
+        "year": "2014",
+        "title": "Examinierter Altenpfleger",
+        "description": "Staatsexamen abgeschlossen – Soft Skills, Verantwortung und Stressresistenz aus der Pflege prägen bis heute meine Arbeitsweise.",
+        "location": "Buchen",
+        "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:500/plain/https://s3-api.teleturbis.de/portfolio/timeline/healthcare-graduation.png",
+        "tags": ["Teamwork", "Verantwortung", "Kommunikation"]
       },
       {
-        "year": "2020",
-        "title": "Fullstack-Entwicklung",
-        "description": "Erweiterung der Kenntnisse auf Backend-Technologien. Node.js, Express und Datenbankdesign wurden zu wichtigen Bausteinen.",
-        "location": "Remote Work",
-        "image": "/fullstack-developer-working-on-backend-code.jpg",
-        "tags": ["Node.js", "Express", "MongoDB", "PostgreSQL"]
+        "year": "2014–2015",
+        "title": "Intensivpflege (24h Heimbeatmung)",
+        "description": "Anima GbR: Pflege im Hochrisiko-Umfeld. Lernen, unter Druck ruhig zu bleiben und präzise zu arbeiten.",
+        "location": "Waiblingen",
+        "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:500/plain/https://s3-api.teleturbis.de/portfolio/timeline/intensive-care.jpg",
+        "tags": ["Fokus", "Präzision", "Zuverlässigkeit"]
       },
       {
-        "year": "2021",
-        "title": "Cloud & DevOps",
-        "description": "Fokus auf moderne Deployment-Strategien und Cloud-Technologien. CI/CD-Pipelines und containerisierte Anwendungen.",
-        "location": "Tech Startup",
-        "image": "/cloud-infrastructure-and-devops-dashboard.jpg",
-        "tags": ["Docker", "AWS", "CI/CD", "Kubernetes"]
+        "year": "2015–2022",
+        "title": "Ambulante Pflege – Tourleitung",
+        "description": "Leitung einer eigenen Tour mit 17–20 Patienten. Organisation, Priorisierung und Entscheidungsfreude werden Alltag.",
+        "location": "Walldürn",
+        "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:500/plain/https://s3-api.teleturbis.de/portfolio/timeline/homecare.jpg",
+        "tags": ["Organisation", "Priorisierung", "Führung"]
       },
       {
         "year": "2022",
-        "title": "Team Leadership",
-        "description": "Übernahme von Führungsverantwortung in Entwicklungsteams. Mentoring von Junior-Entwicklern und Projektmanagement.",
-        "location": "Senior Position",
-        "image": "/team-meeting-with-developers-discussing-code.jpg",
-        "tags": ["Leadership", "Mentoring", "Agile", "Scrum"]
+        "title": "Fullstack Bootcamp – WBS Coding School",
+        "description": "Projektbasiertes Training: React, Node.js, Express, SQL/NoSQL, SCRUM. Der offizielle Sprung zurück in die IT.",
+        "location": "Remote",
+        "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:500/plain/https://s3-api.teleturbis.de/portfolio/timeline/WBS-Zertifikat.jpg",
+        "tags": [
+          "React",
+          "Node.js",
+          "Express",
+          "PostgreSQL",
+          "MongoDB",
+          "SCRUM"
+        ]
       },
       {
-        "year": "2023-2024",
-        "title": "Moderne Technologien",
-        "description": "Spezialisierung auf Next.js, TypeScript und moderne AI-Integration. Fokus auf Performance und Benutzererfahrung.",
-        "location": "Freelance & Consulting",
-        "image": "/modern-web-development-with-ai-tools-and-next-js.jpg",
-        "tags": ["Next.js", "TypeScript", "AI Integration", "Performance"]
+        "year": "2022–2023",
+        "title": "Frontend Developer – Urlaubsguru",
+        "description": "Nuxt/Vue-Weiterentwicklung, Component Library, Code-Reviews und Onboarding. Kurzfristig Nuxt2 gelernt und direkt Verantwortung übernommen.",
+        "location": "Remote",
+        "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:500/plain/https://s3-api.teleturbis.de/portfolio/timeline/nuxt-vue-team.png",
+        "tags": ["Nuxt.js", "Vue 2", "Component Library", "Code Review"]
+      },
+      {
+        "year": "ab 2023",
+        "title": "Fullstack Developer – Kupona",
+        "description": "Greenfield & Modernisierung: Git & Standards eingeführt, alte Code-Landschaft abgelöst, Monorepo-Denken, CI/CD & DevOps in die Praxis gebracht. R&D → Architektur → PoC → Betrieb. Skript läuft in diversen Shop-Stacks (SPA/MPA, Next/Nuxt, Shopify/WordPress), triggert regelbasiert, multilingual, liefert LP-Recomms.",
+        "location": "Deutschland / Remote",
+        "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:500/plain/https://s3-api.teleturbis.de/portfolio/timeline/modernization.png",
+        "tags": [
+          "Next.js",
+          "TypeScript",
+          "Express",
+          "Docker",
+          "CI/CD",
+          "Standards"
+        ]
+      },
+      {
+        "year": "laufend",
+        "title": "Homelab & Self-Hosting",
+        "description": "3 Rack-Server, mehrere RPi, GPU-Node, Hetzner. Docker Swarm + Traefik. Paperless-NGX, Home Assistant, Gitea, n8n, Nextcloud, Wetterstation u.v.m.",
+        "location": "Collenberg & Cloud",
+        "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:500/plain/https://s3-api.teleturbis.de/portfolio/timeline/homelab-rack.jpg",
+        "tags": ["Docker Swarm", "Traefik", "Self-Hosting", "Automation"]
+      },
+      {
+        "year": "laufend",
+        "title": "CognitionX & Herzblatt (ERP fürs Leben)",
+        "description": "Visionäre Side-Projects: AGI-inspirierte Konzepte (ES/ICH/ÜBER-ICH), Life-ERP mit Recommender – Nutzen statt Werbung.",
+        "location": "Side Projects",
+        "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:500/plain/https://s3-api.teleturbis.de/portfolio/timeline/agi-life-erp.jpg",
+        "tags": ["AGI-Ideen", "Recommender", "Domain Modeling"]
       }
     ],
     "CTASection": {
@@ -114,7 +152,7 @@
       {
         "title": "E-Commerce Platform",
         "description": "Eine vollständige E-Commerce-Lösung mit Next.js, Stripe-Integration und Admin-Dashboard. Unterstützt mehrere Zahlungsmethoden und bietet eine intuitive Benutzererfahrung.",
-        "image": "/modern-ecommerce-interface.png",
+        "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:700/plain/https://s3-api.teleturbis.de/portfolio/modern-ecommerce-interface.png",
         "technologies": [
           "Next.js",
           "TypeScript",
@@ -141,7 +179,7 @@
       {
         "title": "Task Management App",
         "description": "Eine kollaborative Projektmanagement-Anwendung mit Echtzeit-Updates, Drag-and-Drop-Funktionalität und Team-Collaboration-Features.",
-        "image": "/project-management-dashboard.png",
+        "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:700/plain/https://s3-api.teleturbis.de/portfolio/project-management-dashboard.png",
         "technologies": [
           "React",
           "Node.js",
@@ -168,7 +206,7 @@
       {
         "title": "AI-Powered Analytics Dashboard",
         "description": "Ein intelligentes Analytics-Dashboard mit KI-gestützten Insights und automatisierten Reports für Unternehmen.",
-        "image": "/ai-analytics-dashboard.png",
+        "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:700/plain/https://s3-api.teleturbis.de/portfolio/ai-analytics-dashboard.png",
         "technologies": [
           "Vue.js",
           "Python",
@@ -195,7 +233,7 @@
       {
         "title": "Restaurant Booking System",
         "description": "Ein umfassendes Reservierungssystem für Restaurants mit Online-Buchung, Tischverwaltung und Kundenverwaltung.",
-        "image": "/restaurant-booking-system-interface.jpg",
+        "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:700/plain/https://s3-api.teleturbis.de/portfolio/restaurant-booking-system-interface.jpg",
         "technologies": [
           "Angular",
           "NestJS",
@@ -222,7 +260,7 @@
       {
         "title": "Fitness Tracking App",
         "description": "Eine mobile-first Fitness-App mit Workout-Tracking, Ernährungsplanung und sozialen Features für Motivation.",
-        "image": "/fitness-tracking-app.png",
+        "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:700/plain/https://s3-api.teleturbis.de/portfolio/fitness-tracking-app.png",
         "technologies": [
           "React Native",
           "Express.js",
@@ -249,7 +287,7 @@
       {
         "title": "Content Management System",
         "description": "Ein flexibles CMS mit Drag-and-Drop-Editor, Multi-Site-Management und erweiterbarer Plugin-Architektur.",
-        "image": "/cms-interface.png",
+        "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:700/plain/https://s3-api.teleturbis.de/portfolio/cms-interface.png",
         "technologies": ["Laravel", "Vue.js", "MySQL", "Docker", "AWS"],
         "category": "Backend",
         "year": "2021",
