@@ -13,6 +13,12 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  // Standalone Output für Docker optimiert
+  output: 'standalone',
+  // Für bessere Docker Performance
+  experimental: {
+    outputFileTracingRoot: process.cwd(),
+  },
 };
 
 export default withNextIntl(nextConfig);

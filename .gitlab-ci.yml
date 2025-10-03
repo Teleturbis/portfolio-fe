@@ -7,8 +7,10 @@ include:
   - local: 'cicd/base.yml'
   - local: 'cicd/lint.yml'
   - local: 'cicd/build.yml'
+  - local: 'cicd/deploy.yml'
 
 # Pipeline Stages Definition
 stages:
   - lint
   - build
+  - deploy

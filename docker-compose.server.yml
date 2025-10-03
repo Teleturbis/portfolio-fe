@@ -1,0 +1,77 @@
+# Docker Compose für v0-Portfolio Server Deployment
+# Staging und Production Environments
+
+version: '3.8'
+
+services:
+  # Staging Environment
+  v0-portfolio-staging:
+    image: registry.teleturbis.de/v0-portfolio:staging
+    container_name: v0-portfolio-staging
+    restart: unless-stopped
+    ports:
+      - '3001:3000' # Staging auf Port 3001
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - HOSTNAME=0.0.0.0
+    networks:
+      - portfolio-network
+    labels:
+      - 'traefik.enable=true'
+      - 'traefik.http.routers.portfolio-staging.rule=Host(`staging.your-domain.com`)'
+      - 'traefik.http.routers.portfolio-staging.tls=true'
+      - 'traefik.http.routers.portfolio-staging.tls.certresolver=letsencrypt'
+      - 'traefik.http.services.portfolio-staging.loadbalancer.server.port=3000'
+    healthcheck:
+      test:
+        [
+          'CMD',
+          'wget',
+          '--no-verbose',
+          '--tries=1',
+          '--spider',
+          'http://localhost:3000/',
+        ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Production Environment
+  v0-portfolio-production:
+    image: registry.teleturbis.de/v0-portfolio:latest
+    container_name: v0-portfolio-production
+    restart: unless-stopped
+    ports:
+      - '3000:3000' # Production auf Port 3000
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - HOSTNAME=0.0.0.0
+    networks:
+      - portfolio-network
+    labels:
+      - 'traefik.enable=true'
+      - 'traefik.http.routers.portfolio-production.rule=Host(`your-domain.com`)'
+      - 'traefik.http.routers.portfolio-production.tls=true'
+      - 'traefik.http.routers.portfolio-production.tls.certresolver=letsencrypt'
+      - 'traefik.http.services.portfolio-production.loadbalancer.server.port=3000'
+    healthcheck:
+      test:
+        [
+          'CMD',
+          'wget',
+          '--no-verbose',
+          '--tries=1',
+          '--spider',
+          'http://localhost:3000/',
+        ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+networks:
+  portfolio-network:
+    external: true
