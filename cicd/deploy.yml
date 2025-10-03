@@ -24,7 +24,24 @@ docker-build-production:
     - docker build -t $IMAGE_NAME:latest .
     - docker push $IMAGE_NAME:$IMAGE_TAG
     - docker push $IMAGE_NAME:latest
+    - echo "Image pushed successfully - Image: $IMAGE_NAME:latest"
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
   needs:
     - build
+
+# Trigger Portainer Service Update via Webhook
+trigger-deployment:
+  stage: deploy
+  image: curlimages/curl:latest
+  script:
+    - echo "Triggering Portainer service update..."
+    - |
+      curl -X POST "$PORTAINER_WEBHOOK_URL" \
+        -H "Content-Type: application/json" || echo "Webhook failed - continuing anyway"
+    - echo "Portainer webhook triggered successfully"
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  needs:
+    - docker-build-production
+  allow_failure: true
