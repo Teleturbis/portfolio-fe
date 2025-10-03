@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
 type TimelineEvent = {
   year: string;
@@ -58,10 +59,13 @@ export default function AboutPage() {
                   >
                     <Card className='overflow-hidden transition-shadow duration-300 hover:shadow-lg'>
                       <div className='relative aspect-video overflow-hidden'>
-                        <img
+                        <Image
                           src={event.image || '/placeholder.svg'}
                           alt={event.title}
                           className='h-full w-full object-cover'
+                          width={640}
+                          height={360}
+                          priority
                         />
                         <div className='absolute top-4 left-4'>
                           <Badge

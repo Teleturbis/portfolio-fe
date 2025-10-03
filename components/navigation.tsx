@@ -9,12 +9,10 @@ import { ThemeToggle } from '@/components/theme-toggle';
 import { LocaleToggle } from '@/components/locale-toggle';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
-import { useTheme } from '@/hooks/use-theme';
 import { useTranslations } from 'next-intl';
 
 export function Navigation() {
   const pathname = usePathname();
-  const { theme } = useTheme();
 
   const t = useTranslations('Navigation');
 
@@ -30,13 +28,6 @@ export function Navigation() {
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
-
-  const getLogoSrc = () => {
-    if (theme === 'dark') {
-      return '/logo-light.png'; // Light logo for dark background
-    }
-    return '/logo-dark.png'; // Dark logo for light background
   };
 
   return (

@@ -38,13 +38,6 @@ type Certification = {
 export default function SkillsPage() {
   const t = useTranslations('Skills');
 
-  const getSkillColor = (level: number) => {
-    if (level >= 90) return 'bg-green-500';
-    if (level >= 80) return 'bg-blue-500';
-    if (level >= 70) return 'bg-yellow-500';
-    return 'bg-gray-500';
-  };
-
   const getSkillLevel = (level: number) => {
     if (level >= 90) return 'Expert';
     if (level >= 80) return 'Fortgeschritten';

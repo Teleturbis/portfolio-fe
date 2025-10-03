@@ -1,7 +1,5 @@
 'use client';
 
-import type React from 'react';
-
 import { useState } from 'react';
 import Link from 'next/link';
 import {
@@ -69,7 +67,7 @@ export default function ContactPage() {
       });
 
       setFormData({ name: '', email: '', message: '' });
-    } catch (error) {
+    } catch (_error) {
       toast({
         title: 'Fehler beim Senden',
         description:
