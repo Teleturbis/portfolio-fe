@@ -1,22 +1,24 @@
 # Linting Jobs - Prettier & ESLint
 # Laufen parallel in der lint stage
 
-.lint-base: &lint-base
-  stage: lint
-  rules:
-    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
-    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
-
 prettier:
-  <<: *lint-base
+  extends: .base-config
+  stage: lint
   script:
     - echo "🎨 Running Prettier code formatting check..."
     - pnpm prettier --check .
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
   allow_failure: false
 
 eslint:
-  <<: *lint-base
+  extends: .base-config
+  stage: lint
   script:
     - echo "🔍 Running ESLint code quality check..."
     - pnpm lint
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
   allow_failure: false

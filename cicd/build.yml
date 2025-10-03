@@ -2,6 +2,7 @@
 # Läuft nach erfolgreicher lint stage
 
 build:
+  extends: .base-config
   stage: build
   script:
     - echo "🏗️ Building Next.js application..."
@@ -11,9 +12,6 @@ build:
     paths:
       - .next/
     expire_in: 1 hour
-    reports:
-      # Für zukünftige Bundle-Analyse
-      dotenv: build.env
   rules:
     - if: $CI_PIPELINE_SOURCE == "merge_request_event"
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH

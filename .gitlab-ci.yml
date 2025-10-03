@@ -12,7 +12,3 @@ include:
 stages:
   - lint
   - build
-
-# Alle Jobs erben von der Basis-Konfiguration
-default:
-  extends: .base-config
