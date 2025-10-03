@@ -17,7 +17,7 @@ docker-build-production:
     IMAGE_TAG: 'v$CI_COMMIT_SHORT_SHA'
   before_script:
     - echo "Setting up Docker environment..."
-    - docker login -u $REGISTRY_USER -p $REGISTRY_PASSWORD $REGISTRY_URL
+    - echo "$REGISTRY_PASSWORD" | docker login -u "$REGISTRY_USER" --password-stdin "$REGISTRY_URL"
   script:
     - docker build -t $IMAGE_NAME:$IMAGE_TAG .
     - docker build -t $IMAGE_NAME:latest .
@@ -38,7 +38,7 @@ docker-build-staging:
     IMAGE_TAG: 'staging-$CI_COMMIT_SHORT_SHA'
   before_script:
     - echo "Setting up Docker environment..."
-    - docker login -u $REGISTRY_USER -p $REGISTRY_PASSWORD $REGISTRY_URL
+    - echo "$REGISTRY_PASSWORD" | docker login -u "$REGISTRY_USER" --password-stdin "$REGISTRY_URL"
   script:
     - docker build -t $IMAGE_NAME:$IMAGE_TAG .
     - docker build -t $IMAGE_NAME:staging .
