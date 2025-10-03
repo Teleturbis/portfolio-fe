@@ -3,10 +3,10 @@
 
 variables:
   # Teleturbis Registry Konfiguration
-  REGISTRY_URL: "registry.teleturbis.de"
-  IMAGE_NAME: "registry.teleturbis.de/portfolio"
+  REGISTRY_URL: 'registry.teleturbis.de'
+  IMAGE_NAME: 'registry.teleturbis.de/portfolio'
   # Docker in Docker für Container Builds
-  DOCKER_TLS_CERTDIR: "/certs"
+  DOCKER_TLS_CERTDIR: '/certs'
 
 # Docker Build für Production (main branch)
 docker-build-production:
@@ -15,21 +15,15 @@ docker-build-production:
   services:
     - docker:20.10.16-dind
   variables:
-    IMAGE_TAG: "v$CI_COMMIT_SHORT_SHA"
+    IMAGE_TAG: 'v$CI_COMMIT_SHORT_SHA'
   before_script:
     - echo "Setting up Docker environment..."
     - docker login -u $REGISTRY_USER -p $REGISTRY_PASSWORD $REGISTRY_URL
   script:
-    - echo "Building Docker image for production..."
     - docker build -t $IMAGE_NAME:$IMAGE_TAG .
     - docker build -t $IMAGE_NAME:latest .
-    - echo "Pushing to registry..."
     - docker push $IMAGE_NAME:$IMAGE_TAG
     - docker push $IMAGE_NAME:latest
-    - echo "Production image pushed successfully"
-    - echo "Image: $IMAGE_NAME:latest"
-    - echo "Tag: $IMAGE_TAG"
-    - echo "Commit: $CI_COMMIT_SHA"
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
   needs:
