@@ -12,20 +12,20 @@
       "subtitle": "Ich entwickle moderne Webanwendungen mit Leidenschaft für sauberen Code und benutzerfreundliche Interfaces",
       "cta": "Jetzt kontaktieren",
       "aboutPreview": "Mein Weg",
-      "aboutDescription": "Von den ersten Programmierzeilen bis heute - entdecken Sie meine Reise als Entwickler.",
+      "aboutDescription": "Von den ersten Programmierzeilen bis heute - entdecken Sie meine Reise als Entwickler",
       "projectsPreview": "Meine Projekte",
-      "projectsDescription": "Eine Auswahl meiner besten Arbeiten und Projekte, die meine Fähigkeiten demonstrieren.",
+      "projectsDescription": "Eine Auswahl meiner besten Arbeiten und Projekte, die meine Fähigkeiten demonstrieren",
       "skillsPreview": "Meine Skills",
-      "skillsDescription": "Die Technologien und Tools, mit denen ich täglich arbeite und meine Expertise.",
+      "skillsDescription": "Die Technologien und Tools, mit denen ich täglich arbeite und meine Expertise",
       "contactPreview": "Kontakt",
-      "contactDescription": "Lassen Sie uns über Ihr nächstes Projekt sprechen. Ich freue mich auf Ihre Nachricht.",
+      "contactDescription": "Lassen Sie uns über Ihr nächstes Projekt sprechen. Ich freue mich auf Ihre Nachricht",
       "projectsCta": "Projekte ansehen",
       "explorePortfolio": "Entdecken Sie mein Portfolio",
       "explorePortfolioDescription": "Erfahren Sie mehr über mich, meine Projekte und Fähigkeiten",
       "viewMore": "Mehr erfahren",
       "CTASection": {
         "title": "Bereit für Ihr nächstes Projekt?",
-        "subtitle": "Lassen Sie uns gemeinsam Ihre Ideen in die Realität umsetzen. Kontaktieren Sie mich für ein unverbindliches Gespräch.",
+        "subtitle": "Lassen Sie uns gemeinsam Ihre Ideen in die Realität umsetzen. Kontaktieren Sie mich für ein unverbindliches Gespräch",
         "button": "Mehr über mich"
       }
     }
@@ -38,7 +38,7 @@
       {
         "year": "vor 2014",
         "title": "Hobbyprogrammierer & Techniknerd",
-        "description": "Erste Jahre mit Java/C++ und Web – aus Neugier, nicht als Job. Technik, Tüftelei und Clean-Code-Denken werden zur Gewohnheit.",
+        "description": "Erste Jahre mit Java/C++ und Web – aus Neugier, nicht als Job. Technik, Tüftelei und Clean-Code-Denken werden zur Gewohnheit",
         "location": "Selbststudium",
         "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:500/plain/https://s3-api.teleturbis.de/portfolio/timeline/hobby-coding.jpg",
         "tags": ["Java", "C++", "HTML", "CSS", "JavaScript"]
@@ -46,7 +46,7 @@
       {
         "year": "2014",
         "title": "Examinierter Altenpfleger",
-        "description": "Staatsexamen abgeschlossen – Soft Skills, Verantwortung und Stressresistenz aus der Pflege prägen bis heute meine Arbeitsweise.",
+        "description": "Staatsexamen abgeschlossen – Soft Skills, Verantwortung und Stressresistenz aus der Pflege prägen bis heute meine Arbeitsweise",
         "location": "Buchen",
         "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:500/plain/https://s3-api.teleturbis.de/portfolio/timeline/healthcare-graduation.png",
         "tags": ["Teamwork", "Verantwortung", "Kommunikation"]
@@ -54,7 +54,7 @@
       {
         "year": "2014–2015",
         "title": "Intensivpflege (24h Heimbeatmung)",
-        "description": "Anima GbR: Pflege im Hochrisiko-Umfeld. Lernen, unter Druck ruhig zu bleiben und präzise zu arbeiten.",
+        "description": "Anima GbR: Pflege im Hochrisiko-Umfeld. Lernen, unter Druck ruhig zu bleiben und präzise zu arbeiten",
         "location": "Waiblingen",
         "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:500/plain/https://s3-api.teleturbis.de/portfolio/timeline/intensive-care.jpg",
         "tags": ["Fokus", "Präzision", "Zuverlässigkeit"]
@@ -62,7 +62,7 @@
       {
         "year": "2015–2022",
         "title": "Ambulante Pflege – Tourleitung",
-        "description": "Leitung einer eigenen Tour mit 17–20 Patienten. Organisation, Priorisierung und Entscheidungsfreude werden Alltag.",
+        "description": "Leitung einer eigenen Tour mit 17–20 Patienten. Organisation, Priorisierung und Entscheidungsfreude werden Alltag",
         "location": "Walldürn",
         "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:500/plain/https://s3-api.teleturbis.de/portfolio/timeline/homecare.jpg",
         "tags": ["Organisation", "Priorisierung", "Führung"]
@@ -70,7 +70,7 @@
       {
         "year": "2022",
         "title": "Fullstack Bootcamp – WBS Coding School",
-        "description": "Projektbasiertes Training: React, Node.js, Express, SQL/NoSQL, SCRUM. Der offizielle Sprung zurück in die IT.",
+        "description": "Projektbasiertes Training: React, Node.js, Express, SQL/NoSQL, SCRUM. Der offizielle Sprung zurück in die IT",
         "location": "Remote",
         "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:500/plain/https://s3-api.teleturbis.de/portfolio/timeline/WBS-Zertifikat.jpg",
         "tags": ["React", "Node.js", "Express", "PostgreSQL", "MongoDB", "SCRUM"]
@@ -78,7 +78,7 @@
       {
         "year": "2022–2023",
         "title": "Frontend Developer – Urlaubsguru",
-        "description": "Nuxt/Vue-Weiterentwicklung, Component Library, Code-Reviews und Onboarding. Kurzfristig Nuxt2 gelernt und direkt Verantwortung übernommen.",
+        "description": "Nuxt/Vue-Weiterentwicklung, Component Library, Code-Reviews und Onboarding. Kurzfristig Nuxt2 gelernt und direkt Verantwortung übernommen",
         "location": "Remote",
         "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:500/plain/https://s3-api.teleturbis.de/portfolio/timeline/nuxt-vue-team.png",
         "tags": ["Nuxt.js", "Vue 2", "Component Library", "Code Review"]
@@ -86,7 +86,7 @@
       {
         "year": "ab 2023",
         "title": "Fullstack Developer – Kupona",
-        "description": "Greenfield & Modernisierung: Git & Standards eingeführt, alte Code-Landschaft abgelöst, Monorepo-Denken, CI/CD & DevOps in die Praxis gebracht. R&D → Architektur → PoC → Betrieb. Skript läuft in diversen Shop-Stacks (SPA/MPA, Next/Nuxt, Shopify/WordPress), triggert regelbasiert, multilingual, liefert LP-Recomms.",
+        "description": "Greenfield & Modernisierung: Git & Standards eingeführt, alte Code-Landschaft abgelöst, Monorepo-Denken, CI/CD & DevOps in die Praxis gebracht. R&D → Architektur → PoC → Betrieb. Skript läuft in diversen Shop-Stacks (SPA/MPA, Next/Nuxt, Shopify/WordPress), triggert regelbasiert, multilingual, liefert LP-Recomms",
         "location": "Deutschland / Remote",
         "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:500/plain/https://s3-api.teleturbis.de/portfolio/timeline/modernization.png",
         "tags": ["Next.js", "TypeScript", "Express", "Docker", "CI/CD", "Standards"]
@@ -102,7 +102,7 @@
       {
         "year": "laufend",
         "title": "CognitionX & Herzblatt (ERP fürs Leben)",
-        "description": "Visionäre Side-Projects: AGI-inspirierte Konzepte (ES/ICH/ÜBER-ICH), Life-ERP mit Recommender – Nutzen statt Werbung.",
+        "description": "Visionäre Side-Projects: AGI-inspirierte Konzepte (ES/ICH/ÜBER-ICH), Life-ERP mit Recommender – Nutzen statt Werbung",
         "location": "Side Projects",
         "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:500/plain/https://s3-api.teleturbis.de/portfolio/timeline/agi-life-erp.jpg",
         "tags": ["AGI-Ideen", "Recommender", "Domain Modeling"]
@@ -110,7 +110,7 @@
     ],
     "CTASection": {
       "title": "Interessiert an einer Zusammenarbeit?",
-      "subtitle": "Meine Erfahrung und Leidenschaft für sauberen Code können Ihr nächstes Projekt zum Erfolg führen.",
+      "subtitle": "Meine Erfahrung und Leidenschaft für sauberen Code können Ihr nächstes Projekt zum Erfolg führen",
       "button": "Projekte ansehen"
     }
   },
@@ -123,7 +123,7 @@
     "codeCta": "Code",
     "CTASection": {
       "title": "Haben Sie ein ähnliches Projekt im Kopf?",
-      "subtitle": "Lassen Sie uns gemeinsam Ihre Idee in die Realität umsetzen. Ich bringe die Erfahrung und das Know-how mit, um Ihr Projekt erfolgreich zu realisieren.",
+      "subtitle": "Lassen Sie uns gemeinsam Ihre Idee in die Realität umsetzen. Ich bringe die Erfahrung und das Know-how mit, um Ihr Projekt erfolgreich zu realisieren",
       "button": "Meine Skills ansehen"
     },
     "categories": ["Alle", "Fullstack", "Frontend", "Backend", "Mobile", "AI/ML"],
@@ -285,7 +285,7 @@
     "certificatesDescription": "Kontinuierliche Weiterbildung und anerkannte Qualifikationen",
     "CTASection": {
       "title": "Suchen Sie einen Entwickler mit diesen Skills?",
-      "subtitle": "Meine vielfältigen Fähigkeiten und jahrelange Erfahrung können Ihr Projekt zum Erfolg führen. Lassen Sie uns über Ihre Anforderungen sprechen.",
+      "subtitle": "Meine vielfältigen Fähigkeiten und jahrelange Erfahrung können Ihr Projekt zum Erfolg führen. Lassen Sie uns über Ihre Anforderungen sprechen",
       "button": "Projekte ansehen"
     },
     "skillCategories": [
@@ -436,7 +436,7 @@
     },
     "CTASection": {
       "title": "Bereit für den nächsten Schritt?",
-      "subtitle": "Schauen Sie sich meine bisherigen Arbeiten an oder erfahren Sie mehr über meine Fähigkeiten.",
+      "subtitle": "Schauen Sie sich meine bisherigen Arbeiten an oder erfahren Sie mehr über meine Fähigkeiten",
       "button1": "Projekte ansehen",
       "button2": "Skills entdecken"
     }

@@ -43,4 +43,5 @@ trigger-deployment:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
   needs:
     - docker-build-production
+  when: manual
   allow_failure: true
