@@ -1,0 +1,19 @@
+# Basis-Konfiguration für alle Pipeline Jobs
+# Gemeinsame Einstellungen für Image, Cache, und Setup
+
+.base-config:
+  image: node:18-alpine
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
+      - .pnpm-store/
+  variables:
+    PNPM_CACHE_FOLDER: .pnpm-store
+  before_script:
+    - echo "📦 Setting up pnpm and dependencies..."
+    - corepack enable
+    - corepack prepare pnpm@latest --activate
+    - pnpm config set store-dir $PNPM_CACHE_FOLDER
+    - pnpm install --frozen-lockfile
+    - echo "✅ Dependencies installed successfully"

@@ -1,0 +1,23 @@
+# Build Job - Next.js Production Build
+# Läuft nach erfolgreicher lint stage
+
+build:
+  stage: build
+  script:
+    - echo "🏗️ Building Next.js application..."
+    - pnpm build
+    - echo "✅ Build completed successfully"
+  artifacts:
+    paths:
+      - .next/
+    expire_in: 1 hour
+    reports:
+      # Für zukünftige Bundle-Analyse
+      dotenv: build.env
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  # Build läuft nur wenn lint stage erfolgreich war
+  needs:
+    - prettier
+    - eslint

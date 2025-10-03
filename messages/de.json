@@ -150,57 +150,80 @@
     ],
     "projects": [
       {
-        "title": "E-Commerce Platform",
-        "description": "Eine vollständige E-Commerce-Lösung mit Next.js, Stripe-Integration und Admin-Dashboard. Unterstützt mehrere Zahlungsmethoden und bietet eine intuitive Benutzererfahrung.",
-        "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:700/plain/https://s3-api.teleturbis.de/portfolio/modern-ecommerce-interface.png",
+        "title": "Dieses Portfolio",
+        "description": "Mein persönliches Portfolio, das meine Reise als Entwickler, meine Projekte und Fähigkeiten präsentiert. Gebaut mit Next.js, TypeScript und Tailwind CSS für eine schnelle und ansprechende Benutzererfahrung. Im Backend setze ich auf ExpressJS für eine robuste API. Bilder werden effizient mit imgproxy verarbeitet und gehostet. Deployment erfolgt nahtlos über eine CI/CD-Pipeline mit GitHub Actions und einer eigenen Docker-Swarm-Umgebung.",
+        "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:700/plain/https://s3-api.teleturbis.de/portfolio/projects/portfolio-screenshot.png",
         "technologies": [
           "Next.js",
           "TypeScript",
-          "Stripe",
-          "PostgreSQL",
-          "Tailwind CSS"
+          "Tailwind CSS",
+          "ExpressJS",
+          "Docker",
+          "Docker Swarm",
+          "CI/CD"
         ],
         "category": "Fullstack",
-        "year": "2024",
-        "team": "3 Entwickler",
-        "duration": "4 Monate",
+        "year": "2025",
+        "duration": "2 Wochen",
         "status": "Live",
         "links": {
-          "demo": "https://example.com",
+          "demo": "/",
           "github": "https://github.com/example/ecommerce"
         },
         "highlights": [
-          "Über 10.000 aktive Nutzer",
           "99.9% Uptime",
           "Mobile-first Design",
-          "SEO-optimiert"
+          "SEO-optimiert",
+          "Schnelle Ladezeiten",
+          "CI/CD Pipeline"
         ]
       },
       {
-        "title": "Task Management App",
-        "description": "Eine kollaborative Projektmanagement-Anwendung mit Echtzeit-Updates, Drag-and-Drop-Funktionalität und Team-Collaboration-Features.",
+        "title": "Homelab & Self-Hosting",
+        "description": "Mein Homelab mit 3 Rack-Servern, mehreren Raspberry Pis und einer GPU-Node, betrieben mit Docker Swarm und Traefik. Zusätzlich ein weiteres Cluster bei Hetzner. Ich hoste verschiedene Dienste wie Paperless-NGX, Home Assistant, Gitea, n8n und Nextcloud selbst, um maximale Kontrolle und Datenschutz zu gewährleisten.",
         "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:700/plain/https://s3-api.teleturbis.de/portfolio/project-management-dashboard.png",
         "technologies": [
-          "React",
-          "Node.js",
-          "Socket.io",
+          "Docker Swarm",
+          "Traefik",
+          "Raspberry Pi",
+          "Home Assistant",
+          "Nextcloud",
+          "Gitea",
+          "n8n",
+          "Paperless-NGX",
+          "Ubuntu Server",
+          "Hetzner API",
+          "Image Proxy",
+          "S3 Storage",
+          "Cluster Management",
+          "PostgreSQL",
           "MongoDB",
-          "Material-UI"
+          "MySQL",
+          "Redis",
+          "Uptime Kuma",
+          "Grafana"
         ],
-        "category": "Fullstack",
-        "year": "2023",
-        "team": "2 Entwickler",
-        "duration": "3 Monate",
+        "category": "DevOps",
+        "year": "2023 - laufend",
+        "duration": "laufend",
         "status": "Live",
         "links": {
           "demo": "https://example.com",
           "github": "https://github.com/example/taskmanager"
         },
         "highlights": [
-          "Echtzeit-Synchronisation",
-          "Offline-Funktionalität",
-          "Team-Collaboration",
-          "Mobile App verfügbar"
+          "Vollständig selbst gehostet",
+          "Hohe Verfügbarkeit",
+          "Automatisierte Backups",
+          "Zentralisiertes Management",
+          "Skalierbare Architektur",
+          "Energieeffizient",
+          "Sicher und privat",
+          "Vielfältige Dienste",
+          "Einfache Erweiterbarkeit",
+          "Kosteneffizient",
+          "Monitoring & Alerts",
+          "Cloud-Exit"
         ]
       },
       {

@@ -1,0 +1,18 @@
+# GitLab CI/CD Pipeline für v0-Portfolio
+# Next.js 14 mit pnpm Package Manager
+# Modulare Konfiguration mit Include-Pattern
+
+# Importiere modulare Pipeline-Konfigurationen
+include:
+  - local: 'cicd/base.yml'
+  - local: 'cicd/lint.yml'
+  - local: 'cicd/build.yml'
+
+# Pipeline Stages Definition
+stages:
+  - lint
+  - build
+
+# Alle Jobs erben von der Basis-Konfiguration
+default:
+  extends: .base-config

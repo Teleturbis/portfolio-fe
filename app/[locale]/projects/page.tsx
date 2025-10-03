@@ -96,10 +96,6 @@ export default function ProjectsPage() {
                         <Calendar className='h-4 w-4' />
                         {project.year}
                       </div>
-                      <div className='flex items-center gap-1'>
-                        <Users className='h-4 w-4' />
-                        {project.team}
-                      </div>
                     </div>
                   </div>
                 </div>
