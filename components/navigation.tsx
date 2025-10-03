@@ -40,36 +40,36 @@ export function Navigation() {
   };
 
   return (
-    <header className='sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60'>
+    <header className='bg-background/95 supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50 w-full border-b backdrop-blur'>
       <div className='container mx-auto flex h-16 items-center justify-between'>
         <Link
           href='/'
-          className='flex items-center gap-3 hover:opacity-80 transition-opacity'
+          className='flex items-center gap-3 transition-opacity hover:opacity-80'
         >
           <Image
             src={'/logo-color.png'}
             alt='Kevin Poppe Logo'
             width={32}
             height={32}
-            className='w-8 h-8 lg:hidden'
+            className='h-8 w-8 lg:hidden'
           />
           <Image
             src={'/logo-color-full.png'}
             alt='Kevin Poppe Logo'
             width={200}
             height={200}
-            className='w-auto h-12 hidden lg:inline-block'
+            className='hidden h-12 w-auto lg:inline-block'
           />
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className='hidden md:flex items-center space-x-6'>
+        <nav className='hidden items-center space-x-6 md:flex'>
           {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
               className={cn(
-                'text-sm font-medium transition-colors hover:text-primary relative',
+                'hover:text-primary relative text-sm font-medium transition-colors',
                 pathname === item.href
                   ? 'text-primary'
                   : 'text-muted-foreground'
@@ -77,17 +77,17 @@ export function Navigation() {
             >
               {item.label}
               {pathname === item.href && (
-                <div className='absolute -bottom-1 left-0 right-0 h-0.5 bg-primary rounded-full' />
+                <div className='bg-primary absolute right-0 -bottom-1 left-0 h-0.5 rounded-full' />
               )}
             </Link>
           ))}
         </nav>
 
         {/* Desktop Actions */}
-        <div className='hidden md:flex items-center space-x-2'>
+        <div className='hidden items-center space-x-2 md:flex'>
           <Button asChild size='sm' className='font-medium'>
             <Link href='/contact'>
-              <Mail className='h-4 w-4 mr-2' />
+              <Mail className='mr-2 h-4 w-4' />
               {t('home.cta')}
             </Link>
           </Button>
@@ -96,7 +96,7 @@ export function Navigation() {
         </div>
 
         {/* Mobile Menu Button */}
-        <div className='flex md:hidden items-center space-x-2'>
+        <div className='flex items-center space-x-2 md:hidden'>
           <LocaleToggle />
           <ThemeToggle />
           <Button
@@ -117,15 +117,15 @@ export function Navigation() {
 
       {/* Mobile Navigation */}
       {isMobileMenuOpen && (
-        <div className='md:hidden border-t bg-background/95 backdrop-blur'>
-          <nav className='container py-4 space-y-3'>
+        <div className='bg-background/95 border-t backdrop-blur md:hidden'>
+          <nav className='container space-y-3 py-4'>
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className={cn(
-                  'block py-2 text-sm font-medium transition-colors hover:text-primary',
+                  'hover:text-primary block py-2 text-sm font-medium transition-colors',
                   pathname === item.href
                     ? 'text-primary'
                     : 'text-muted-foreground'
@@ -134,13 +134,13 @@ export function Navigation() {
                 {item.label}
               </Link>
             ))}
-            <div className='pt-3 border-t'>
+            <div className='border-t pt-3'>
               <Button asChild size='sm' className='w-full'>
                 <Link
                   href='/contact'
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  <Mail className='h-4 w-4 mr-2' />
+                  <Mail className='mr-2 h-4 w-4' />
                   {t('home.cta')}
                 </Link>
               </Button>

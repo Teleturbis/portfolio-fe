@@ -106,17 +106,17 @@ export default function ContactPage() {
     <div className='min-h-screen py-20'>
       <div className='container mx-auto px-4'>
         {/* Header */}
-        <div className='max-w-4xl mx-auto text-center mb-16'>
-          <h1 className='text-4xl lg:text-5xl font-bold mb-6 text-balance'>
+        <div className='mx-auto mb-16 max-w-4xl text-center'>
+          <h1 className='mb-6 text-4xl font-bold text-balance lg:text-5xl'>
             {t('title')}
           </h1>
-          <p className='text-xl text-muted-foreground text-pretty max-w-2xl mx-auto'>
+          <p className='text-muted-foreground mx-auto max-w-2xl text-xl text-pretty'>
             {t('subtitle')}
           </p>
         </div>
 
-        <div className='max-w-6xl mx-auto'>
-          <div className='grid lg:grid-cols-2 gap-12'>
+        <div className='mx-auto max-w-6xl'>
+          <div className='grid gap-12 lg:grid-cols-2'>
             {/* Contact Form */}
             <Card className='order-2 lg:order-1'>
               <CardHeader>
@@ -174,12 +174,12 @@ export default function ContactPage() {
                   >
                     {isSubmitting ? (
                       <>
-                        <div className='animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2'></div>
+                        <div className='mr-2 h-4 w-4 animate-spin rounded-full border-b-2 border-white'></div>
                         {t('form.sending')}
                       </>
                     ) : (
                       <>
-                        <Send className='h-4 w-4 mr-2' />
+                        <Send className='mr-2 h-4 w-4' />
                         {t('form.send')}
                       </>
                     )}
@@ -189,7 +189,7 @@ export default function ContactPage() {
             </Card>
 
             {/* Contact Information */}
-            <div className='order-1 lg:order-2 space-y-8'>
+            <div className='order-1 space-y-8 lg:order-2'>
               {/* Contact Details */}
               <Card>
                 <CardHeader>
@@ -207,9 +207,9 @@ export default function ContactPage() {
                       const content = (
                         <div
                           key={index}
-                          className='flex items-center gap-4 p-4 rounded-lg hover:bg-muted/50 transition-colors'
+                          className='hover:bg-muted/50 flex items-center gap-4 rounded-lg p-4 transition-colors'
                         >
-                          <div className='p-3 rounded-lg bg-muted'>
+                          <div className='bg-muted rounded-lg p-3'>
                             <Icon className={`h-5 w-5 ${info.color}`} />
                           </div>
                           <div>
@@ -252,7 +252,7 @@ export default function ContactPage() {
                             href={social.href}
                             target='_blank'
                             rel='noopener noreferrer'
-                            className={`p-3 rounded-lg bg-muted hover:bg-muted/80 transition-colors ${social.color}`}
+                            className={`bg-muted hover:bg-muted/80 rounded-lg p-3 transition-colors ${social.color}`}
                             aria-label={social.label}
                           >
                             <Icon className='h-5 w-5' />
@@ -299,14 +299,14 @@ export default function ContactPage() {
         </div>
 
         {/* Additional CTA */}
-        <div className='max-w-4xl mx-auto text-center mt-20 p-8 bg-muted/30 rounded-2xl'>
-          <h2 className='text-2xl lg:text-3xl font-bold mb-4 text-balance'>
+        <div className='bg-muted/30 mx-auto mt-20 max-w-4xl rounded-2xl p-8 text-center'>
+          <h2 className='mb-4 text-2xl font-bold text-balance lg:text-3xl'>
             {t('CTASection.title')}
           </h2>
-          <p className='text-lg text-muted-foreground mb-6 text-pretty max-w-2xl mx-auto'>
+          <p className='text-muted-foreground mx-auto mb-6 max-w-2xl text-lg text-pretty'>
             {t('CTASection.subtitle')}
           </p>
-          <div className='flex flex-col sm:flex-row gap-4 justify-center'>
+          <div className='flex flex-col justify-center gap-4 sm:flex-row'>
             <Button asChild variant='outline' size='lg'>
               <Link href='/projects'>{t('CTASection.button1')}</Link>
             </Button>

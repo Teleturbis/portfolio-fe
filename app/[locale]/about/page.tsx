@@ -23,45 +23,45 @@ export default function AboutPage() {
     <div className='min-h-screen py-20'>
       <div className='container mx-auto px-4'>
         {/* Header */}
-        <div className='max-w-4xl mx-auto text-center mb-16'>
-          <h1 className='text-4xl lg:text-5xl font-bold mb-6 text-balance'>
+        <div className='mx-auto mb-16 max-w-4xl text-center'>
+          <h1 className='mb-6 text-4xl font-bold text-balance lg:text-5xl'>
             {t('title')}
           </h1>
-          <p className='text-xl text-muted-foreground text-pretty max-w-2xl mx-auto'>
+          <p className='text-muted-foreground mx-auto max-w-2xl text-xl text-pretty'>
             {t('subtitle')}
           </p>
         </div>
 
         {/* Timeline */}
-        <div className='max-w-6xl mx-auto'>
+        <div className='mx-auto max-w-6xl'>
           <div className='relative'>
             {/* Timeline line */}
-            <div className='absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-border md:transform md:-translate-x-0.5'></div>
+            <div className='bg-border absolute top-0 bottom-0 left-4 w-0.5 md:left-1/2 md:-translate-x-0.5 md:transform'></div>
             {(t.raw('timelineEvents') as TimelineEvent[])?.map(
               (event, index) => (
                 <div
                   key={index}
-                  className={`relative flex items-center mb-16 ${
+                  className={`relative mb-16 flex items-center ${
                     index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
                   }`}
                 >
                   {/* Timeline dot */}
-                  <div className='absolute left-4 md:left-1/2 w-4 h-4 bg-primary rounded-full border-4 border-background md:transform md:-translate-x-2 z-10'></div>
+                  <div className='bg-primary border-background absolute left-4 z-10 h-4 w-4 rounded-full border-4 md:left-1/2 md:-translate-x-2 md:transform'></div>
 
                   {/* Content */}
                   <div
                     className={`w-full md:w-1/2 ${
                       index % 2 === 0
-                        ? 'md:pr-12 pl-12 md:pl-0'
-                        : 'md:pl-12 pl-12'
+                        ? 'pl-12 md:pr-12 md:pl-0'
+                        : 'pl-12 md:pl-12'
                     }`}
                   >
-                    <Card className='overflow-hidden hover:shadow-lg transition-shadow duration-300'>
-                      <div className='aspect-video relative overflow-hidden'>
+                    <Card className='overflow-hidden transition-shadow duration-300 hover:shadow-lg'>
+                      <div className='relative aspect-video overflow-hidden'>
                         <img
                           src={event.image || '/placeholder.svg'}
                           alt={event.title}
-                          className='w-full h-full object-cover'
+                          className='h-full w-full object-cover'
                         />
                         <div className='absolute top-4 left-4'>
                           <Badge
@@ -73,11 +73,11 @@ export default function AboutPage() {
                         </div>
                       </div>
                       <CardContent className='p-6'>
-                        <div className='flex items-center gap-2 text-sm text-muted-foreground mb-2'>
+                        <div className='text-muted-foreground mb-2 flex items-center gap-2 text-sm'>
                           <MapPin className='h-4 w-4' />
                           {event.location}
                         </div>
-                        <h3 className='text-xl font-bold mb-3 text-balance'>
+                        <h3 className='mb-3 text-xl font-bold text-balance'>
                           {event.title}
                         </h3>
                         <p className='text-muted-foreground mb-4 text-pretty'>
@@ -104,14 +104,14 @@ export default function AboutPage() {
         </div>
 
         {/* CTA Section */}
-        <div className='max-w-4xl mx-auto text-center mt-20 p-8 bg-muted/30 rounded-2xl'>
-          <h2 className='text-2xl lg:text-3xl font-bold mb-4 text-balance'>
+        <div className='bg-muted/30 mx-auto mt-20 max-w-4xl rounded-2xl p-8 text-center'>
+          <h2 className='mb-4 text-2xl font-bold text-balance lg:text-3xl'>
             {t('CTASection.title')}
           </h2>
-          <p className='text-lg text-muted-foreground mb-6 text-pretty max-w-2xl mx-auto'>
+          <p className='text-muted-foreground mx-auto mb-6 max-w-2xl text-lg text-pretty'>
             {t('CTASection.subtitle')}
           </p>
-          <div className='flex flex-col sm:flex-row gap-4 justify-center'>
+          <div className='flex flex-col justify-center gap-4 sm:flex-row'>
             <Button asChild size='lg'>
               <Link href='/contact'>
                 {t('cta')}

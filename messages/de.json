@@ -73,14 +73,7 @@
         "description": "Projektbasiertes Training: React, Node.js, Express, SQL/NoSQL, SCRUM. Der offizielle Sprung zurück in die IT.",
         "location": "Remote",
         "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:500/plain/https://s3-api.teleturbis.de/portfolio/timeline/WBS-Zertifikat.jpg",
-        "tags": [
-          "React",
-          "Node.js",
-          "Express",
-          "PostgreSQL",
-          "MongoDB",
-          "SCRUM"
-        ]
+        "tags": ["React", "Node.js", "Express", "PostgreSQL", "MongoDB", "SCRUM"]
       },
       {
         "year": "2022–2023",
@@ -96,14 +89,7 @@
         "description": "Greenfield & Modernisierung: Git & Standards eingeführt, alte Code-Landschaft abgelöst, Monorepo-Denken, CI/CD & DevOps in die Praxis gebracht. R&D → Architektur → PoC → Betrieb. Skript läuft in diversen Shop-Stacks (SPA/MPA, Next/Nuxt, Shopify/WordPress), triggert regelbasiert, multilingual, liefert LP-Recomms.",
         "location": "Deutschland / Remote",
         "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:500/plain/https://s3-api.teleturbis.de/portfolio/timeline/modernization.png",
-        "tags": [
-          "Next.js",
-          "TypeScript",
-          "Express",
-          "Docker",
-          "CI/CD",
-          "Standards"
-        ]
+        "tags": ["Next.js", "TypeScript", "Express", "Docker", "CI/CD", "Standards"]
       },
       {
         "year": "laufend",
@@ -140,28 +126,13 @@
       "subtitle": "Lassen Sie uns gemeinsam Ihre Idee in die Realität umsetzen. Ich bringe die Erfahrung und das Know-how mit, um Ihr Projekt erfolgreich zu realisieren.",
       "button": "Meine Skills ansehen"
     },
-    "categories": [
-      "Alle",
-      "Fullstack",
-      "Frontend",
-      "Backend",
-      "Mobile",
-      "AI/ML"
-    ],
+    "categories": ["Alle", "Fullstack", "Frontend", "Backend", "Mobile", "AI/ML"],
     "projects": [
       {
         "title": "Dieses Portfolio",
         "description": "Mein persönliches Portfolio, das meine Reise als Entwickler, meine Projekte und Fähigkeiten präsentiert. Gebaut mit Next.js, TypeScript und Tailwind CSS für eine schnelle und ansprechende Benutzererfahrung. Im Backend setze ich auf ExpressJS für eine robuste API. Bilder werden effizient mit imgproxy verarbeitet und gehostet. Deployment erfolgt nahtlos über eine CI/CD-Pipeline mit GitHub Actions und einer eigenen Docker-Swarm-Umgebung.",
         "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:700/plain/https://s3-api.teleturbis.de/portfolio/projects/portfolio-screenshot.png",
-        "technologies": [
-          "Next.js",
-          "TypeScript",
-          "Tailwind CSS",
-          "ExpressJS",
-          "Docker",
-          "Docker Swarm",
-          "CI/CD"
-        ],
+        "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "ExpressJS", "Docker", "Docker Swarm", "CI/CD"],
         "category": "Fullstack",
         "year": "2025",
         "duration": "2 Wochen",
@@ -170,13 +141,7 @@
           "demo": "/",
           "github": "https://github.com/example/ecommerce"
         },
-        "highlights": [
-          "99.9% Uptime",
-          "Mobile-first Design",
-          "SEO-optimiert",
-          "Schnelle Ladezeiten",
-          "CI/CD Pipeline"
-        ]
+        "highlights": ["99.9% Uptime", "Mobile-first Design", "SEO-optimiert", "Schnelle Ladezeiten", "CI/CD Pipeline"]
       },
       {
         "title": "Homelab & Self-Hosting",
@@ -230,13 +195,7 @@
         "title": "AI-Powered Analytics Dashboard",
         "description": "Ein intelligentes Analytics-Dashboard mit KI-gestützten Insights und automatisierten Reports für Unternehmen.",
         "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:700/plain/https://s3-api.teleturbis.de/portfolio/ai-analytics-dashboard.png",
-        "technologies": [
-          "Vue.js",
-          "Python",
-          "TensorFlow",
-          "FastAPI",
-          "Chart.js"
-        ],
+        "technologies": ["Vue.js", "Python", "TensorFlow", "FastAPI", "Chart.js"],
         "category": "AI/ML",
         "year": "2023",
         "team": "4 Entwickler",
@@ -257,13 +216,7 @@
         "title": "Restaurant Booking System",
         "description": "Ein umfassendes Reservierungssystem für Restaurants mit Online-Buchung, Tischverwaltung und Kundenverwaltung.",
         "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:700/plain/https://s3-api.teleturbis.de/portfolio/restaurant-booking-system-interface.jpg",
-        "technologies": [
-          "Angular",
-          "NestJS",
-          "PostgreSQL",
-          "Redis",
-          "Bootstrap"
-        ],
+        "technologies": ["Angular", "NestJS", "PostgreSQL", "Redis", "Bootstrap"],
         "category": "Fullstack",
         "year": "2022",
         "team": "Solo-Projekt",
@@ -284,13 +237,7 @@
         "title": "Fitness Tracking App",
         "description": "Eine mobile-first Fitness-App mit Workout-Tracking, Ernährungsplanung und sozialen Features für Motivation.",
         "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:700/plain/https://s3-api.teleturbis.de/portfolio/fitness-tracking-app.png",
-        "technologies": [
-          "React Native",
-          "Express.js",
-          "MongoDB",
-          "AWS S3",
-          "Expo"
-        ],
+        "technologies": ["React Native", "Express.js", "MongoDB", "AWS S3", "Expo"],
         "category": "Mobile",
         "year": "2022",
         "team": "3 Entwickler",
@@ -300,12 +247,7 @@
           "demo": "https://example.com",
           "github": "https://github.com/example/fitness-app"
         },
-        "highlights": [
-          "Cross-Platform App",
-          "Offline-Synchronisation",
-          "Social Features",
-          "50k+ Downloads"
-        ]
+        "highlights": ["Cross-Platform App", "Offline-Synchronisation", "Social Features", "50k+ Downloads"]
       },
       {
         "title": "Content Management System",
@@ -321,12 +263,7 @@
           "demo": "https://example.com",
           "github": "https://github.com/example/cms"
         },
-        "highlights": [
-          "Plugin-System",
-          "Multi-Tenant Architektur",
-          "SEO-Tools integriert",
-          "White-Label Lösung"
-        ]
+        "highlights": ["Plugin-System", "Multi-Tenant Architektur", "SEO-Tools integriert", "White-Label Lösung"]
       }
     ]
   },

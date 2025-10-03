@@ -48,15 +48,15 @@ export function Footer() {
   };
 
   return (
-    <footer className='bg-muted/30 border-t mt-20'>
+    <footer className='bg-muted/30 mt-20 border-t'>
       <div className='container mx-auto px-4 py-12'>
-        <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
+        <div className='grid gap-8 md:grid-cols-2 lg:grid-cols-4'>
           {/* Brand */}
           <div className='lg:col-span-1'>
-            <Link href='/' className='font-bold text-xl mb-4 block'>
+            <Link href='/' className='mb-4 block text-xl font-bold'>
               Portfolio
             </Link>
-            <p className='text-muted-foreground text-sm mb-4'>
+            <p className='text-muted-foreground mb-4 text-sm'>
               Fullstack Web Developer mit Leidenschaft für sauberen Code und
               moderne Technologien.
             </p>
@@ -69,7 +69,7 @@ export function Footer() {
                     href={social.href}
                     target='_blank'
                     rel='noopener noreferrer'
-                    className='p-2 rounded-lg bg-background hover:bg-muted transition-colors'
+                    className='bg-background hover:bg-muted rounded-lg p-2 transition-colors'
                     aria-label={social.label}
                   >
                     <Icon className='h-4 w-4' />
@@ -81,13 +81,13 @@ export function Footer() {
 
           {/* Navigation */}
           <div>
-            <h3 className='font-semibold mb-4'>Navigation</h3>
+            <h3 className='mb-4 font-semibold'>Navigation</h3>
             <ul className='space-y-2'>
               {footerLinks.navigation.map((link, index) => (
                 <li key={index}>
                   <Link
                     href={link.href}
-                    className='text-muted-foreground hover:text-foreground transition-colors text-sm'
+                    className='text-muted-foreground hover:text-foreground text-sm transition-colors'
                   >
                     {link.label}
                   </Link>
@@ -98,12 +98,12 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className='font-semibold mb-4'>Kontakt</h3>
+            <h3 className='mb-4 font-semibold'>Kontakt</h3>
             <ul className='space-y-2'>
               {footerLinks.contact.map((contact, index) => {
                 const Icon = contact.icon;
                 const content = (
-                  <div className='flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors'>
+                  <div className='text-muted-foreground hover:text-foreground flex items-center gap-2 text-sm transition-colors'>
                     <Icon className='h-4 w-4' />
                     {contact.label}
                   </div>
@@ -124,13 +124,13 @@ export function Footer() {
 
           {/* CTA */}
           <div>
-            <h3 className='font-semibold mb-4'>Projekt starten</h3>
-            <p className='text-muted-foreground text-sm mb-4'>
+            <h3 className='mb-4 font-semibold'>Projekt starten</h3>
+            <p className='text-muted-foreground mb-4 text-sm'>
               Bereit für Ihr nächstes Projekt? Lassen Sie uns sprechen!
             </p>
             <Link
               href='/contact'
-              className='inline-flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium'
+              className='bg-primary text-primary-foreground hover:bg-primary/90 inline-flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition-colors'
             >
               <Mail className='h-4 w-4' />
               {t('home.cta')}
@@ -139,11 +139,11 @@ export function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className='border-t mt-8 pt-8 flex flex-col md:flex-row justify-between items-center gap-4'>
+        <div className='mt-8 flex flex-col items-center justify-between gap-4 border-t pt-8 md:flex-row'>
           <p className='text-muted-foreground text-sm'>
             © 2025 Portfolio. Alle Rechte vorbehalten.
           </p>
-          <p className='text-muted-foreground text-sm flex items-center gap-1'>
+          <p className='text-muted-foreground flex items-center gap-1 text-sm'>
             Made with <Heart className='h-3 w-3 text-red-500' /> using Next.js &
             Tailwind CSS
           </p>

@@ -32,18 +32,18 @@ export function FloatingCTA() {
   return (
     <div
       className={cn(
-        'fixed bottom-6 right-6 z-40 transition-all duration-300',
+        'fixed right-6 bottom-6 z-40 transition-all duration-300',
         isVisible ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'
       )}
     >
-      <div className='bg-primary text-primary-foreground rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300 p-1 flex items-center gap-2'>
+      <div className='bg-primary text-primary-foreground flex items-center gap-2 rounded-full p-1 shadow-lg transition-shadow duration-300 hover:shadow-xl'>
         <Button
           asChild
           size='sm'
-          className='rounded-full bg-transparent hover:bg-primary-foreground/10'
+          className='hover:bg-primary-foreground/10 rounded-full bg-transparent'
         >
           <Link href='/contact'>
-            <Mail className='h-4 w-4 mr-2' />
+            <Mail className='mr-2 h-4 w-4' />
             {t('home.cta')}
           </Link>
         </Button>
@@ -51,7 +51,7 @@ export function FloatingCTA() {
           variant='ghost'
           size='icon'
           onClick={() => setIsDismissed(true)}
-          className='h-8 w-8 rounded-full hover:bg-primary-foreground/10 text-primary-foreground'
+          className='hover:bg-primary-foreground/10 text-primary-foreground h-8 w-8 rounded-full'
         >
           <X className='h-3 w-3' />
           <span className='sr-only'>Dismiss</span>

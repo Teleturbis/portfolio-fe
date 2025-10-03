@@ -49,20 +49,20 @@ export default function HomePage() {
 
   return (
     <div className='min-h-screen'>
-      <section className='relative py-20 lg:py-32 bg-gradient-to-br from-background via-background to-muted/20'>
+      <section className='from-background via-background to-muted/20 relative bg-gradient-to-br py-20 lg:py-32'>
         <div className='container mx-auto px-4'>
-          <div className='max-w-7xl mx-auto'>
-            <div className='grid lg:grid-cols-2 gap-12 items-center'>
+          <div className='mx-auto max-w-7xl'>
+            <div className='grid items-center gap-12 lg:grid-cols-2'>
               {/* Text Content */}
               <div className='text-center lg:text-left'>
-                <h1 className='text-4xl lg:text-6xl font-bold mb-6 text-balance'>
+                <h1 className='mb-6 text-4xl font-bold text-balance lg:text-6xl'>
                   {t('home.title')}
                 </h1>
-                <p className='text-xl lg:text-2xl text-muted-foreground mb-8 text-pretty'>
+                <p className='text-muted-foreground mb-8 text-xl text-pretty lg:text-2xl'>
                   {t('home.subtitle')}
                 </p>
-                <div className='flex flex-col sm:flex-row gap-4 justify-center lg:justify-start'>
-                  <Button asChild size='lg' className='text-lg px-8'>
+                <div className='flex flex-col justify-center gap-4 sm:flex-row lg:justify-start'>
+                  <Button asChild size='lg' className='px-8 text-lg'>
                     <Link href='/contact'>
                       {t('home.cta')}
                       <ArrowRight className='ml-2 h-5 w-5' />
@@ -72,7 +72,7 @@ export default function HomePage() {
                     asChild
                     variant='outline'
                     size='lg'
-                    className='text-lg px-8 bg-transparent'
+                    className='bg-transparent px-8 text-lg'
                   >
                     <Link href='/projects'>{t('home.projectsCta')}</Link>
                   </Button>
@@ -82,14 +82,14 @@ export default function HomePage() {
               {/* Portrait Image */}
               <div className='flex justify-center lg:justify-end'>
                 <div className='relative'>
-                  <div className='absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl transform rotate-3'></div>
-                  <div className='relative bg-background rounded-2xl p-2 shadow-2xl'>
+                  <div className='from-primary/20 to-primary/5 absolute inset-0 rotate-3 transform rounded-2xl bg-gradient-to-br'></div>
+                  <div className='bg-background relative rounded-2xl p-2 shadow-2xl'>
                     <Image
                       src='https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:500/plain/https://s3-api.teleturbis.de/portfolio/guru.png'
                       alt='Kevin Poppe - Fullstack Web Developer'
                       width={500}
                       height={600}
-                      className='rounded-xl object-cover w-full max-w-sm lg:max-w-md'
+                      className='w-full max-w-sm rounded-xl object-cover lg:max-w-md'
                       priority
                     />
                   </div>
@@ -101,29 +101,29 @@ export default function HomePage() {
       </section>
 
       {/* Preview Sections */}
-      <section className='py-20 bg-muted/30'>
+      <section className='bg-muted/30 py-20'>
         <div className='container mx-auto px-4'>
-          <div className='max-w-6xl mx-auto'>
-            <div className='text-center mb-16'>
-              <h2 className='text-3xl lg:text-4xl font-bold mb-4'>
+          <div className='mx-auto max-w-6xl'>
+            <div className='mb-16 text-center'>
+              <h2 className='mb-4 text-3xl font-bold lg:text-4xl'>
                 {t('home.explorePortfolio')}
               </h2>
-              <p className='text-xl text-muted-foreground max-w-2xl mx-auto text-pretty'>
+              <p className='text-muted-foreground mx-auto max-w-2xl text-xl text-pretty'>
                 {t('home.explorePortfolioDescription')}
               </p>
             </div>
 
-            <div className='grid md:grid-cols-2 gap-8'>
+            <div className='grid gap-8 md:grid-cols-2'>
               {sections.map((section, index) => {
                 const Icon = section.icon;
                 return (
                   <Card
                     key={index}
-                    className='group hover:shadow-lg transition-all duration-300 hover:-translate-y-1'
+                    className='group transition-all duration-300 hover:-translate-y-1 hover:shadow-lg'
                   >
                     <CardHeader>
                       <div className='flex items-center gap-4'>
-                        <div className='p-3 rounded-lg bg-muted'>
+                        <div className='bg-muted rounded-lg p-3'>
                           <Icon className={`h-6 w-6 ${section.color}`} />
                         </div>
                         <CardTitle className='text-xl'>
@@ -132,13 +132,13 @@ export default function HomePage() {
                       </div>
                     </CardHeader>
                     <CardContent>
-                      <CardDescription className='text-base mb-4 text-pretty'>
+                      <CardDescription className='mb-4 text-base text-pretty'>
                         {section.description}
                       </CardDescription>
                       <Button
                         asChild
                         variant='ghost'
-                        className='p-0 h-auto font-semibold group-hover:text-primary'
+                        className='group-hover:text-primary h-auto p-0 font-semibold'
                       >
                         <Link
                           href={section.href}
@@ -158,17 +158,17 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className='py-20 bg-primary/5'>
+      <section className='bg-primary/5 py-20'>
         <div className='container mx-auto px-4'>
-          <div className='max-w-4xl mx-auto text-center'>
-            <h2 className='text-3xl lg:text-4xl font-bold mb-6 text-balance'>
+          <div className='mx-auto max-w-4xl text-center'>
+            <h2 className='mb-6 text-3xl font-bold text-balance lg:text-4xl'>
               {t('home.CTASection.title')}
             </h2>
-            <p className='text-xl text-muted-foreground mb-8 text-pretty max-w-2xl mx-auto'>
+            <p className='text-muted-foreground mx-auto mb-8 max-w-2xl text-xl text-pretty'>
               {t('home.CTASection.subtitle')}
             </p>
-            <div className='flex flex-col sm:flex-row gap-4 justify-center'>
-              <Button asChild size='lg' className='text-lg px-8'>
+            <div className='flex flex-col justify-center gap-4 sm:flex-row'>
+              <Button asChild size='lg' className='px-8 text-lg'>
                 <Link href='/contact'>
                   {t('home.cta')}
                   <Mail className='ml-2 h-5 w-5' />
@@ -178,7 +178,7 @@ export default function HomePage() {
                 asChild
                 variant='outline'
                 size='lg'
-                className='text-lg px-8 bg-transparent'
+                className='bg-transparent px-8 text-lg'
               >
                 <Link href='/about'>{t('home.CTASection.button')}</Link>
               </Button>

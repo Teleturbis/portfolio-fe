@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { ExternalLink, Github, Calendar, Users, Mail } from 'lucide-react';
+import { ExternalLink, Github, Calendar, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   Card,
@@ -12,6 +12,7 @@ import {
 } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
 type Project = {
   title: string;
@@ -37,17 +38,17 @@ export default function ProjectsPage() {
     <div className='min-h-screen py-20'>
       <div className='container mx-auto px-4'>
         {/* Header */}
-        <div className='max-w-4xl mx-auto text-center mb-16'>
-          <h1 className='text-4xl lg:text-5xl font-bold mb-6 text-balance'>
+        <div className='mx-auto mb-16 max-w-4xl text-center'>
+          <h1 className='mb-6 text-4xl font-bold text-balance lg:text-5xl'>
             {t('title')}
           </h1>
-          <p className='text-xl text-muted-foreground text-pretty max-w-2xl mx-auto'>
+          <p className='text-muted-foreground mx-auto max-w-2xl text-xl text-pretty'>
             {t('subtitle')}
           </p>
         </div>
 
         {/* Filter Buttons */}
-        <div className='flex flex-wrap justify-center gap-2 mb-12'>
+        <div className='mb-12 flex flex-wrap justify-center gap-2'>
           {(t.raw('categories') as string[]).map((category) => (
             <Button
               key={category}
@@ -61,17 +62,19 @@ export default function ProjectsPage() {
         </div>
 
         {/* Projects Grid */}
-        <div className='grid lg:grid-cols-2 gap-8 max-w-7xl mx-auto'>
+        <div className='mx-auto grid max-w-7xl gap-8 lg:grid-cols-2'>
           {(t.raw('projects') as Project[]).map((project, index) => (
             <Card
               key={index}
-              className='overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1'
+              className='overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl'
             >
-              <div className='aspect-video relative overflow-hidden'>
-                <img
+              <div className='relative aspect-video overflow-hidden'>
+                <Image
                   src={project.image || '/placeholder.svg'}
                   alt={project.title}
-                  className='w-full h-full object-cover'
+                  className='h-full w-full object-cover'
+                  layout='fill'
+                  objectFit='cover'
                 />
                 <div className='absolute top-4 left-4'>
                   <Badge variant='secondary'>{project.category}</Badge>
@@ -88,10 +91,10 @@ export default function ProjectsPage() {
               <CardHeader>
                 <div className='flex items-start justify-between'>
                   <div>
-                    <CardTitle className='text-xl mb-2 text-balance'>
+                    <CardTitle className='mb-2 text-xl text-balance'>
                       {project.title}
                     </CardTitle>
-                    <div className='flex items-center gap-4 text-sm text-muted-foreground mb-3'>
+                    <div className='text-muted-foreground mb-3 flex items-center gap-4 text-sm'>
                       <div className='flex items-center gap-1'>
                         <Calendar className='h-4 w-4' />
                         {project.year}
@@ -122,16 +125,16 @@ export default function ProjectsPage() {
 
                 {/* Highlights */}
                 <div className='mb-6'>
-                  <h4 className='font-semibold mb-2 text-sm'>
+                  <h4 className='mb-2 text-sm font-semibold'>
                     {t('highlights')}:
                   </h4>
-                  <ul className='text-sm text-muted-foreground space-y-1'>
+                  <ul className='text-muted-foreground space-y-1 text-sm'>
                     {project.highlights.map((highlight, highlightIndex) => (
                       <li
                         key={highlightIndex}
                         className='flex items-center gap-2'
                       >
-                        <div className='w-1.5 h-1.5 bg-primary rounded-full'></div>
+                        <div className='bg-primary h-1.5 w-1.5 rounded-full'></div>
                         {highlight}
                       </li>
                     ))}
@@ -147,7 +150,7 @@ export default function ProjectsPage() {
                         target='_blank'
                         rel='noopener noreferrer'
                       >
-                        <ExternalLink className='h-4 w-4 mr-2' />
+                        <ExternalLink className='mr-2 h-4 w-4' />
                         {t('projectCta')}
                       </a>
                     </Button>
@@ -164,7 +167,7 @@ export default function ProjectsPage() {
                         target='_blank'
                         rel='noopener noreferrer'
                       >
-                        <Github className='h-4 w-4 mr-2' />
+                        <Github className='mr-2 h-4 w-4' />
                         {t('codeCta')}
                       </a>
                     </Button>
@@ -176,14 +179,14 @@ export default function ProjectsPage() {
         </div>
 
         {/* CTA Section */}
-        <div className='max-w-4xl mx-auto text-center mt-20 p-8 bg-muted/30 rounded-2xl'>
-          <h2 className='text-2xl lg:text-3xl font-bold mb-4 text-balance'>
+        <div className='bg-muted/30 mx-auto mt-20 max-w-4xl rounded-2xl p-8 text-center'>
+          <h2 className='mb-4 text-2xl font-bold text-balance lg:text-3xl'>
             {t('CTASection.title')}
           </h2>
-          <p className='text-lg text-muted-foreground mb-6 text-pretty max-w-2xl mx-auto'>
+          <p className='text-muted-foreground mx-auto mb-6 max-w-2xl text-lg text-pretty'>
             {t('CTASection.subtitle')}
           </p>
-          <div className='flex flex-col sm:flex-row gap-4 justify-center'>
+          <div className='flex flex-col justify-center gap-4 sm:flex-row'>
             <Button asChild size='lg'>
               <Link href='/contact'>
                 {t('cta')}
