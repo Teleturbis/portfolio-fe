@@ -77,10 +77,10 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
-    { media: '(prefers-color-scheme: dark)', color: '#0b0b0b' },
-  ],
+  // themeColor: [
+  //   { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+  //   { media: '(prefers-color-scheme: dark)', color: '#0b0b0b' },
+  // ],
   manifest: '/site.webmanifest',
 };
 
