@@ -18,6 +18,7 @@ type Project = {
   title: string;
   description: string;
   image: string;
+  placeholder: string;
   technologies: string[];
   category: string;
   year: string;
@@ -72,9 +73,12 @@ export default function ProjectsPage() {
                 <Image
                   src={project.image || '/placeholder.svg'}
                   alt={project.title}
-                  className='h-full w-full object-cover'
-                  layout='fill'
-                  objectFit='cover'
+                  fill
+                  className='object-cover transition-transform duration-300 hover:scale-105'
+                  sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+                  priority={index < 2}
+                  placeholder='blur'
+                  blurDataURL={project.placeholder}
                 />
                 <div className='absolute top-4 left-4'>
                   <Badge variant='secondary'>{project.category}</Badge>
@@ -194,7 +198,7 @@ export default function ProjectsPage() {
               </Link>
             </Button>
             <Button asChild variant='outline' size='lg'>
-              <Link href='/skills'>{t('ctaSection.button')}</Link>
+              <Link href='/skills'>{t('CTASection.button')}</Link>
             </Button>
           </div>
         </div>

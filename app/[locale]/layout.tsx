@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import { Analytics } from '@vercel/analytics/next';
 import { Navigation } from '@/components/navigation';
 import { Footer } from '@/components/footer';
 import { FloatingCTA } from '@/components/floating-cta';
@@ -9,11 +8,11 @@ import { Suspense } from 'react';
 export const metadata: Metadata = {
   metadataBase: new URL('https://kevinpoppe.com'),
   title: {
-    default: 'Kevin Poppe – Fullstack Web Developer',
+    default: 'Kevin Poppe - Fullstack Web Developer',
     template: '%s | Kevin Poppe',
   },
   description:
-    'Ich baue performante, skalierbare Webanwendungen – von Architektur & Prototyp bis Produktion. Spezialisiert auf Next.js, React, TypeScript, Node.js und Docker.',
+    'Ich baue performante, skalierbare Webanwendungen - von Architektur & Prototyp bis Produktion. Spezialisiert auf Next.js, React, TypeScript, Node.js und Docker.',
   keywords: [
     'Kevin Poppe',
     'Fullstack Developer',
@@ -33,7 +32,7 @@ export const metadata: Metadata = {
   authors: [{ name: 'Kevin Poppe', url: 'https://kevinpoppe.com' }],
   creator: 'Kevin Poppe',
   publisher: 'Kevin Poppe',
-  applicationName: 'Kevin Poppe – Portfolio',
+  applicationName: 'Kevin Poppe - Portfolio',
   alternates: {
     canonical: '/',
     languages: {
@@ -53,16 +52,16 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'de_DE',
     url: 'https://kevinpoppe.com',
-    siteName: 'Kevin Poppe – Fullstack Web Developer',
-    title: 'Kevin Poppe – Fullstack Web Developer',
+    siteName: 'Kevin Poppe - Fullstack Web Developer',
+    title: 'Kevin Poppe - Fullstack Web Developer',
     description:
-      'Portfolio von Kevin Poppe: moderne Webentwicklung mit Next.js, React, TypeScript, Node.js und Docker – von R&D über Architektur bis Betrieb.',
+      'Portfolio von Kevin Poppe: moderne Webentwicklung mit Next.js, React, TypeScript, Node.js und Docker - von R&D über Architektur bis Betrieb.',
     images: [
       {
         url: '/og.jpg',
         width: 1200,
         height: 630,
-        alt: 'Kevin Poppe – Fullstack Web Developer',
+        alt: 'Kevin Poppe - Fullstack Web Developer',
       },
     ],
   },
@@ -98,7 +97,6 @@ export default function RootLayout({
       <Footer />
       <FloatingCTA />
       <Toaster />
-      <Analytics />
     </div>
   );
 }

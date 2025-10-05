@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { TrendingUp, Award, Mail } from 'lucide-react';
+import { TrendingUp, Award, Mail, SquareArrowOutUpRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   Card,
@@ -31,8 +31,8 @@ type SkillCategory = {
 type Certification = {
   title: string;
   issuer: string;
-  year: string;
-  badge: string;
+  year?: string;
+  link: string;
 };
 
 export default function SkillsPage() {
@@ -167,23 +167,27 @@ export default function SkillsPage() {
 
           <div className='grid gap-6 md:grid-cols-3'>
             {(t.raw('certifications') as Certification[]).map((cert, index) => (
-              <Card
-                key={index}
-                className='text-center transition-shadow duration-300 hover:shadow-lg'
-              >
-                <CardHeader>
-                  <div className='bg-primary/10 mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full'>
-                    <Award className='text-primary h-8 w-8' />
+              <Link target='_blank' href={cert.link} key={index}>
+                <Card className='group hover:bg-primary/5 relative min-h-full text-center transition-all duration-200 hover:shadow-lg'>
+                  <div className='absolute right-4 bottom-4'>
+                    <SquareArrowOutUpRight className='hover:text-primary group-hover:text-primary h-5 w-5 text-gray-400' />
                   </div>
-                  <CardTitle className='text-lg text-balance'>
-                    {cert.title}
-                  </CardTitle>
-                  <CardDescription>{cert.issuer}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Badge variant='secondary'>{cert.year}</Badge>
-                </CardContent>
-              </Card>
+                  <CardHeader>
+                    <div className='bg-primary/10 mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full'>
+                      <Award className='text-primary h-8 w-8' />
+                    </div>
+                    <CardTitle className='text-lg text-balance'>
+                      {cert.title}
+                    </CardTitle>
+                    <CardDescription>{cert.issuer}</CardDescription>
+                  </CardHeader>
+                  <CardContent className='mt-4 flex justify-center gap-2'>
+                    {cert.year && (
+                      <Badge variant='secondary'>{cert.year}</Badge>
+                    )}
+                  </CardContent>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>

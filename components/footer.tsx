@@ -7,8 +7,8 @@ import {
   MapPin,
   Github,
   Linkedin,
-  Twitter,
   Heart,
+  Gitlab,
 } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
@@ -26,23 +26,19 @@ export function Footer() {
     contact: [
       {
         icon: Mail,
-        label: 'hello@developer.com',
-        href: 'mailto:hello@developer.com',
+        label: 'office@kevinpoppe.com',
+        href: 'mailto:office@kevinpoppe.com',
       },
-      { icon: Phone, label: '+49 123 456 7890', href: 'tel:+491234567890' },
+      { icon: Phone, label: '+49 160 911 18 502', href: 'tel:+4916091118502' },
       { icon: MapPin, label: 'Deutschland', href: null },
     ],
     social: [
-      { icon: Github, label: 'GitHub', href: 'https://github.com/developer' },
+      { icon: Github, label: 'GitHub', href: 'https://github.com/Teleturbis' },
+      { icon: Gitlab, label: 'GitLab', href: 'https://gitlab.com/Teleturbis' },
       {
         icon: Linkedin,
         label: 'LinkedIn',
-        href: 'https://linkedin.com/in/developer',
-      },
-      {
-        icon: Twitter,
-        label: 'Twitter',
-        href: 'https://twitter.com/developer',
+        href: 'https://www.linkedin.com/in/poppe-kevin/',
       },
     ],
   };
