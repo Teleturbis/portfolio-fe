@@ -67,84 +67,86 @@ export default function ProjectsPage() {
           {(t.raw('projects') as Project[]).map((project, index) => (
             <Card
               key={index}
-              className='overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl'
+              className='flex flex-col justify-between overflow-hidden pt-0 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl'
             >
-              <div className='relative aspect-video overflow-hidden'>
-                <Image
-                  src={project.image || '/placeholder.svg'}
-                  alt={project.title}
-                  fill
-                  className='object-cover transition-transform duration-300 hover:scale-105'
-                  sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
-                  priority={index < 2}
-                  placeholder='blur'
-                  blurDataURL={project.placeholder}
-                />
-                <div className='absolute top-4 left-4'>
-                  <Badge variant='secondary'>{project.category}</Badge>
+              <div className='flex flex-col gap-6 pb-6'>
+                <div className='relative aspect-video overflow-hidden'>
+                  <Image
+                    src={project.image || '/placeholder.svg'}
+                    alt={project.title}
+                    fill
+                    className='object-cover transition-transform duration-300 hover:scale-105 w-auto h-auto'
+                    sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+                    priority={index < 2}
+                    placeholder='blur'
+                    blurDataURL={project.placeholder}
+                  />
+                  <div className='absolute top-4 right-4 gap-2 flex'>
+                    <Badge variant='secondary'>{project.category}</Badge>
+                    <Badge
+                      variant={
+                        project.status === 'Live' ? 'default' : 'outline'
+                      }
+                    >
+                      {project.status}
+                    </Badge>
+                  </div>
                 </div>
-                <div className='absolute top-4 right-4'>
-                  <Badge
-                    variant={project.status === 'Live' ? 'default' : 'outline'}
-                  >
-                    {project.status}
-                  </Badge>
-                </div>
-              </div>
 
-              <CardHeader>
-                <div className='flex items-start justify-between'>
-                  <div>
-                    <CardTitle className='mb-2 text-xl text-balance'>
-                      {project.title}
-                    </CardTitle>
-                    <div className='text-muted-foreground mb-3 flex items-center gap-4 text-sm'>
-                      <div className='flex items-center gap-1'>
-                        <Calendar className='h-4 w-4' />
-                        {project.year}
+                <CardHeader>
+                  <div className='flex items-start justify-between'>
+                    <div>
+                      <CardTitle className='mb-2 text-xl text-balance'>
+                        {project.title}
+                      </CardTitle>
+                      <div className='text-muted-foreground mb-3 flex items-center gap-4 text-sm'>
+                        <div className='flex items-center gap-1'>
+                          <Calendar className='h-4 w-4' />
+                          {project.year}
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <CardDescription className='text-base text-pretty'>
-                  {project.description}
-                </CardDescription>
-              </CardHeader>
+                  <CardDescription className='text-base text-pretty'>
+                    {project.description}
+                  </CardDescription>
+
+                  {/* Technologies */}
+                  <div className='mb-4'>
+                    <div className='flex flex-wrap gap-2'>
+                      {project.technologies.map((tech, techIndex) => (
+                        <Badge
+                          key={techIndex}
+                          variant='outline'
+                          className='text-xs'
+                        >
+                          {tech}
+                        </Badge>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Highlights */}
+                  <div className='mb-6'>
+                    <h4 className='mb-2 text-sm font-semibold'>
+                      {t('highlights')}:
+                    </h4>
+                    <ul className='text-muted-foreground grid grid-cols-1 space-y-1 text-sm sm:grid-cols-2'>
+                      {project.highlights.map((highlight, highlightIndex) => (
+                        <li
+                          key={highlightIndex}
+                          className='flex items-center gap-2'
+                        >
+                          <div className='bg-primary h-1.5 w-1.5 rounded-full'></div>
+                          {highlight}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </CardHeader>
+              </div>
 
               <CardContent>
-                {/* Technologies */}
-                <div className='mb-4'>
-                  <div className='flex flex-wrap gap-2'>
-                    {project.technologies.map((tech, techIndex) => (
-                      <Badge
-                        key={techIndex}
-                        variant='outline'
-                        className='text-xs'
-                      >
-                        {tech}
-                      </Badge>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Highlights */}
-                <div className='mb-6'>
-                  <h4 className='mb-2 text-sm font-semibold'>
-                    {t('highlights')}:
-                  </h4>
-                  <ul className='text-muted-foreground space-y-1 text-sm'>
-                    {project.highlights.map((highlight, highlightIndex) => (
-                      <li
-                        key={highlightIndex}
-                        className='flex items-center gap-2'
-                      >
-                        <div className='bg-primary h-1.5 w-1.5 rounded-full'></div>
-                        {highlight}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
                 {/* Links */}
                 <div className='flex gap-3'>
                   {project.links.demo && (

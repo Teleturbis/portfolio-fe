@@ -132,7 +132,7 @@
       {
         "title": "Dieses Portfolio",
         "description": "Mein persönliches Portfolio, das meine Reise als Entwickler, meine Projekte und Fähigkeiten präsentiert. Gebaut mit Next.js, TypeScript und Tailwind CSS für eine schnelle und ansprechende Benutzererfahrung. Im Backend setze ich auf ExpressJS für eine robuste API. Bilder werden effizient mit imgproxy verarbeitet und gehostet. Deployment erfolgt nahtlos über eine CI/CD-Pipeline mit GitHub Actions und einer eigenen Docker-Swarm-Umgebung.",
-        "image": "https://imgs.kevinpoppe.com/600x360,sF5k-pO-czSA5WvvLDn2vmZzKCSJrdugue-VFFIkKNDQ/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC9wb3J0Zm9saW8tc2NyZWVuc2hvdC5wbmc",
+        "image": "https://imgs.kevinpoppe.com/1240x742,sF5k-pO-czSA5WvvLDn2vmZzKCSJrdugue-VFFIkKNDQ/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC9wb3J0Zm9saW8tc2NyZWVuc2hvdC5wbmc",
         "placeholder": "https://imgs.kevinpoppe.com/60x30,s2CVtqnAP8wG4v6IJX3p06UE4MzCa2hfblwPMjkgiTCQ/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC9wcm9qZWN0LW1hbmFnZW1lbnQtZGFzaGJvYXJkLnBuZw",
         "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "ExpressJS", "Docker", "Docker Swarm", "CI/CD"],
         "category": "Fullstack",
@@ -148,7 +148,7 @@
       {
         "title": "Homelab & Self-Hosting",
         "description": "Mein Homelab mit 3 Rack-Servern, mehreren Raspberry Pis und einer GPU-Node, betrieben mit Docker Swarm und Traefik. Zusätzlich ein weiteres Cluster bei Hetzner. Ich hoste verschiedene Dienste wie Paperless-NGX, Home Assistant, Gitea, n8n und Nextcloud selbst, um maximale Kontrolle und Datenschutz zu gewährleisten.",
-        "image": "https://imgs.kevinpoppe.com/600x360,s2CVtqnAP8wG4v6IJX3p06UE4MzCa2hfblwPMjkgiTCQ/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC9wcm9qZWN0LW1hbmFnZW1lbnQtZGFzaGJvYXJkLnBuZw",
+        "image": "https://imgs.kevinpoppe.com/1240x742,s2CVtqnAP8wG4v6IJX3p06UE4MzCa2hfblwPMjkgiTCQ/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC9wcm9qZWN0LW1hbmFnZW1lbnQtZGFzaGJvYXJkLnBuZw",
         "placeholder": "https://imgs.kevinpoppe.com/60x30,s2CVtqnAP8wG4v6IJX3p06UE4MzCa2hfblwPMjkgiTCQ/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC9wcm9qZWN0LW1hbmFnZW1lbnQtZGFzaGJvYXJkLnBuZw",
         "technologies": [
           "Docker Swarm",
