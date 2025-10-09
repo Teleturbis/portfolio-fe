@@ -26,9 +26,7 @@ export function useLocale() {
       const newPath = '/' + segments.join('/');
       window.location.pathname = newPath;
     }
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- locale only
-  }, [locale]);
+  }, [locale, init]);
 
   const changeLocale = (newLocale: Locale) => {
     setLocale(newLocale);

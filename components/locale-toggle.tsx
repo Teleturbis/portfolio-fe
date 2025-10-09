@@ -25,13 +25,17 @@ export function LocaleToggle() {
       <DropdownMenuContent align='end'>
         <DropdownMenuItem
           onClick={() => handleChange('de')}
-          className={locale === 'de' ? 'bg-accent' : ''}
+          className={
+            locale === 'de' ? 'bg-accent/75 text-accent-foreground' : ''
+          }
         >
           Deutsch
         </DropdownMenuItem>
         <DropdownMenuItem
           onClick={() => handleChange('en')}
-          className={locale === 'en' ? 'bg-accent' : ''}
+          className={
+            locale === 'en' ? 'bg-accent/75 text-accent-foreground' : ''
+          }
         >
           English
         </DropdownMenuItem>
