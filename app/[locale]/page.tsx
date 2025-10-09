@@ -82,10 +82,10 @@ export default function HomePage() {
               {/* Portrait Image */}
               <div className='flex justify-center lg:justify-end'>
                 <div className='relative'>
-                  <div className='from-primary/20 to-primary/5 absolute inset-0 rotate-3 transform rounded-2xl bg-gradient-to-br'></div>
-                  <div className='bg-background relative rounded-2xl p-2 shadow-2xl'>
+                  <div className='from-primary/10 to-primary/5 absolute inset-0 rotate-3 transform rounded-2xl border bg-gradient-to-br'></div>
+                  <div className='relative rounded-2xl border bg-white p-2 shadow-2xl'>
                     <Image
-                      src='https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:500/plain/https://s3-api.teleturbis.de/portfolio/guru.png'
+                      src='https://imgs.kevinpoppe.com/400x460,sXnOnD1S371a1BDmZPJi2b8ctG0FyUiOgpwz8BS9J2zg/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC9ndXJ1LnBuZw'
                       alt='Kevin Poppe - Fullstack Web Developer'
                       width={500}
                       height={600}

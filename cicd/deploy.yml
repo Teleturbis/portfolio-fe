@@ -1,5 +1,4 @@
 # Docker Build & Registry Push Jobs
-# Nur für Production (main branch)
 
 variables:
   # Teleturbis Registry Konfiguration
@@ -8,7 +7,7 @@ variables:
   # Docker in Docker für Container Builds
   DOCKER_TLS_CERTDIR: '/certs'
 
-# Docker Build für Production (main branch)
+# Docker Build für Production
 docker-build-production:
   stage: deploy
   image: docker:20.10.16
@@ -29,6 +28,27 @@ docker-build-production:
   needs:
     - build
 
+# Docker Build für Staging
+docker-build-staging:
+  stage: deploy
+  image: docker:20.10.16
+  services:
+    - docker:20.10.16-dind
+  variables:
+    IMAGE_TAG: 'staging-$CI_COMMIT_SHORT_SHA'
+  before_script:
+    - echo "Setting up Docker environment..."
+    - docker login -u $REGISTRY_USER -p $REGISTRY_PASSWORD $REGISTRY_URL
+  script:
+    - docker build -t $IMAGE_NAME:$IMAGE_TAG .
+    - docker build -t $IMAGE_NAME:staging .
+    - docker push $IMAGE_NAME:$IMAGE_TAG
+    - docker push $IMAGE_NAME:staging
+  rules:
+    - if: $CI_COMMIT_BRANCH == "dev"
+  needs:
+    - build
+
 # Trigger Portainer Service Update via Webhook
 trigger-deployment:
   stage: deploy
@@ -43,5 +63,22 @@ trigger-deployment:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
   needs:
     - docker-build-production
+  when: manual
+  allow_failure: true
+
+# Trigger Staging Environment Update via Webhook
+trigger-staging-deployment:
+  stage: deploy
+  image: curlimages/curl:latest
+  script:
+    - echo "Triggering Portainer staging service update..."
+    - |
+      curl -X POST "$PORTAINER_STAGING_WEBHOOK_URL" \
+        -H "Content-Type: application/json" || echo "Staging webhook failed - continuing anyway"
+    - echo "Portainer staging webhook triggered successfully"
+  rules:
+    - if: $CI_COMMIT_BRANCH == "dev"
+  needs:
+    - docker-build-staging
   when: manual
   allow_failure: true

@@ -11,6 +11,7 @@ import {
   Twitter,
   Send,
   CheckCircle,
+  Gitlab,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
@@ -24,6 +25,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
+import { useContactForm } from '@/hooks/use-contact-form';
 import { useTranslations } from 'next-intl';
 
 type Contactinfo = {
@@ -48,35 +50,48 @@ export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    subject: '',
     message: '',
+    company: '',
+    phone: '',
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const { submitForm, isLoading, isSuccess, error } = useContactForm({
+    onSuccess: () => {
+      toast({
+        title: t('form.success.title'),
+        description: t('form.success.description'),
+      });
+      // Reset form on success
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+        company: '',
+        phone: '',
+      });
+    },
+    onError: (err) => {
+      toast({
+        title: t('form.error.title'),
+        description: err.message || t('form.error.description'),
+        variant: 'destructive',
+      });
+    },
+  });
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
 
-    // Simulate form submission
-    try {
-      await new Promise((resolve) => setTimeout(resolve, 2000));
-
-      toast({
-        title: 'Nachricht gesendet!',
-        description:
-          'Vielen Dank für Ihre Nachricht. Ich melde mich bald bei Ihnen.',
-      });
-
-      setFormData({ name: '', email: '', message: '' });
-    } catch (_error) {
-      toast({
-        title: 'Fehler beim Senden',
-        description:
-          'Bitte versuchen Sie es später erneut oder kontaktieren Sie mich direkt.',
-        variant: 'destructive',
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
+    await submitForm({
+      mail: formData.email,
+      name: formData.name,
+      subject: formData.subject || t('form.defaultSubject'),
+      message: formData.message,
+      company: formData.company || undefined,
+      phone: formData.phone || undefined,
+    });
   };
 
   const handleChange = (
@@ -96,6 +111,7 @@ export default function ContactPage() {
       Github,
       Linkedin,
       Twitter,
+      Gitlab,
     };
     return icons[iconName] || Mail;
   };
@@ -152,6 +168,40 @@ export default function ContactPage() {
                   </div>
 
                   <div className='space-y-2'>
+                    <Label htmlFor='company'>{t('form.company')}</Label>
+                    <Input
+                      id='company'
+                      name='company'
+                      value={formData.company}
+                      onChange={handleChange}
+                      placeholder={t('form.companyPlaceholder')}
+                    />
+                  </div>
+
+                  <div className='space-y-2'>
+                    <Label htmlFor='phone'>{t('form.phone')}</Label>
+                    <Input
+                      id='phone'
+                      name='phone'
+                      type='tel'
+                      value={formData.phone}
+                      onChange={handleChange}
+                      placeholder={t('form.phonePlaceholder')}
+                    />
+                  </div>
+
+                  <div className='space-y-2'>
+                    <Label htmlFor='subject'>{t('form.subject')}</Label>
+                    <Input
+                      id='subject'
+                      name='subject'
+                      value={formData.subject}
+                      onChange={handleChange}
+                      placeholder={t('form.subjectPlaceholder')}
+                    />
+                  </div>
+
+                  <div className='space-y-2'>
                     <Label htmlFor='message'>{t('form.message')}</Label>
                     <Textarea
                       id='message'
@@ -164,13 +214,25 @@ export default function ContactPage() {
                     />
                   </div>
 
+                  {error && (
+                    <div className='rounded-md bg-red-50 p-4 text-sm text-red-600 dark:bg-red-900/20 dark:text-red-400'>
+                      {error}
+                    </div>
+                  )}
+
+                  {isSuccess && (
+                    <div className='rounded-md bg-green-50 p-4 text-sm text-green-600 dark:bg-green-900/20 dark:text-green-400'>
+                      {t('form.success.description')}
+                    </div>
+                  )}
+
                   <Button
                     type='submit'
                     className='w-full'
                     size='lg'
-                    disabled={isSubmitting}
+                    disabled={isLoading}
                   >
-                    {isSubmitting ? (
+                    {isLoading ? (
                       <>
                         <div className='mr-2 h-4 w-4 animate-spin rounded-full border-b-2 border-white'></div>
                         {t('form.sending')}
@@ -250,7 +312,7 @@ export default function ContactPage() {
                             href={social.href}
                             target='_blank'
                             rel='noopener noreferrer'
-                            className={`bg-muted hover:bg-muted/80 rounded-lg p-3 transition-colors ${social.color}`}
+                            className={`bg-muted hover:bg-muted/80 rounded-lg p-3 text-gray-600 transition-colors ${social.color}`}
                             aria-label={social.label}
                           >
                             <Icon className='h-5 w-5' />

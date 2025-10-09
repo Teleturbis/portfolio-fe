@@ -62,10 +62,12 @@ export default function AboutPage() {
                         <Image
                           src={event.image || '/placeholder.svg'}
                           alt={event.title}
-                          className='h-full w-full object-cover'
-                          width={640}
-                          height={360}
-                          priority
+                          fill
+                          className='object-cover'
+                          sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+                          priority={index < 2}
+                          placeholder='blur'
+                          blurDataURL='/giphy.gif'
                         />
                         <div className='absolute top-4 left-4'>
                           <Badge

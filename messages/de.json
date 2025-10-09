@@ -40,7 +40,8 @@
         "title": "Hobbyprogrammierer & Techniknerd",
         "description": "Erste Jahre mit Java/C++ und Web – aus Neugier, nicht als Job. Technik, Tüftelei und Clean-Code-Denken werden zur Gewohnheit",
         "location": "Selbststudium",
-        "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:500/plain/https://s3-api.teleturbis.de/portfolio/timeline/hobby-coding.jpg",
+        "image": "https://imgs.kevinpoppe.com/600x360,sTbpWywg4tu2cG4NS23o519iLiFIOeg0p9Sl4QL23uzk/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC90aW1lbGluZS9ob2JieS1jb2RpbmcuanBn",
+        "placeholder": "https://imgs.kevinpoppe.com/60x36,sTbpWywg4tu2cG4NS23o519iLiFIOeg0p9Sl4QL23uzk/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC90aW1lbGluZS9ob2JieS1jb2RpbmcuanBn",
         "tags": ["Java", "C++", "HTML", "CSS", "JavaScript"]
       },
       {
@@ -48,7 +49,7 @@
         "title": "Examinierter Altenpfleger",
         "description": "Staatsexamen abgeschlossen – Soft Skills, Verantwortung und Stressresistenz aus der Pflege prägen bis heute meine Arbeitsweise",
         "location": "Buchen",
-        "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:500/plain/https://s3-api.teleturbis.de/portfolio/timeline/healthcare-graduation.png",
+        "image": "https://imgs.kevinpoppe.com/600x360,sjy-2MAkeeM_YggWMsqlMYg-DzegFmVIZztIxIYNG768/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC90aW1lbGluZS9oZWFsdGhjYXJlLWdyYWR1YXRpb24ucG5n",
         "tags": ["Teamwork", "Verantwortung", "Kommunikation"]
       },
       {
@@ -56,7 +57,7 @@
         "title": "Intensivpflege (24h Heimbeatmung)",
         "description": "Anima GbR: Pflege im Hochrisiko-Umfeld. Lernen, unter Druck ruhig zu bleiben und präzise zu arbeiten",
         "location": "Waiblingen",
-        "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:500/plain/https://s3-api.teleturbis.de/portfolio/timeline/intensive-care.jpg",
+        "image": "https://imgs.kevinpoppe.com/600x360,sXBbcC934rYc2aGsyKLnfLDu_vTQoL_Mok87WoDbZ4hA/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC90aW1lbGluZS9pbnRlbnNpdmUtY2FyZS5qcGc",
         "tags": ["Fokus", "Präzision", "Zuverlässigkeit"]
       },
       {
@@ -64,7 +65,7 @@
         "title": "Ambulante Pflege – Tourleitung",
         "description": "Leitung einer eigenen Tour mit 17–20 Patienten. Organisation, Priorisierung und Entscheidungsfreude werden Alltag",
         "location": "Walldürn",
-        "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:500/plain/https://s3-api.teleturbis.de/portfolio/timeline/homecare.jpg",
+        "image": "https://imgs.kevinpoppe.com/600x360,srqgR9J6m4VvTofRMBIJcca6vXGIsFColZufllL61HWY/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC90aW1lbGluZS9ob21lY2FyZS5qcGc",
         "tags": ["Organisation", "Priorisierung", "Führung"]
       },
       {
@@ -72,7 +73,7 @@
         "title": "Fullstack Bootcamp – WBS Coding School",
         "description": "Projektbasiertes Training: React, Node.js, Express, SQL/NoSQL, SCRUM. Der offizielle Sprung zurück in die IT",
         "location": "Remote",
-        "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:500/plain/https://s3-api.teleturbis.de/portfolio/timeline/WBS-Zertifikat.jpg",
+        "image": "https://imgs.kevinpoppe.com/600x360,svNN7VKYzXDDmkuqyn6qgdAM0voiE5w94gKQ_X9XSFLY/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC90aW1lbGluZS9XQlMtWmVydGlmaWthdC5qcGc",
         "tags": ["React", "Node.js", "Express", "PostgreSQL", "MongoDB", "SCRUM"]
       },
       {
@@ -80,7 +81,7 @@
         "title": "Frontend Developer – Urlaubsguru",
         "description": "Nuxt/Vue-Weiterentwicklung, Component Library, Code-Reviews und Onboarding. Kurzfristig Nuxt2 gelernt und direkt Verantwortung übernommen",
         "location": "Remote",
-        "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:500/plain/https://s3-api.teleturbis.de/portfolio/timeline/nuxt-vue-team.png",
+        "image": "https://imgs.kevinpoppe.com/600x360,skisr5FTi0aRNHnsI-TTvlZ2Ve2MG8eizWHuY2idt3dM/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC90aW1lbGluZS9udXh0LXZ1ZS10ZWFtLnBuZw",
         "tags": ["Nuxt.js", "Vue 2", "Component Library", "Code Review"]
       },
       {
@@ -88,7 +89,7 @@
         "title": "Fullstack Developer – Kupona",
         "description": "Greenfield & Modernisierung: Git & Standards eingeführt, alte Code-Landschaft abgelöst, Monorepo-Denken, CI/CD & DevOps in die Praxis gebracht. R&D → Architektur → PoC → Betrieb. Skript läuft in diversen Shop-Stacks (SPA/MPA, Next/Nuxt, Shopify/WordPress), triggert regelbasiert, multilingual, liefert LP-Recomms",
         "location": "Deutschland / Remote",
-        "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:500/plain/https://s3-api.teleturbis.de/portfolio/timeline/modernization.png",
+        "image": "https://imgs.kevinpoppe.com/600x360,szWRxYW_YhU1JoEqB2uKOoBogDuRt_rQoyw4WnqOXTjw/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC90aW1lbGluZS9tb2Rlcm5pemF0aW9uLnBuZw",
         "tags": ["Next.js", "TypeScript", "Express", "Docker", "CI/CD", "Standards"]
       },
       {
@@ -96,7 +97,7 @@
         "title": "Homelab & Self-Hosting",
         "description": "3 Rack-Server, mehrere RPi, GPU-Node, Hetzner. Docker Swarm + Traefik. Paperless-NGX, Home Assistant, Gitea, n8n, Nextcloud, Wetterstation u.v.m.",
         "location": "Collenberg & Cloud",
-        "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:500/plain/https://s3-api.teleturbis.de/portfolio/timeline/homelab-rack.jpg",
+        "image": "https://imgs.kevinpoppe.com/600x360,sdRaJGBNpsHg2X98JvxINXf6Vf758OdAbO88Af4F0734/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC90aW1lbGluZS9ob21lbGFiLXJhY2suanBn",
         "tags": ["Docker Swarm", "Traefik", "Self-Hosting", "Automation"]
       },
       {
@@ -104,7 +105,7 @@
         "title": "CognitionX & Herzblatt (ERP fürs Leben)",
         "description": "Visionäre Side-Projects: AGI-inspirierte Konzepte (ES/ICH/ÜBER-ICH), Life-ERP mit Recommender – Nutzen statt Werbung",
         "location": "Side Projects",
-        "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:500/plain/https://s3-api.teleturbis.de/portfolio/timeline/agi-life-erp.jpg",
+        "image": "https://imgs.kevinpoppe.com/600x360,s4RYJ5ad10X8PrVUqgWFkkqxf2AU9DWJWx3Eg0xjp_yk/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC90aW1lbGluZS9hZ2ktbGlmZS1lcnAuanBn",
         "tags": ["AGI-Ideen", "Recommender", "Domain Modeling"]
       }
     ],
@@ -131,7 +132,8 @@
       {
         "title": "Dieses Portfolio",
         "description": "Mein persönliches Portfolio, das meine Reise als Entwickler, meine Projekte und Fähigkeiten präsentiert. Gebaut mit Next.js, TypeScript und Tailwind CSS für eine schnelle und ansprechende Benutzererfahrung. Im Backend setze ich auf ExpressJS für eine robuste API. Bilder werden effizient mit imgproxy verarbeitet und gehostet. Deployment erfolgt nahtlos über eine CI/CD-Pipeline mit GitHub Actions und einer eigenen Docker-Swarm-Umgebung.",
-        "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:700/plain/https://s3-api.teleturbis.de/portfolio/projects/portfolio-screenshot.png",
+        "image": "https://imgs.kevinpoppe.com/1240x742,sF5k-pO-czSA5WvvLDn2vmZzKCSJrdugue-VFFIkKNDQ/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC9wb3J0Zm9saW8tc2NyZWVuc2hvdC5wbmc",
+        "placeholder": "https://imgs.kevinpoppe.com/60x30,s2CVtqnAP8wG4v6IJX3p06UE4MzCa2hfblwPMjkgiTCQ/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC9wcm9qZWN0LW1hbmFnZW1lbnQtZGFzaGJvYXJkLnBuZw",
         "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "ExpressJS", "Docker", "Docker Swarm", "CI/CD"],
         "category": "Fullstack",
         "year": "2025",
@@ -146,7 +148,8 @@
       {
         "title": "Homelab & Self-Hosting",
         "description": "Mein Homelab mit 3 Rack-Servern, mehreren Raspberry Pis und einer GPU-Node, betrieben mit Docker Swarm und Traefik. Zusätzlich ein weiteres Cluster bei Hetzner. Ich hoste verschiedene Dienste wie Paperless-NGX, Home Assistant, Gitea, n8n und Nextcloud selbst, um maximale Kontrolle und Datenschutz zu gewährleisten.",
-        "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:700/plain/https://s3-api.teleturbis.de/portfolio/project-management-dashboard.png",
+        "image": "https://imgs.kevinpoppe.com/1240x742,s2CVtqnAP8wG4v6IJX3p06UE4MzCa2hfblwPMjkgiTCQ/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC9wcm9qZWN0LW1hbmFnZW1lbnQtZGFzaGJvYXJkLnBuZw",
+        "placeholder": "https://imgs.kevinpoppe.com/60x30,s2CVtqnAP8wG4v6IJX3p06UE4MzCa2hfblwPMjkgiTCQ/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC9wcm9qZWN0LW1hbmFnZW1lbnQtZGFzaGJvYXJkLnBuZw",
         "technologies": [
           "Docker Swarm",
           "Traefik",
@@ -190,80 +193,6 @@
           "Monitoring & Alerts",
           "Cloud-Exit"
         ]
-      },
-      {
-        "title": "AI-Powered Analytics Dashboard",
-        "description": "Ein intelligentes Analytics-Dashboard mit KI-gestützten Insights und automatisierten Reports für Unternehmen.",
-        "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:700/plain/https://s3-api.teleturbis.de/portfolio/ai-analytics-dashboard.png",
-        "technologies": ["Vue.js", "Python", "TensorFlow", "FastAPI", "Chart.js"],
-        "category": "AI/ML",
-        "year": "2023",
-        "team": "4 Entwickler",
-        "duration": "6 Monate",
-        "status": "Live",
-        "links": {
-          "demo": "https://example.com",
-          "github": "https://github.com/example/ai-dashboard"
-        },
-        "highlights": [
-          "Machine Learning Integration",
-          "Predictive Analytics",
-          "Automatisierte Reports",
-          "Enterprise-ready"
-        ]
-      },
-      {
-        "title": "Restaurant Booking System",
-        "description": "Ein umfassendes Reservierungssystem für Restaurants mit Online-Buchung, Tischverwaltung und Kundenverwaltung.",
-        "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:700/plain/https://s3-api.teleturbis.de/portfolio/restaurant-booking-system-interface.jpg",
-        "technologies": ["Angular", "NestJS", "PostgreSQL", "Redis", "Bootstrap"],
-        "category": "Fullstack",
-        "year": "2022",
-        "team": "Solo-Projekt",
-        "duration": "2 Monate",
-        "status": "Live",
-        "links": {
-          "demo": "https://example.com",
-          "github": "https://github.com/example/restaurant-booking"
-        },
-        "highlights": [
-          "Automatische Bestätigungen",
-          "Wartelisten-Management",
-          "Multi-Restaurant Support",
-          "SMS/Email Benachrichtigungen"
-        ]
-      },
-      {
-        "title": "Fitness Tracking App",
-        "description": "Eine mobile-first Fitness-App mit Workout-Tracking, Ernährungsplanung und sozialen Features für Motivation.",
-        "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:700/plain/https://s3-api.teleturbis.de/portfolio/fitness-tracking-app.png",
-        "technologies": ["React Native", "Express.js", "MongoDB", "AWS S3", "Expo"],
-        "category": "Mobile",
-        "year": "2022",
-        "team": "3 Entwickler",
-        "duration": "5 Monate",
-        "status": "Live",
-        "links": {
-          "demo": "https://example.com",
-          "github": "https://github.com/example/fitness-app"
-        },
-        "highlights": ["Cross-Platform App", "Offline-Synchronisation", "Social Features", "50k+ Downloads"]
-      },
-      {
-        "title": "Content Management System",
-        "description": "Ein flexibles CMS mit Drag-and-Drop-Editor, Multi-Site-Management und erweiterbarer Plugin-Architektur.",
-        "image": "https://imgs.kevinpoppe.com/M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA/w:700/plain/https://s3-api.teleturbis.de/portfolio/cms-interface.png",
-        "technologies": ["Laravel", "Vue.js", "MySQL", "Docker", "AWS"],
-        "category": "Backend",
-        "year": "2021",
-        "team": "5 Entwickler",
-        "duration": "8 Monate",
-        "status": "Live",
-        "links": {
-          "demo": "https://example.com",
-          "github": "https://github.com/example/cms"
-        },
-        "highlights": ["Plugin-System", "Multi-Tenant Architektur", "SEO-Tools integriert", "White-Label Lösung"]
       }
     ]
   },
@@ -294,12 +223,11 @@
         "icon": "🎨",
         "description": "Moderne Benutzeroberflächen und interaktive Webanwendungen",
         "skills": [
-          { "name": "React", "level": 95, "years": 5, "projects": 25 },
-          { "name": "Next.js", "level": 90, "years": 3, "projects": 15 },
-          { "name": "TypeScript", "level": 88, "years": 4, "projects": 20 },
-          { "name": "Tailwind CSS", "level": 92, "years": 3, "projects": 18 },
-          { "name": "Vue.js", "level": 85, "years": 3, "projects": 12 },
-          { "name": "Angular", "level": 80, "years": 2, "projects": 8 }
+          { "name": "React", "level": 95, "years": 4, "projects": 50 },
+          { "name": "Next.js", "level": 90, "years": 3, "projects": 8 },
+          { "name": "TypeScript", "level": 88, "years": 3, "projects": 50 },
+          { "name": "Tailwind CSS", "level": 92, "years": 4, "projects": 50 },
+          { "name": "Nuxt.js", "level": 85, "years": 4, "projects": 3 }
         ]
       },
       {
@@ -307,12 +235,10 @@
         "icon": "⚙️",
         "description": "Robuste Server-Architekturen und APIs",
         "skills": [
-          { "name": "Node.js", "level": 90, "years": 4, "projects": 22 },
-          { "name": "Express.js", "level": 88, "years": 4, "projects": 20 },
-          { "name": "NestJS", "level": 85, "years": 2, "projects": 10 },
-          { "name": "Python", "level": 82, "years": 3, "projects": 15 },
-          { "name": "PHP/Laravel", "level": 80, "years": 3, "projects": 12 },
-          { "name": "GraphQL", "level": 78, "years": 2, "projects": 8 }
+          { "name": "Node.js", "level": 90, "years": 4, "projects": 5 },
+          { "name": "Express.js", "level": 88, "years": 4, "projects": 5 },
+          { "name": "NestJS", "level": 85, "years": 1, "projects": 2 },
+          { "name": "Python", "level": 82, "years": 2, "projects": 5 }
         ]
       },
       {
@@ -320,12 +246,11 @@
         "icon": "☁️",
         "description": "Datenmanagement und Cloud-Infrastruktur",
         "skills": [
-          { "name": "PostgreSQL", "level": 88, "years": 4, "projects": 18 },
-          { "name": "MongoDB", "level": 85, "years": 3, "projects": 15 },
+          { "name": "PostgreSQL", "level": 88, "years": 4, "projects": 5 },
+          { "name": "MongoDB", "level": 85, "years": 4, "projects": 15 },
           { "name": "AWS", "level": 82, "years": 3, "projects": 12 },
           { "name": "Docker", "level": 80, "years": 3, "projects": 14 },
-          { "name": "Redis", "level": 78, "years": 2, "projects": 10 },
-          { "name": "Kubernetes", "level": 75, "years": 2, "projects": 6 }
+          { "name": "Redis", "level": 78, "years": 2, "projects": 5 }
         ]
       },
       {
@@ -333,33 +258,44 @@
         "icon": "🛠️",
         "description": "Entwicklungstools und Projektmanagement",
         "skills": [
-          { "name": "Git/GitHub", "level": 95, "years": 6, "projects": 30 },
+          { "name": "Git/GitHub", "level": 95, "years": 10, "projects": 30 },
           { "name": "VS Code", "level": 92, "years": 5, "projects": 30 },
-          { "name": "Figma", "level": 85, "years": 3, "projects": 20 },
+          { "name": "Figma", "level": 85, "years": 3, "projects": 3 },
           { "name": "Jest/Testing", "level": 82, "years": 3, "projects": 15 },
-          { "name": "CI/CD", "level": 80, "years": 2, "projects": 12 },
+          { "name": "CI/CD", "level": 80, "years": 2, "projects": 10 },
           { "name": "Agile/Scrum", "level": 88, "years": 4, "projects": 25 }
         ]
       }
     ],
     "certifications": [
       {
-        "title": "AWS Certified Developer",
-        "issuer": "Amazon Web Services",
-        "year": "2023",
-        "badge": "aws"
-      },
-      {
-        "title": "React Professional Certificate",
-        "issuer": "Meta",
+        "title": "Bootcamp - Full Stack Web & App Entwicklung",
+        "issuer": "WBS Coding School",
         "year": "2022",
-        "badge": "react"
+        "link": "https://imgs.kevinpoppe.com/svNN7VKYzXDDmkuqyn6qgdAM0voiE5w94gKQ_X9XSFLY/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC90aW1lbGluZS9XQlMtWmVydGlmaWthdC5qcGc"
       },
       {
-        "title": "Google Cloud Professional",
-        "issuer": "Google Cloud",
-        "year": "2023",
-        "badge": "gcp"
+        "title": "Rest API (Intermediate) Certificate",
+        "issuer": "HackerRank",
+        "year": "2024",
+        "link": "https://www.hackerrank.com/certificates/63334ba1cd6d"
+      },
+      {
+        "title": "Frontend Developer (React) Certificate",
+        "issuer": "HackerRank",
+        "year": "2024",
+        "link": "https://www.hackerrank.com/certificates/1bc49bff1260"
+      },
+      {
+        "title": "Node (Basic) Certificate",
+        "issuer": "HackerRank",
+        "year": "2024",
+        "link": "https://www.hackerrank.com/certificates/a60453c35d6c"
+      },
+      {
+        "title": "JavaScript, CSS, HTML, u.v.m.",
+        "issuer": "Codecademy",
+        "link": "https://www.codecademy.com/profiles/teleturbis"
       }
     ]
   },
@@ -371,12 +307,25 @@
       "namePlaceholder": "Ihr vollständiger Name",
       "email": "E-Mail",
       "emailPlaceholder": "ihre.email@beispiel.com",
+      "company": "Unternehmen",
+      "companyPlaceholder": "Ihr Unternehmen (optional)",
+      "phone": "Telefon",
+      "phonePlaceholder": "+49 123 4567890 (optional)",
+      "subject": "Betreff",
+      "subjectPlaceholder": "Worum geht es?",
       "message": "Nachricht",
       "messagePlaceholder": "Beschreiben Sie Ihr Projekt oder Ihre Anfrage...",
       "send": "Nachricht senden",
       "sending": "Wird gesendet...",
-      "success": "Nachricht erfolgreich gesendet!",
-      "error": "Fehler beim Senden der Nachricht."
+      "defaultSubject": "Kontakt über Portfolio",
+      "success": {
+        "title": "Nachricht erfolgreich gesendet!",
+        "description": "Vielen Dank für Ihre Nachricht. Ich melde mich bald bei Ihnen."
+      },
+      "error": {
+        "title": "Fehler beim Senden",
+        "description": "Bitte versuchen Sie es später erneut oder kontaktieren Sie mich direkt."
+      }
     },
     "rightSection": {
       "title": "Kontaktinformationen",
@@ -388,15 +337,15 @@
         {
           "icon": "Mail",
           "label": "E-Mail",
-          "value": "hello@developer.com",
-          "href": "mailto:hello@developer.com",
+          "value": "office@kevinpoppe.com",
+          "href": "mailto:office@kevinpoppe.com",
           "color": "text-blue-600 dark:text-blue-400"
         },
         {
           "icon": "Phone",
           "label": "Telefon",
-          "value": "+49 123 456 7890",
-          "href": "tel:+491234567890",
+          "value": "+49 160 911 18 502",
+          "href": "tel:+4916091118502",
           "color": "text-green-600 dark:text-green-400"
         },
         {
@@ -411,20 +360,20 @@
         {
           "icon": "Github",
           "label": "GitHub",
-          "href": "https://github.com/developer",
+          "href": "https://github.com/Teleturbis",
           "color": "hover:text-gray-900 dark:hover:text-gray-100"
         },
         {
           "icon": "Linkedin",
           "label": "LinkedIn",
-          "href": "https://linkedin.com/in/developer",
-          "color": "hover:text-blue-600"
+          "href": "https://linkedin.com/in/poppe-kevin",
+          "color": "hover:text-blue-600 dark:hover:text-blue-400"
         },
         {
-          "icon": "Twitter",
-          "label": "Twitter",
-          "href": "https://twitter.com/developer",
-          "color": "hover:text-blue-400"
+          "icon": "Gitlab",
+          "label": "GitLab",
+          "href": "https://gitlab.com/Teleturbis",
+          "color": "hover:text-orange-600 dark:hover:text-orange-400"
         }
       ],
       "availability": {
