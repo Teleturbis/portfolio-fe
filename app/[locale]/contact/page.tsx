@@ -312,7 +312,7 @@ export default function ContactPage() {
                             href={social.href}
                             target='_blank'
                             rel='noopener noreferrer'
-                            className={`bg-muted hover:bg-muted/80 rounded-lg p-3 transition-colors text-gray-600 ${social.color}`}
+                            className={`bg-muted hover:bg-muted/80 rounded-lg p-3 text-gray-600 transition-colors ${social.color}`}
                             aria-label={social.label}
                           >
                             <Icon className='h-5 w-5' />

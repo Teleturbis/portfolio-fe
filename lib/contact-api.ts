@@ -1,18 +1,22 @@
-import type { ContactFormData, ContactApiResponse, ContactApiError } from '@/types/contact'
+import type {
+  ContactFormData,
+  ContactApiResponse,
+  ContactApiError,
+} from '@/types/contact';
 
 class ContactApiClient {
-  private baseUrl: string
+  private baseUrl: string;
 
   constructor() {
-    this.baseUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080'
+    this.baseUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080';
   }
 
   /**
    * Send contact form data to backend
    */
   async sendContactForm(data: ContactFormData): Promise<ContactApiResponse> {
-    const url = `${this.baseUrl}/api/contact`
-    
+    const url = `${this.baseUrl}/api/contact`;
+
     try {
       const response = await fetch(url, {
         method: 'POST',
@@ -20,24 +24,31 @@ class ContactApiClient {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(data),
-      })
+      });
 
-      const result = await response.json() as ContactApiResponse | ContactApiError
+      const result = (await response.json()) as
+        | ContactApiResponse
+        | ContactApiError;
 
       if (!response.ok) {
         // Handle HTTP errors
-        const errorResult = result as ContactApiError
-        throw new Error(errorResult.message || `HTTP ${response.status}: ${response.statusText}`)
+        const errorResult = result as ContactApiError;
+        throw new Error(
+          errorResult.message ||
+            `HTTP ${response.status}: ${response.statusText}`
+        );
       }
 
-      return result as ContactApiResponse
+      return result as ContactApiResponse;
     } catch (error) {
       // Handle network errors or JSON parsing errors
       if (error instanceof Error) {
-        throw error
+        throw error;
       }
-      
-      throw new Error('An unexpected error occurred while sending the contact form')
+
+      throw new Error(
+        'An unexpected error occurred while sending the contact form'
+      );
     }
   }
 
@@ -46,17 +57,17 @@ class ContactApiClient {
    */
   async healthCheck(): Promise<boolean> {
     try {
-      const url = `${this.baseUrl}/health`
+      const url = `${this.baseUrl}/health`;
       const response = await fetch(url, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
         },
-      })
-      
-      return response.ok
+      });
+
+      return response.ok;
     } catch {
-      return false
+      return false;
     }
   }
 
@@ -64,9 +75,9 @@ class ContactApiClient {
    * Get the configured API URL
    */
   getApiUrl(): string {
-    return this.baseUrl
+    return this.baseUrl;
   }
 }
 
 // Export singleton instance
-export const contactApi = new ContactApiClient()
+export const contactApi = new ContactApiClient();
