@@ -75,13 +75,13 @@ export default function ProjectsPage() {
                     src={project.image || '/placeholder.svg'}
                     alt={project.title}
                     fill
-                    className='object-cover transition-transform duration-300 hover:scale-105 w-auto h-auto'
+                    className='h-auto w-auto object-cover transition-transform duration-300 hover:scale-105'
                     sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
                     priority={index < 2}
                     placeholder='blur'
                     blurDataURL={project.placeholder}
                   />
-                  <div className='absolute top-4 right-4 gap-2 flex'>
+                  <div className='absolute top-4 right-4 flex gap-2'>
                     <Badge variant='secondary'>{project.category}</Badge>
                     <Badge
                       variant={
