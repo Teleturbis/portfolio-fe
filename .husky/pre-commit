@@ -1,0 +1,12 @@
+echo "🔍 Running pre-push checks..."
+
+# Run Prettier
+echo "📝 Running Prettier..."
+pnpm prettier --write . || exit 1
+git add .
+
+# Run ESLint
+echo "🔧 Running ESLint..."
+pnpm lint || exit 1
+
+echo "✅ Pre-push checks passed!"
