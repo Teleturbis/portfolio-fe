@@ -1,9 +1,7 @@
 import type { Metadata } from 'next';
-import { Navigation } from '@/components/navigation';
-import { Footer } from '@/components/footer';
-import { FloatingCTA } from '@/components/floating-cta';
-import { Toaster } from '@/components/ui/toaster';
-import { Suspense } from 'react';
+import { notFound } from 'next/navigation';
+import { routing } from '@/i18n/routing';
+import { Providers } from '@/components/providers/Providers';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://kevinpoppe.com'),
@@ -76,27 +74,20 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  // themeColor: [
-  //   { media: '(prefers-color-scheme: light)', color: '#ffffff' },
-  //   { media: '(prefers-color-scheme: dark)', color: '#0b0b0b' },
-  // ],
   manifest: '/site.webmanifest',
 };
 
-export default function RootLayout({
+export default async function LocaleLayout({
   children,
-}: Readonly<{
+  params: { locale },
+}: {
   children: React.ReactNode;
-}>) {
-  return (
-    <div className='font-sans antialiased'>
-      <Navigation />
-      <div className='min-h-screen'>
-        <Suspense>{children}</Suspense>
-      </div>
-      <Footer />
-      <FloatingCTA />
-      <Toaster />
-    </div>
-  );
+  params: { locale: string };
+}) {
+  // Ensure that the incoming `locale` is valid
+  if (!routing.locales.includes(locale as (typeof routing.locales)[number])) {
+    notFound();
+  }
+
+  return <Providers>{children}</Providers>;
 }

@@ -1,15 +1,18 @@
 import type React from 'react';
 import './globals.css';
 import { NextIntlClientProvider } from 'next-intl';
+import { getMessages } from 'next-intl/server';
 import Script from 'next/script';
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const messages = await getMessages();
+
   return (
-    <html lang='de' suppressHydrationWarning>
+    <html suppressHydrationWarning className='scroll-smooth'>
       <Script
         src='https://um.teleturbis.de/script.js'
         data-website-id='3594f23a-c13c-49a5-93fb-10f2a2a32fe0'
@@ -17,8 +20,8 @@ export default function RootLayout({
         strategy='afterInteractive'
       />
       <body className='font-sans antialiased'>
-        <NextIntlClientProvider>
-          <main className='min-h-screen'>{children}</main>
+        <NextIntlClientProvider messages={messages}>
+          {children}
         </NextIntlClientProvider>
       </body>
     </html>

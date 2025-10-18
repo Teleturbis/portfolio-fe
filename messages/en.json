@@ -1,393 +1,95 @@
 {
   "Navigation": {
     "nav": {
-      "home": "Home",
-      "about": "About Me",
-      "projects": "Projects",
+      "about": "About",
       "skills": "Skills",
+      "projects": "Projects",
       "contact": "Contact"
     },
-    "home": {
-      "title": "Fullstack Web Developer",
-      "subtitle": "I develop modern web applications with a passion for clean code and user-friendly interfaces.",
-      "cta": "Contact Now",
-      "aboutPreview": "My Journey",
-      "aboutDescription": "From my first lines of code to today - discover my journey as a developer.",
-      "projectsPreview": "My Projects",
-      "projectsDescription": "A selection of my best work and projects that demonstrate my skills.",
-      "skillsPreview": "My Skills",
-      "skillsDescription": "The technologies and tools I work with daily and my expertise.",
-      "contactPreview": "Contact",
-      "contactDescription": "Let’s talk about your next project. I look forward to your message.",
-      "projectsCta": "View Projects",
-      "explorePortfolio": "Explore My Portfolio",
-      "explorePortfolioDescription": "Learn more about me, my projects, and skills",
-      "viewMore": "Learn More",
-      "CTASection": {
-        "title": "Ready for your next project?",
-        "subtitle": "Let’s bring your ideas to life together. Contact me for a no-obligation consultation.",
-        "button": "More About Me"
-      }
+    "aria": {
+      "toggleDarkMode": "Toggle dark mode",
+      "contactButton": "Jump to contact form"
+    }
+  },
+  "Hero": {
+    "title": "Fullstack WebDev with Passion",
+    "description": "I develop modern, accessible and performant web applications that inspire.",
+    "cta": {
+      "contact": "Get in touch",
+      "projects": "View projects"
     }
   },
   "About": {
-    "title": "My Path as a Developer",
-    "subtitle": "A journey through my professional development",
-    "cta": "Contact Now",
-    "timelineEvents": [
-      {
-        "year": "before 2014",
-        "title": "Hobby Programmer & Tech Nerd",
-        "description": "First years with Java/C++ and web development - out of curiosity, not as a job. Technology, tinkering and clean-code thinking become a habit",
-        "location": "Self-study",
-        "image": "https://imgs.kevinpoppe.com/600x360,sTbpWywg4tu2cG4NS23o519iLiFIOeg0p9Sl4QL23uzk/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC90aW1lbGluZS9ob2JieS1jb2RpbmcuanBn",
-        "placeholder": "https://imgs.kevinpoppe.com/60x36,sTbpWywg4tu2cG4NS23o519iLiFIOeg0p9Sl4QL23uzk/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC90aW1lbGluZS9ob2JieS1jb2RpbmcuanBn",
-        "tags": ["Java", "C++", "HTML", "CSS", "JavaScript"]
+    "title": "About me",
+    "paragraph1": "As a passionate fullstack developer, I combine technical expertise with creative design. My focus is on developing applications that are not only functional, but also intuitive and accessible.",
+    "paragraph2": "With several years of experience in modern web technologies, I develop customized solutions that meet the individual requirements of my clients.",
+    "imageAlt": "Logo"
+  },
+  "Skills": {
+    "title": "Skills & Expertise",
+    "categories": {
+      "frontend": {
+        "name": "Frontend",
+        "items": ["React", "TypeScript", "Next.js", "Tailwind CSS", "Vue.js"]
       },
-      {
-        "year": "2014",
-        "title": "Certified Geriatric Nurse",
-        "description": "State examination completed - soft skills, responsibility and stress resistance from nursing still shape my work approach today",
-        "location": "Buchen",
-        "image": "https://imgs.kevinpoppe.com/600x360,sjy-2MAkeeM_YggWMsqlMYg-DzegFmVIZztIxIYNG768/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC90aW1lbGluZS9oZWFsdGhjYXJlLWdyYWR1YXRpb24ucG5n",
-        "tags": ["Teamwork", "Responsibility", "Communication"]
+      "backend": {
+        "name": "Backend",
+        "items": ["Node.js", "Python", "PostgreSQL", "MongoDB", "REST APIs"]
       },
-      {
-        "year": "2014-2015",
-        "title": "Intensive Care (24h Home Ventilation)",
-        "description": "Anima GbR: Care in high-risk environment. Learning to stay calm under pressure and work precisely",
-        "location": "Waiblingen",
-        "image": "https://imgs.kevinpoppe.com/600x360,sXBbcC934rYc2aGsyKLnfLDu_vTQoL_Mok87WoDbZ4hA/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC90aW1lbGluZS9pbnRlbnNpdmUtY2FyZS5qcGc",
-        "tags": ["Focus", "Precision", "Reliability"]
+      "design": {
+        "name": "Design",
+        "items": ["Figma", "UI/UX", "Responsive Design", "Accessibility"]
       },
-      {
-        "year": "2015-2022",
-        "title": "Outpatient Care - Tour Management",
-        "description": "Managing my own route with 17-20 patients. Organization, prioritization and decision-making become everyday skills",
-        "location": "Walldürn",
-        "image": "https://imgs.kevinpoppe.com/600x360,srqgR9J6m4VvTofRMBIJcca6vXGIsFColZufllL61HWY/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC90aW1lbGluZS9ob21lY2FyZS5qcGc",
-        "tags": ["Organization", "Prioritization", "Leadership"]
-      },
-      {
-        "year": "2022",
-        "title": "Fullstack Bootcamp - WBS Coding School",
-        "description": "Project-based training: React, Node.js, Express, SQL/NoSQL, SCRUM. The official jump back into IT",
-        "location": "Remote",
-        "image": "https://imgs.kevinpoppe.com/600x360,svNN7VKYzXDDmkuqyn6qgdAM0voiE5w94gKQ_X9XSFLY/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC90aW1lbGluZS9XQlMtWmVydGlmaWthdC5qcGc",
-        "tags": ["React", "Node.js", "Express", "PostgreSQL", "MongoDB", "SCRUM"]
-      },
-      {
-        "year": "2022-2023",
-        "title": "Frontend Developer - Urlaubsguru",
-        "description": "Nuxt/Vue development, Component Library, code reviews and onboarding. Quickly learned Nuxt2 and immediately took on responsibility",
-        "location": "Remote",
-        "image": "https://imgs.kevinpoppe.com/600x360,skisr5FTi0aRNHnsI-TTvlZ2Ve2MG8eizWHuY2idt3dM/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC90aW1lbGluZS9udXh0LXZ1ZS10ZWFtLnBuZw",
-        "tags": ["Nuxt.js", "Vue 2", "Component Library", "Code Review"]
-      },
-      {
-        "year": "from 2023",
-        "title": "Fullstack Developer - Kupona",
-        "description": "Greenfield & Modernization: Introduced Git & standards, replaced old code landscape, monorepo thinking, brought CI/CD & DevOps into practice. R&D → Architecture → PoC → Operations. Script runs in various shop stacks (SPA/MPA, Next/Nuxt, Shopify/WordPress), triggers rule-based, multilingual, delivers LP recommendations",
-        "location": "Germany / Remote",
-        "image": "https://imgs.kevinpoppe.com/600x360,szWRxYW_YhU1JoEqB2uKOoBogDuRt_rQoyw4WnqOXTjw/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC90aW1lbGluZS9tb2Rlcm5pemF0aW9uLnBuZw",
-        "tags": ["Next.js", "TypeScript", "Express", "Docker", "CI/CD", "Standards"]
-      },
-      {
-        "year": "ongoing",
-        "title": "Homelab & Self-Hosting",
-        "description": "3 rack servers, multiple RPi, GPU node, Hetzner. Docker Swarm + Traefik. Paperless-NGX, Home Assistant, Gitea, n8n, Nextcloud, weather station and much more.",
-        "location": "Collenberg & Cloud",
-        "image": "https://imgs.kevinpoppe.com/600x360,sdRaJGBNpsHg2X98JvxINXf6Vf758OdAbO88Af4F0734/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC90aW1lbGluZS9ob21lbGFiLXJhY2suanBn",
-        "tags": ["Docker Swarm", "Traefik", "Self-Hosting", "Automation"]
-      },
-      {
-        "year": "ongoing",
-        "title": "CognitionX & Herzblatt (ERP for Life)",
-        "description": "Visionary side projects: AGI-inspired concepts (ID/EGO/SUPEREGO), Life-ERP with recommender - utility instead of advertising",
-        "location": "Side Projects",
-        "image": "https://imgs.kevinpoppe.com/600x360,s4RYJ5ad10X8PrVUqgWFkkqxf2AU9DWJWx3Eg0xjp_yk/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC90aW1lbGluZS9hZ2ktbGlmZS1lcnAuanBn",
-        "tags": ["AGI Ideas", "Recommender", "Domain Modeling"]
+      "devops": {
+        "name": "DevOps",
+        "items": ["Docker", "CI/CD", "AWS", "Git", "Linux"]
       }
-    ],
-    "CTASection": {
-      "title": "Interested in working together?",
-      "subtitle": "My experience and passion for clean code can make your next project a success",
-      "button": "View Projects"
     }
   },
   "Projects": {
-    "title": "My Projects",
-    "subtitle": "A selection of my best work",
-    "cta": "Contact Now",
-    "highlights": "Highlights",
-    "projectCta": "Live Demo",
-    "codeCta": "Code",
-    "CTASection": {
-      "title": "Do you have a similar project in mind?",
-      "subtitle": "Let’s bring your idea to life together. I bring the experience and know-how to make your project a success.",
-      "button": "View My Skills"
-    },
-    "categories": ["All", "Fullstack", "Frontend", "Backend", "Mobile", "AI/ML"],
-    "projects": [
-      {
-        "title": "This Portfolio",
-        "description": "My personal portfolio showcasing my journey as a developer, my projects and skills. Built with Next.js, TypeScript and Tailwind CSS for a fast and appealing user experience. In the backend, I use ExpressJS for a robust API. Images are efficiently processed and hosted with imgproxy. Deployment happens seamlessly via a CI/CD pipeline with GitHub Actions and my own Docker Swarm environment.",
-        "image": "https://imgs.kevinpoppe.com/1240x742,sF5k-pO-czSA5WvvLDn2vmZzKCSJrdugue-VFFIkKNDQ/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC9wb3J0Zm9saW8tc2NyZWVuc2hvdC5wbmc",
-        "placeholder": "https://imgs.kevinpoppe.com/60x30,s2CVtqnAP8wG4v6IJX3p06UE4MzCa2hfblwPMjkgiTCQ/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC9wcm9qZWN0LW1hbmFnZW1lbnQtZGFzaGJvYXJkLnBuZw",
-        "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "ExpressJS", "Docker", "Docker Swarm", "CI/CD"],
-        "category": "Fullstack",
-        "year": "2025",
-        "duration": "2 weeks",
-        "status": "Live",
-        "links": {
-          "demo": "/",
-          "github": "https://github.com/example/ecommerce"
-        },
-        "highlights": ["99.9% Uptime", "Mobile-first Design", "SEO optimized", "Fast loading times", "CI/CD Pipeline"]
+    "title": "Projects",
+    "items": {
+      "ecommerce": {
+        "title": "E-Commerce Platform",
+        "description": "Complete e-commerce solution with React, Node.js and Stripe integration",
+        "tags": ["React", "Node.js", "MongoDB", "Stripe"]
       },
-      {
-        "title": "Homelab & Self-Hosting",
-        "description": "My homelab with 3 rack servers, multiple Raspberry Pis and a GPU node, operated with Docker Swarm and Traefik. Additionally, another cluster at Hetzner. I self-host various services like Paperless-NGX, Home Assistant, Gitea, n8n and Nextcloud to ensure maximum control and data privacy.",
-        "image": "https://imgs.kevinpoppe.com/1240x742,s2CVtqnAP8wG4v6IJX3p06UE4MzCa2hfblwPMjkgiTCQ/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC9wcm9qZWN0LW1hbmFnZW1lbnQtZGFzaGJvYXJkLnBuZw",
-        "placeholder": "https://imgs.kevinpoppe.com/60x30,s2CVtqnAP8wG4v6IJX3p06UE4MzCa2hfblwPMjkgiTCQ/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC9wcm9qZWN0LW1hbmFnZW1lbnQtZGFzaGJvYXJkLnBuZw",
-        "technologies": [
-          "Docker Swarm",
-          "Traefik",
-          "Raspberry Pi",
-          "Home Assistant",
-          "Nextcloud",
-          "Gitea",
-          "n8n",
-          "Paperless-NGX",
-          "Ubuntu Server",
-          "Hetzner API",
-          "Image Proxy",
-          "S3 Storage",
-          "Cluster Management",
-          "PostgreSQL",
-          "MongoDB",
-          "MySQL",
-          "Redis",
-          "Uptime Kuma",
-          "Grafana"
-        ],
-        "category": "DevOps",
-        "year": "2023 - ongoing",
-        "duration": "ongoing",
-        "status": "Live",
-        "links": {
-          "demo": "https://example.com",
-          "github": "https://github.com/example/taskmanager"
-        },
-        "highlights": [
-          "Completely self-hosted",
-          "High availability",
-          "Automated backups",
-          "Centralized management",
-          "Scalable architecture",
-          "Energy efficient",
-          "Secure and private",
-          "Diverse services",
-          "Easy expandability",
-          "Cost effective",
-          "Monitoring & Alerts",
-          "Cloud exit"
-        ]
+      "dashboard": {
+        "title": "SaaS Dashboard",
+        "description": "Modern admin dashboard with real-time data visualization",
+        "tags": ["Next.js", "TypeScript", "PostgreSQL"]
+      },
+      "mobileApp": {
+        "title": "Mobile-First App",
+        "description": "Progressive web app for fitness tracking with offline functionality",
+        "tags": ["React", "PWA", "IndexedDB"]
       }
-    ]
-  },
-  "Skills": {
-    "title": "My Skills",
-    "cta": "Contact Now",
-    "subtitle": "Technologies and tools I master",
-    "yearsOfExperience": "Years of Experience",
-    "yearsOfExperienceCount": "6+",
-    "projectsCompletedCount": "50+",
-    "projectsCompleted": "Projects Completed",
-    "technologiesCount": "20+",
-    "knownTechnologies": "Technologies Mastered",
-    "knowledge": "Knowledge Level",
-    "year": "Year",
-    "years": "Years",
-    "projects": "Projects",
-    "certificates": "Certificates",
-    "certificatesDescription": "Continuous learning and recognized qualifications",
-    "CTASection": {
-      "title": "Looking for a developer with these skills?",
-      "subtitle": "My diverse skills and years of experience can make your project a success. Let’s discuss your requirements.",
-      "button": "View Projects"
-    },
-    "skillCategories": [
-      {
-        "title": "Frontend Development",
-        "icon": "🎨",
-        "description": "Modern user interfaces and interactive web applications",
-        "skills": [
-          { "name": "React", "level": 95, "years": 4, "projects": 50 },
-          { "name": "Next.js", "level": 90, "years": 3, "projects": 8 },
-          { "name": "TypeScript", "level": 88, "years": 3, "projects": 50 },
-          { "name": "Tailwind CSS", "level": 92, "years": 4, "projects": 50 },
-          { "name": "Nuxt.js", "level": 85, "years": 4, "projects": 3 }
-        ]
-      },
-      {
-        "title": "Backend Development",
-        "icon": "⚙️",
-        "description": "Robust server architectures and APIs",
-        "skills": [
-          { "name": "Node.js", "level": 90, "years": 4, "projects": 5 },
-          { "name": "Express.js", "level": 88, "years": 4, "projects": 5 },
-          { "name": "NestJS", "level": 85, "years": 1, "projects": 2 },
-          { "name": "Python", "level": 82, "years": 2, "projects": 5 }
-        ]
-      },
-      {
-        "title": "Database & Cloud",
-        "icon": "☁️",
-        "description": "Data management and cloud infrastructure",
-        "skills": [
-          { "name": "PostgreSQL", "level": 88, "years": 4, "projects": 5 },
-          { "name": "MongoDB", "level": 85, "years": 4, "projects": 15 },
-          { "name": "AWS", "level": 82, "years": 3, "projects": 12 },
-          { "name": "Docker", "level": 80, "years": 3, "projects": 14 },
-          { "name": "Redis", "level": 78, "years": 2, "projects": 5 }
-        ]
-      },
-      {
-        "title": "Tools & Workflow",
-        "icon": "🛠️",
-        "description": "Development tools and project management",
-        "skills": [
-          { "name": "Git/GitHub", "level": 95, "years": 10, "projects": 30 },
-          { "name": "VS Code", "level": 92, "years": 5, "projects": 30 },
-          { "name": "Figma", "level": 85, "years": 3, "projects": 3 },
-          { "name": "Jest/Testing", "level": 82, "years": 3, "projects": 15 },
-          { "name": "CI/CD", "level": 80, "years": 2, "projects": 10 },
-          { "name": "Agile/Scrum", "level": 88, "years": 4, "projects": 25 }
-        ]
-      }
-    ],
-    "certifications": [
-      {
-        "title": "Bootcamp - Full Stack Web & App Development",
-        "issuer": "WBS Coding School",
-        "year": "2022",
-        "link": "https://imgs.kevinpoppe.com/svNN7VKYzXDDmkuqyn6qgdAM0voiE5w94gKQ_X9XSFLY/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC90aW1lbGluZS9XQlMtWmVydGlmaWthdC5qcGc"
-      },
-      {
-        "title": "Rest API (Intermediate) Certificate",
-        "issuer": "HackerRank",
-        "year": "2024",
-        "link": "https://www.hackerrank.com/certificates/63334ba1cd6d"
-      },
-      {
-        "title": "Frontend Developer (React) Certificate",
-        "issuer": "HackerRank",
-        "year": "2024",
-        "link": "https://www.hackerrank.com/certificates/1bc49bff1260"
-      },
-      {
-        "title": "Node (Basic) Certificate",
-        "issuer": "HackerRank",
-        "year": "2024",
-        "link": "https://www.hackerrank.com/certificates/a60453c35d6c"
-      },
-      {
-        "title": "JavaScript, CSS, HTML, and more",
-        "issuer": "Codecademy",
-        "link": "https://www.codecademy.com/profiles/teleturbis"
-      }
-    ]
+    }
   },
   "Contact": {
     "title": "Contact",
-    "subtitle": "Let’s work together",
+    "intro": "Do you have an exciting project in mind? Let's talk about it!",
     "form": {
-      "name": "Name",
-      "namePlaceholder": "Your full name",
-      "email": "Email",
-      "emailPlaceholder": "your.email@example.com",
-      "company": "Company",
-      "companyPlaceholder": "Your company (optional)",
-      "phone": "Phone",
-      "phonePlaceholder": "+49 123 456 789 (optional)",
-      "subject": "Subject",
-      "subjectPlaceholder": "What's this about?",
-      "message": "Message",
-      "messagePlaceholder": "Describe your project or inquiry...",
-      "send": "Send Message",
-      "sending": "Sending...",
-      "defaultSubject": "Contact from Portfolio",
-      "success": {
-        "title": "Message sent successfully!",
-        "description": "Thank you for your message. I'll get back to you soon."
+      "name": {
+        "label": "Name",
+        "placeholder": "John Doe"
       },
-      "error": {
-        "title": "Error sending message",
-        "description": "Please try again later or contact me directly."
-      }
-    },
-    "rightSection": {
-      "title": "Contact Information",
-      "description": "Reach me through these channels",
-      "email": "Email",
-      "phone": "Phone",
-      "location": "Location",
-      "contactinfo": [
-        {
-          "icon": "Mail",
-          "label": "Email",
-          "value": "office@kevinpoppe.com",
-          "href": "mailto:office@kevinpoppe.com",
-          "color": "text-blue-600 dark:text-blue-400"
-        },
-        {
-          "icon": "Phone",
-          "label": "Phone",
-          "value": "+49 160 911 18 502",
-          "href": "tel:+4916091118502",
-          "color": "text-green-600 dark:text-green-400"
-        },
-        {
-          "icon": "MapPin",
-          "label": "Location",
-          "value": "Germany",
-          "href": null,
-          "color": "text-orange-600 dark:text-orange-400"
-        }
-      ],
-      "socials": [
-        {
-          "icon": "Github",
-          "label": "GitHub",
-          "href": "https://github.com/Teleturbis",
-          "color": "hover:text-gray-900 dark:hover:text-gray-100"
-        },
-        {
-          "icon": "Linkedin",
-          "label": "LinkedIn",
-          "href": "https://linkedin.com/in/poppe-kevin",
-          "color": "hover:text-blue-600 dark:hover:text-blue-400"
-        },
-        {
-          "icon": "Gitlab",
-          "label": "GitLab",
-          "href": "https://gitlab.com/Teleturbis",
-          "color": "hover:text-orange-600 dark:hover:text-orange-400"
-        }
-      ],
-      "availability": {
-        "title": "Availability",
-        "description1": "Available for new projects",
-        "description2": "Fully equipped home office",
-        "description3": "Response within 24h"
-      }
-    },
-    "CTASection": {
-      "title": "Ready for the next step?",
-      "subtitle": "Check out my previous work or learn more about my skills",
-      "button1": "View Projects",
-      "button2": "Discover Skills"
+      "email": {
+        "label": "Email",
+        "placeholder": "john@example.com"
+      },
+      "subject": {
+        "label": "Subject",
+        "placeholder": "Project inquiry"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Tell me about your project..."
+      },
+      "submit": "Send message"
     }
+  },
+  "Footer": {
+    "copyright": "© 2025 Kevin Poppe. All rights reserved."
   }
 }
