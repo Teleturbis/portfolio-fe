@@ -60,44 +60,44 @@ export function Header({ onNavigate, activeSection }: HeaderProps) {
 
             {/* Theme Toggle */}
             <motion.button
-                onClick={toggleTheme}
-                className="relative w-14 h-7 bg-muted rounded-full p-1 transition-colors hover:bg-muted/80 border"
-                whileTap={{ scale: 0.95 }}
-                aria-label="Toggle dark mode"
+              onClick={toggleTheme}
+              className='bg-muted hover:bg-muted/80 relative h-7 w-14 rounded-full border p-1 transition-colors'
+              whileTap={{ scale: 0.95 }}
+              aria-label='Toggle dark mode'
+            >
+              <motion.div
+                className='bg-primary flex h-5 w-5 items-center justify-center rounded-full'
+                animate={{
+                  x: isDark ? 24 : 0,
+                }}
+                transition={{ type: 'spring', stiffness: 500, damping: 30 }}
               >
                 <motion.div
-                  className="w-5 h-5 bg-primary rounded-full flex items-center justify-center"
+                  initial={false}
                   animate={{
-                    x: isDark ? 24 : 0,
+                    scale: isDark ? 0 : 1,
+                    opacity: isDark ? 0 : 1,
+                    rotate: isDark ? 180 : 0,
                   }}
-                  transition={{ type: 'spring', stiffness: 500, damping: 30 }}
+                  transition={{ duration: 0.2 }}
+                  className='absolute'
                 >
-                  <motion.div
-                    initial={false}
-                    animate={{
-                      scale: isDark ? 0 : 1,
-                      opacity: isDark ? 0 : 1,
-                      rotate: isDark ? 180 : 0,
-                    }}
-                    transition={{ duration: 0.2 }}
-                    className="absolute"
-                  >
-                    <Sun size={14} className="text-white" />
-                  </motion.div>
-                  <motion.div
-                    initial={false}
-                    animate={{
-                      scale: isDark ? 1 : 0,
-                      opacity: isDark ? 1 : 0,
-                      rotate: isDark ? 0 : -180,
-                    }}
-                    transition={{ duration: 0.2 }}
-                    className="absolute"
-                  >
-                    <Moon size={14} className="text-white" />
-                  </motion.div>
+                  <Sun size={14} className='text-white' />
                 </motion.div>
-              </motion.button>
+                <motion.div
+                  initial={false}
+                  animate={{
+                    scale: isDark ? 1 : 0,
+                    opacity: isDark ? 1 : 0,
+                    rotate: isDark ? 0 : -180,
+                  }}
+                  transition={{ duration: 0.2 }}
+                  className='absolute'
+                >
+                  <Moon size={14} className='text-white' />
+                </motion.div>
+              </motion.div>
+            </motion.button>
           </div>
 
           {/* Mobile Menu Button and Theme Toggle */}

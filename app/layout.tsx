@@ -12,7 +12,7 @@ export default async function RootLayout({
   const messages = await getMessages();
 
   return (
-    <html suppressHydrationWarning className="scroll-smooth">
+    <html suppressHydrationWarning className='scroll-smooth'>
       <Script
         src='https://um.teleturbis.de/script.js'
         data-website-id='3594f23a-c13c-49a5-93fb-10f2a2a32fe0'

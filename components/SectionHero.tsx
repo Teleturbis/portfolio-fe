@@ -91,7 +91,7 @@ export function SectionHero({
             fontSize,
             lineHeight: 1.1,
           }}
-          className='from-primary via-secondary to-primary bg-gradient-to-r bg-clip-text font-extrabold text-transparent drop-shadow-2xl py-8'
+          className='from-primary via-secondary to-primary bg-gradient-to-r bg-clip-text py-8 font-extrabold text-transparent drop-shadow-2xl'
         >
           {title}
         </motion.h2>
