@@ -1,393 +1,169 @@
 {
   "Navigation": {
     "nav": {
-      "home": "Startseite",
-      "about": "Über mich",
-      "projects": "Projekte",
+      "about": "About",
       "skills": "Skills",
-      "contact": "Kontakt"
+      "projects": "Projects",
+      "contact": "Contact"
     },
-    "home": {
-      "title": "Fullstack Webdeveloper",
-      "subtitle": "Ich entwickle moderne Webanwendungen mit Leidenschaft für sauberen Code und benutzerfreundliche Interfaces",
-      "cta": "Jetzt kontaktieren",
-      "aboutPreview": "Mein Weg",
-      "aboutDescription": "Von den ersten Programmierzeilen bis heute - entdecken Sie meine Reise als Entwickler",
-      "projectsPreview": "Meine Projekte",
-      "projectsDescription": "Eine Auswahl meiner besten Arbeiten und Projekte, die meine Fähigkeiten demonstrieren",
-      "skillsPreview": "Meine Skills",
-      "skillsDescription": "Die Technologien und Tools, mit denen ich täglich arbeite und meine Expertise",
-      "contactPreview": "Kontakt",
-      "contactDescription": "Lassen Sie uns über Ihr nächstes Projekt sprechen. Ich freue mich auf Ihre Nachricht",
-      "projectsCta": "Projekte ansehen",
-      "explorePortfolio": "Entdecken Sie mein Portfolio",
-      "explorePortfolioDescription": "Erfahren Sie mehr über mich, meine Projekte und Fähigkeiten",
-      "viewMore": "Mehr erfahren",
-      "CTASection": {
-        "title": "Bereit für Ihr nächstes Projekt?",
-        "subtitle": "Lassen Sie uns gemeinsam Ihre Ideen in die Realität umsetzen. Kontaktieren Sie mich für ein unverbindliches Gespräch",
-        "button": "Mehr über mich"
-      }
+    "aria": {
+      "toggleDarkMode": "Toggle dark mode",
+      "contactButton": "Zum Kontaktformular springen"
+    }
+  },
+  "Hero": {
+    "title": "Fullstack WebDev mit Leidenschaft",
+    "description": "Ich entwickle moderne, zugängliche und performante Webanwendungen, die begeistern.",
+    "cta": {
+      "contact": "Kontakt aufnehmen",
+      "projects": "Projekte ansehen"
     }
   },
   "About": {
-    "title": "Mein Weg als Entwickler",
-    "subtitle": "Eine Reise durch meine berufliche Entwicklung",
-    "cta": "Jetzt kontaktieren",
-    "timelineEvents": [
-      {
-        "year": "vor 2014",
-        "title": "Hobbyprogrammierer & Techniknerd",
-        "description": "Erste Jahre mit Java/C++ und Web – aus Neugier, nicht als Job. Technik, Tüftelei und Clean-Code-Denken werden zur Gewohnheit",
-        "location": "Selbststudium",
-        "image": "https://imgs.kevinpoppe.com/600x360,sTbpWywg4tu2cG4NS23o519iLiFIOeg0p9Sl4QL23uzk/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC90aW1lbGluZS9ob2JieS1jb2RpbmcuanBn",
-        "placeholder": "https://imgs.kevinpoppe.com/60x36,sTbpWywg4tu2cG4NS23o519iLiFIOeg0p9Sl4QL23uzk/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC90aW1lbGluZS9ob2JieS1jb2RpbmcuanBn",
-        "tags": ["Java", "C++", "HTML", "CSS", "JavaScript"]
-      },
-      {
-        "year": "2014",
-        "title": "Examinierter Altenpfleger",
-        "description": "Staatsexamen abgeschlossen – Soft Skills, Verantwortung und Stressresistenz aus der Pflege prägen bis heute meine Arbeitsweise",
-        "location": "Buchen",
-        "image": "https://imgs.kevinpoppe.com/600x360,sjy-2MAkeeM_YggWMsqlMYg-DzegFmVIZztIxIYNG768/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC90aW1lbGluZS9oZWFsdGhjYXJlLWdyYWR1YXRpb24ucG5n",
-        "tags": ["Teamwork", "Verantwortung", "Kommunikation"]
-      },
-      {
-        "year": "2014–2015",
-        "title": "Intensivpflege (24h Heimbeatmung)",
-        "description": "Anima GbR: Pflege im Hochrisiko-Umfeld. Lernen, unter Druck ruhig zu bleiben und präzise zu arbeiten",
-        "location": "Waiblingen",
-        "image": "https://imgs.kevinpoppe.com/600x360,sXBbcC934rYc2aGsyKLnfLDu_vTQoL_Mok87WoDbZ4hA/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC90aW1lbGluZS9pbnRlbnNpdmUtY2FyZS5qcGc",
-        "tags": ["Fokus", "Präzision", "Zuverlässigkeit"]
-      },
-      {
-        "year": "2015–2022",
-        "title": "Ambulante Pflege – Tourleitung",
-        "description": "Leitung einer eigenen Tour mit 17–20 Patienten. Organisation, Priorisierung und Entscheidungsfreude werden Alltag",
-        "location": "Walldürn",
-        "image": "https://imgs.kevinpoppe.com/600x360,srqgR9J6m4VvTofRMBIJcca6vXGIsFColZufllL61HWY/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC90aW1lbGluZS9ob21lY2FyZS5qcGc",
-        "tags": ["Organisation", "Priorisierung", "Führung"]
-      },
-      {
-        "year": "2022",
-        "title": "Fullstack Bootcamp – WBS Coding School",
-        "description": "Projektbasiertes Training: React, Node.js, Express, SQL/NoSQL, SCRUM. Der offizielle Sprung zurück in die IT",
-        "location": "Remote",
-        "image": "https://imgs.kevinpoppe.com/600x360,svNN7VKYzXDDmkuqyn6qgdAM0voiE5w94gKQ_X9XSFLY/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC90aW1lbGluZS9XQlMtWmVydGlmaWthdC5qcGc",
-        "tags": ["React", "Node.js", "Express", "PostgreSQL", "MongoDB", "SCRUM"]
-      },
-      {
-        "year": "2022–2023",
-        "title": "Frontend Developer – Urlaubsguru",
-        "description": "Nuxt/Vue-Weiterentwicklung, Component Library, Code-Reviews und Onboarding. Kurzfristig Nuxt2 gelernt und direkt Verantwortung übernommen",
-        "location": "Remote",
-        "image": "https://imgs.kevinpoppe.com/600x360,skisr5FTi0aRNHnsI-TTvlZ2Ve2MG8eizWHuY2idt3dM/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC90aW1lbGluZS9udXh0LXZ1ZS10ZWFtLnBuZw",
-        "tags": ["Nuxt.js", "Vue 2", "Component Library", "Code Review"]
-      },
-      {
-        "year": "ab 2023",
-        "title": "Fullstack Developer – Kupona",
-        "description": "Greenfield & Modernisierung: Git & Standards eingeführt, alte Code-Landschaft abgelöst, Monorepo-Denken, CI/CD & DevOps in die Praxis gebracht. R&D → Architektur → PoC → Betrieb. Skript läuft in diversen Shop-Stacks (SPA/MPA, Next/Nuxt, Shopify/WordPress), triggert regelbasiert, multilingual, liefert LP-Recomms",
-        "location": "Deutschland / Remote",
-        "image": "https://imgs.kevinpoppe.com/600x360,szWRxYW_YhU1JoEqB2uKOoBogDuRt_rQoyw4WnqOXTjw/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC90aW1lbGluZS9tb2Rlcm5pemF0aW9uLnBuZw",
-        "tags": ["Next.js", "TypeScript", "Express", "Docker", "CI/CD", "Standards"]
-      },
-      {
-        "year": "laufend",
-        "title": "Homelab & Self-Hosting",
-        "description": "3 Rack-Server, mehrere RPi, GPU-Node, Hetzner. Docker Swarm + Traefik. Paperless-NGX, Home Assistant, Gitea, n8n, Nextcloud, Wetterstation u.v.m.",
-        "location": "Collenberg & Cloud",
-        "image": "https://imgs.kevinpoppe.com/600x360,sdRaJGBNpsHg2X98JvxINXf6Vf758OdAbO88Af4F0734/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC90aW1lbGluZS9ob21lbGFiLXJhY2suanBn",
-        "tags": ["Docker Swarm", "Traefik", "Self-Hosting", "Automation"]
-      },
-      {
-        "year": "laufend",
-        "title": "CognitionX & Herzblatt (ERP fürs Leben)",
-        "description": "Visionäre Side-Projects: AGI-inspirierte Konzepte (ES/ICH/ÜBER-ICH), Life-ERP mit Recommender – Nutzen statt Werbung",
-        "location": "Side Projects",
-        "image": "https://imgs.kevinpoppe.com/600x360,s4RYJ5ad10X8PrVUqgWFkkqxf2AU9DWJWx3Eg0xjp_yk/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC90aW1lbGluZS9hZ2ktbGlmZS1lcnAuanBn",
-        "tags": ["AGI-Ideen", "Recommender", "Domain Modeling"]
-      }
-    ],
-    "CTASection": {
-      "title": "Interessiert an einer Zusammenarbeit?",
-      "subtitle": "Meine Erfahrung und Leidenschaft für sauberen Code können Ihr nächstes Projekt zum Erfolg führen",
-      "button": "Projekte ansehen"
-    }
+    "title": "Über mich",
+    "paragraph1": "Als passionierter Fullstack-Entwickler verbinde ich technische Expertise mit kreativem Design. Mein Fokus liegt auf der Entwicklung von Anwendungen, die nicht nur funktional, sondern auch intuitiv und barrierefrei sind.",
+    "paragraph2": "Mit mehrjähriger Erfahrung in modernen Web-Technologien entwickle ich maßgeschneiderte Lösungen, die den individuellen Anforderungen meiner Kunden gerecht werden.",
+    "imageAlt": "Logo"
   },
-  "Projects": {
-    "title": "Meine Projekte",
-    "subtitle": "Eine Auswahl meiner besten Arbeiten",
-    "cta": "Jetzt kontaktieren",
-    "highlights": "Highlights",
-    "projectCta": "Live Demo",
-    "codeCta": "Code",
-    "CTASection": {
-      "title": "Haben Sie ein ähnliches Projekt im Kopf?",
-      "subtitle": "Lassen Sie uns gemeinsam Ihre Idee in die Realität umsetzen. Ich bringe die Erfahrung und das Know-how mit, um Ihr Projekt erfolgreich zu realisieren",
-      "button": "Meine Skills ansehen"
-    },
-    "categories": ["Alle", "Fullstack", "Frontend", "Backend", "Mobile", "AI/ML"],
-    "projects": [
+  "Skills": {
+    "title": "Skills & Expertise",
+    "more": "...mehr anzeigen",
+    "items": [
       {
-        "title": "Dieses Portfolio",
-        "description": "Mein persönliches Portfolio, das meine Reise als Entwickler, meine Projekte und Fähigkeiten präsentiert. Gebaut mit Next.js, TypeScript und Tailwind CSS für eine schnelle und ansprechende Benutzererfahrung. Im Backend setze ich auf ExpressJS für eine robuste API. Bilder werden effizient mit imgproxy verarbeitet und gehostet. Deployment erfolgt nahtlos über eine CI/CD-Pipeline mit GitHub Actions und einer eigenen Docker-Swarm-Umgebung.",
-        "image": "https://imgs.kevinpoppe.com/1240x742,sF5k-pO-czSA5WvvLDn2vmZzKCSJrdugue-VFFIkKNDQ/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC9wb3J0Zm9saW8tc2NyZWVuc2hvdC5wbmc",
-        "placeholder": "https://imgs.kevinpoppe.com/60x30,s2CVtqnAP8wG4v6IJX3p06UE4MzCa2hfblwPMjkgiTCQ/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC9wcm9qZWN0LW1hbmFnZW1lbnQtZGFzaGJvYXJkLnBuZw",
-        "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "ExpressJS", "Docker", "Docker Swarm", "CI/CD"],
-        "category": "Fullstack",
-        "year": "2025",
-        "duration": "2 Wochen",
-        "status": "Live",
-        "links": {
-          "demo": "/",
-          "github": "https://github.com/example/ecommerce"
-        },
-        "highlights": ["99.9% Uptime", "Mobile-first Design", "SEO-optimiert", "Schnelle Ladezeiten", "CI/CD Pipeline"]
+        "name": "Frontend",
+        "icon": "Code2",
+        "highlights": [
+          "React • Next.js (SSR/ISR)",
+          "Native Web Components",
+          "TailwindCSS + shadcn/ui",
+          "Turborepo • Webpack",
+          "Performance & A11y"
+        ],
+        "items": [
+          "JavaScript (ES6+) & gutes TypeScript-Verständnis",
+          "React Hooks, Context, Suspense, dynamische Imports",
+          "Next.js mit SEO, Middleware, API Routes, ISR/SSG/SSR",
+          "Native Web Components mit Custom Elements & Shadow DOM",
+          "TailwindCSS, shadcn/ui, Framer Motion, Lucide Icons",
+          "Turborepo Monorepo-Architektur (apps/*, packages/*)",
+          "Webpack Multi-Entry Builds, Caching & Asset Optimierung",
+          "Lighthouse-Optimierung, Lazy Loading, Barrierefreiheit",
+          "Landingpages @Scale, Phoenix MasterTag Integration"
+        ]
       },
       {
-        "title": "Homelab & Self-Hosting",
-        "description": "Mein Homelab mit 3 Rack-Servern, mehreren Raspberry Pis und einer GPU-Node, betrieben mit Docker Swarm und Traefik. Zusätzlich ein weiteres Cluster bei Hetzner. Ich hoste verschiedene Dienste wie Paperless-NGX, Home Assistant, Gitea, n8n und Nextcloud selbst, um maximale Kontrolle und Datenschutz zu gewährleisten.",
-        "image": "https://imgs.kevinpoppe.com/1240x742,s2CVtqnAP8wG4v6IJX3p06UE4MzCa2hfblwPMjkgiTCQ/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC9wcm9qZWN0LW1hbmFnZW1lbnQtZGFzaGJvYXJkLnBuZw",
-        "placeholder": "https://imgs.kevinpoppe.com/60x30,s2CVtqnAP8wG4v6IJX3p06UE4MzCa2hfblwPMjkgiTCQ/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC9wcm9qZWN0LW1hbmFnZW1lbnQtZGFzaGJvYXJkLnBuZw",
-        "technologies": [
-          "Docker Swarm",
-          "Traefik",
-          "Raspberry Pi",
-          "Home Assistant",
-          "Nextcloud",
-          "Gitea",
-          "n8n",
-          "Paperless-NGX",
-          "Ubuntu Server",
-          "Hetzner API",
-          "Image Proxy",
-          "S3 Storage",
-          "Cluster Management",
-          "PostgreSQL",
-          "MongoDB",
-          "MySQL",
-          "Redis",
-          "Uptime Kuma",
-          "Grafana"
-        ],
-        "category": "DevOps",
-        "year": "2023 - laufend",
-        "duration": "laufend",
-        "status": "Live",
-        "links": {
-          "demo": "https://example.com",
-          "github": "https://github.com/example/taskmanager"
-        },
+        "name": "Backend",
+        "icon": "Database",
         "highlights": [
-          "Vollständig selbst gehostet",
-          "Hohe Verfügbarkeit",
-          "Automatisierte Backups",
-          "Zentralisiertes Management",
-          "Skalierbare Architektur",
-          "Energieeffizient",
-          "Sicher und privat",
-          "Vielfältige Dienste",
-          "Einfache Erweiterbarkeit",
-          "Kosteneffizient",
-          "Monitoring & Alerts",
-          "Cloud-Exit"
+          "Node.js • Express",
+          "Python • FastAPI",
+          "PostgreSQL + pgvector",
+          "Redis (Queue/Caching)",
+          "REST APIs"
+        ],
+        "items": [
+          "Node.js & Express Services, Middleware, Rate Limiting",
+          "Python FastAPI (CTranslate2 / MarianMT Integration)",
+          "PostgreSQL Schema Design, Indizes, Batch-Writes",
+          "pgvector für semantische Suche (Embeddings)",
+          "Redis für Queueing, Worker & Caching",
+          "Feed-Verarbeitung: Produktdaten, Übersetzungen, Vektorisierung",
+          "Empfehlungslogik auf Basis von Kosinus-Ähnlichkeit",
+          "RESTful API Design mit Auth & Logging",
+          "Automatisierte Pipelines zur Datenverarbeitung"
+        ]
+      },
+      {
+        "name": "DevOps",
+        "icon": "Layers",
+        "highlights": [
+          "Docker • Swarm • Portainer",
+          "Traefik (TLS/Wildcard)",
+          "CI/CD mit Bitbucket",
+          "Hetzner + On-Prem Server",
+          "Monitoring (Grafana / Wazuh)"
+        ],
+        "items": [
+          "Docker Compose & Swarm Deployments mit Rolling Updates",
+          "Traefik Ingress, TLS-Termination, OAuth2-Proxy / Keycloak",
+          "Portainer Management, Bitbucket-Pipelines, Webhooks",
+          "Hetzner Cloud (CX-Instanzen) & HP DL380 Homelab",
+          "Raspberry Pi Cluster & Mini-PC Nodes",
+          "Netzwerk: VLANs, WireGuard/Netbird, 2.5–10 Gbit LAN",
+          "Monitoring: Grafana, Loki, Promtail, Node Exporter, cAdvisor",
+          "Security: Wazuh, OPNsense, AdGuard, Fail2Ban",
+          "NFS-Storage, NAS, Volumes, Offsite-Backups"
+        ]
+      },
+      {
+        "name": "Softskills",
+        "icon": "UsersRound",
+        "highlights": [
+          "Architektur & Ownership",
+          "Teamführung (inoffiziell)",
+          "Kommunikation & Mentoring",
+          "Kundenorientierung",
+          "Problem-Solving"
+        ],
+        "items": [
+          "Projektleitung von Architektur bis Go-Live",
+          "Definieren technischer Standards (Linting, Pipelines, Repos)",
+          "Team Enablement: Brownbags, Guidelines, Reviews",
+          "Direkte, ehrliche und lösungsorientierte Kommunikation",
+          "Hohe Lernkurve & Experimentierfreude (KI, IoT, ML)",
+          "Verantwortungsbewusstes, strategisches Denken",
+          "Balance aus Kontrolle & Flexibilität im Team"
         ]
       }
     ]
   },
-  "Skills": {
-    "title": "Meine Skills",
-    "cta": "Jetzt kontaktieren",
-    "subtitle": "Technologien und Tools, die ich beherrsche",
-    "yearsOfExperience": "Jahre Erfahrung",
-    "yearsOfExperienceCount": "6+",
-    "projectsCompletedCount": "50+",
-    "projectsCompleted": "Projekte abgeschlossen",
-    "technologiesCount": "20+",
-    "knownTechnologies": "Technologien beherrscht",
-    "knowledge": "Kenntnisstand",
-    "year": "Jahr",
-    "years": "Jahre",
-    "projects": "Projekte",
-    "certificates": "Zertifikate",
-    "certificatesDescription": "Kontinuierliche Weiterbildung und anerkannte Qualifikationen",
-    "CTASection": {
-      "title": "Suchen Sie einen Entwickler mit diesen Skills?",
-      "subtitle": "Meine vielfältigen Fähigkeiten und jahrelange Erfahrung können Ihr Projekt zum Erfolg führen. Lassen Sie uns über Ihre Anforderungen sprechen",
-      "button": "Projekte ansehen"
-    },
-    "skillCategories": [
+  "Projects": {
+    "title": "Projekte",
+    "items": [
       {
-        "title": "Frontend Development",
-        "icon": "🎨",
-        "description": "Moderne Benutzeroberflächen und interaktive Webanwendungen",
-        "skills": [
-          { "name": "React", "level": 95, "years": 4, "projects": 50 },
-          { "name": "Next.js", "level": 90, "years": 3, "projects": 8 },
-          { "name": "TypeScript", "level": 88, "years": 3, "projects": 50 },
-          { "name": "Tailwind CSS", "level": 92, "years": 4, "projects": 50 },
-          { "name": "Nuxt.js", "level": 85, "years": 4, "projects": 3 }
-        ]
+        "title": "E-Commerce Platform",
+        "description": "Vollständige E-Commerce-Lösung mit React, Node.js und Stripe Integration",
+        "image": "https://images.unsplash.com/photo-1546900703-cf06143d1239?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMGNvZGV8ZW58MXx8fHwxNzYwNjUwMzM5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+        "tags": ["React", "Node.js", "MongoDB", "Stripe"]
       },
       {
-        "title": "Backend Development",
-        "icon": "⚙️",
-        "description": "Robuste Server-Architekturen und APIs",
-        "skills": [
-          { "name": "Node.js", "level": 90, "years": 4, "projects": 5 },
-          { "name": "Express.js", "level": 88, "years": 4, "projects": 5 },
-          { "name": "NestJS", "level": 85, "years": 1, "projects": 2 },
-          { "name": "Python", "level": 82, "years": 2, "projects": 5 }
-        ]
+        "title": "SaaS Dashboard",
+        "description": "Modernes Admin-Dashboard mit Echtzeit-Datenvisualisierung",
+        "image": "https://images.unsplash.com/photo-1718220216044-006f43e3a9b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB0ZWNoJTIwd29ya3NwYWNlfGVufDF8fHx8MTc2MDYwOTU4MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+        "tags": ["Next.js", "TypeScript", "PostgreSQL"]
       },
       {
-        "title": "Database & Cloud",
-        "icon": "☁️",
-        "description": "Datenmanagement und Cloud-Infrastruktur",
-        "skills": [
-          { "name": "PostgreSQL", "level": 88, "years": 4, "projects": 5 },
-          { "name": "MongoDB", "level": 85, "years": 4, "projects": 15 },
-          { "name": "AWS", "level": 82, "years": 3, "projects": 12 },
-          { "name": "Docker", "level": 80, "years": 3, "projects": 14 },
-          { "name": "Redis", "level": 78, "years": 2, "projects": 5 }
-        ]
-      },
-      {
-        "title": "Tools & Workflow",
-        "icon": "🛠️",
-        "description": "Entwicklungstools und Projektmanagement",
-        "skills": [
-          { "name": "Git/GitHub", "level": 95, "years": 10, "projects": 30 },
-          { "name": "VS Code", "level": 92, "years": 5, "projects": 30 },
-          { "name": "Figma", "level": 85, "years": 3, "projects": 3 },
-          { "name": "Jest/Testing", "level": 82, "years": 3, "projects": 15 },
-          { "name": "CI/CD", "level": 80, "years": 2, "projects": 10 },
-          { "name": "Agile/Scrum", "level": 88, "years": 4, "projects": 25 }
-        ]
-      }
-    ],
-    "certifications": [
-      {
-        "title": "Bootcamp - Full Stack Web & App Entwicklung",
-        "issuer": "WBS Coding School",
-        "year": "2022",
-        "link": "https://imgs.kevinpoppe.com/svNN7VKYzXDDmkuqyn6qgdAM0voiE5w94gKQ_X9XSFLY/aHR0cDovLzEwMC43Ni4yMjguMTcxOjkxMDAvdGVzdC90aW1lbGluZS9XQlMtWmVydGlmaWthdC5qcGc"
-      },
-      {
-        "title": "Rest API (Intermediate) Certificate",
-        "issuer": "HackerRank",
-        "year": "2024",
-        "link": "https://www.hackerrank.com/certificates/63334ba1cd6d"
-      },
-      {
-        "title": "Frontend Developer (React) Certificate",
-        "issuer": "HackerRank",
-        "year": "2024",
-        "link": "https://www.hackerrank.com/certificates/1bc49bff1260"
-      },
-      {
-        "title": "Node (Basic) Certificate",
-        "issuer": "HackerRank",
-        "year": "2024",
-        "link": "https://www.hackerrank.com/certificates/a60453c35d6c"
-      },
-      {
-        "title": "JavaScript, CSS, HTML, u.v.m.",
-        "issuer": "Codecademy",
-        "link": "https://www.codecademy.com/profiles/teleturbis"
+        "title": "Mobile-First App",
+        "description": "Progressive Web App für Fitness-Tracking mit Offline-Funktionalität",
+        "image": "https://images.unsplash.com/photo-1658953229625-aad99d7603b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzYwNjQ1NTMxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+        "tags": ["React", "PWA", "IndexedDB"]
       }
     ]
   },
   "Contact": {
     "title": "Kontakt",
-    "subtitle": "Lassen Sie uns zusammenarbeiten",
+    "intro": "Haben Sie ein spannendes Projekt im Kopf? Lassen Sie uns darüber sprechen!",
     "form": {
-      "name": "Name",
-      "namePlaceholder": "Ihr vollständiger Name",
-      "email": "E-Mail",
-      "emailPlaceholder": "ihre.email@beispiel.com",
-      "company": "Unternehmen",
-      "companyPlaceholder": "Ihr Unternehmen (optional)",
-      "phone": "Telefon",
-      "phonePlaceholder": "+49 123 4567890 (optional)",
-      "subject": "Betreff",
-      "subjectPlaceholder": "Worum geht es?",
-      "message": "Nachricht",
-      "messagePlaceholder": "Beschreiben Sie Ihr Projekt oder Ihre Anfrage...",
-      "send": "Nachricht senden",
-      "sending": "Wird gesendet...",
-      "defaultSubject": "Kontakt über Portfolio",
-      "success": {
-        "title": "Nachricht erfolgreich gesendet!",
-        "description": "Vielen Dank für Ihre Nachricht. Ich melde mich bald bei Ihnen."
+      "name": {
+        "label": "Name",
+        "placeholder": "Max Mustermann"
       },
-      "error": {
-        "title": "Fehler beim Senden",
-        "description": "Bitte versuchen Sie es später erneut oder kontaktieren Sie mich direkt."
-      }
-    },
-    "rightSection": {
-      "title": "Kontaktinformationen",
-      "description": "Erreichen Sie mich über diese Kanäle",
-      "email": "E-Mail",
-      "phone": "Telefon",
-      "location": "Standort",
-      "contactinfo": [
-        {
-          "icon": "Mail",
-          "label": "E-Mail",
-          "value": "office@kevinpoppe.com",
-          "href": "mailto:office@kevinpoppe.com",
-          "color": "text-blue-600 dark:text-blue-400"
-        },
-        {
-          "icon": "Phone",
-          "label": "Telefon",
-          "value": "+49 160 911 18 502",
-          "href": "tel:+4916091118502",
-          "color": "text-green-600 dark:text-green-400"
-        },
-        {
-          "icon": "MapPin",
-          "label": "Standort",
-          "value": "Deutschland",
-          "href": null,
-          "color": "text-orange-600 dark:text-orange-400"
-        }
-      ],
-      "socials": [
-        {
-          "icon": "Github",
-          "label": "GitHub",
-          "href": "https://github.com/Teleturbis",
-          "color": "hover:text-gray-900 dark:hover:text-gray-100"
-        },
-        {
-          "icon": "Linkedin",
-          "label": "LinkedIn",
-          "href": "https://linkedin.com/in/poppe-kevin",
-          "color": "hover:text-blue-600 dark:hover:text-blue-400"
-        },
-        {
-          "icon": "Gitlab",
-          "label": "GitLab",
-          "href": "https://gitlab.com/Teleturbis",
-          "color": "hover:text-orange-600 dark:hover:text-orange-400"
-        }
-      ],
-      "availability": {
-        "title": "Verfügbarkeit",
-        "description1": "Verfügbar für neue Projekte",
-        "description2": "Ausgestattetes Homeoffice vorhanden",
-        "description3": "Antwort innerhalb von 24h"
-      }
-    },
-    "CTASection": {
-      "title": "Bereit für den nächsten Schritt?",
-      "subtitle": "Schauen Sie sich meine bisherigen Arbeiten an oder erfahren Sie mehr über meine Fähigkeiten",
-      "button1": "Projekte ansehen",
-      "button2": "Skills entdecken"
+      "email": {
+        "label": "E-Mail",
+        "placeholder": "max@beispiel.de"
+      },
+      "subject": {
+        "label": "Betreff",
+        "placeholder": "Projektanfrage"
+      },
+      "message": {
+        "label": "Nachricht",
+        "placeholder": "Erzählen Sie mir von Ihrem Projekt..."
+      },
+      "submit": "Nachricht senden"
     }
+  },
+  "Footer": {
+    "copyright": "© 2025 Kevin Poppe. Alle Rechte vorbehalten."
   }
 }
