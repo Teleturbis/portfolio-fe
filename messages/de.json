@@ -160,7 +160,11 @@
         "label": "Nachricht",
         "placeholder": "Erzählen Sie mir von Ihrem Projekt..."
       },
-      "submit": "Nachricht senden"
+      "submit": "Nachricht senden",
+      "success": "Nachricht erfolgreich gesendet! Ich melde mich bald bei Ihnen.",
+      "failure": "Fehler beim Senden. Bitte versuchen Sie es erneut.",
+      "sending": "Wird gesendet",
+      "sent": "Gesendet!"
     }
   },
   "Footer": {

@@ -86,7 +86,11 @@
         "label": "Message",
         "placeholder": "Tell me about your project..."
       },
-      "submit": "Send message"
+      "submit": "Send message",
+      "success": "Message sent successfully! I'll get back to you soon.",
+      "failure": "Failed to send. Please try again.",
+      "sending": "Sending...",
+      "sent": "Sent!"
     }
   },
   "Footer": {

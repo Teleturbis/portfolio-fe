@@ -8,8 +8,7 @@ class ContactApiClient {
   private baseUrl: string;
 
   constructor() {
-    this.baseUrl =
-      process.env.NEXT_PUBLIC_API_URL || 'https://api.kevinpoppe.com';
+    this.baseUrl = 'https://api.kevinpoppe.com';
   }
 
   /**
@@ -24,6 +23,8 @@ class ContactApiClient {
         headers: {
           'Content-Type': 'application/json',
         },
+        mode: 'cors',
+        // credentials: 'include',
         body: JSON.stringify(data),
       });
 
