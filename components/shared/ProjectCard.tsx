@@ -12,7 +12,7 @@ interface ProjectCardProps {
   description: string;
   image: string;
   tags: string[];
-  type: 'Privat' | 'Work Project';
+  type: string;
   links?: {
     [key: string]: {
       label: string;

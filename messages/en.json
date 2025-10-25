@@ -124,7 +124,7 @@
         "title": "This Portfolio",
         "description": "Fully featured fullstack portfolio with CI/CD, automated deployment via Docker Swarm and Traefik. Frontend in Next.js + TypeScript with i18n, dark/light mode and motion animations. Backend in Express with Zod validation, Nodemailer and rate limiting. Completely open source.",
         "image": "https://images.unsplash.com/photo-1546900703-cf06143d1239?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMGNvZGV8ZW58MXx8fHwxNzYwNjUwMzM5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-        "type": "Privat",
+        "type": "Personal",
         "tags": [
           "Next.js",
           "TypeScript",
@@ -153,7 +153,7 @@
         "title": "Homelab & Private Cloud",
         "description": "Fully self-managed hybrid cluster of on-prem and cloud servers (Hetzner + on-prem) with Docker Swarm, Traefik routing and centralized auth via Keycloak. Services are automatically scheduled to nodes with matching labels. Security via oauth2-proxy, firewall (OpenWRT) and Netbird VPN. Centralized storage via NFS RAID5 (10 TB).",
         "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-        "type": "Privat",
+        "type": "Personal",
         "tags": [
           "Docker Swarm",
           "Traefik",

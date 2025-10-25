@@ -8,7 +8,7 @@ interface ProjectItem {
   description: string;
   image: string;
   tags: string[];
-  type: 'Privat' | 'Work Project';
+  type: string;
   employer?: string;
   links?: {
     [key: string]: {
