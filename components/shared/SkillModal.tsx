@@ -31,7 +31,7 @@ export function SkillModal({
             exit={{ opacity: 0 }}
             onClick={onClose}
             style={{ backgroundColor: '#00000099' }}
-            className='fixed inset-0 top-0 right-0 bottom-0 left-0 flex items-center justify-center backdrop-blur-sm'
+            className='fixed inset-0 top-0 right-0 bottom-0 left-0 z-[999] flex items-center justify-center p-4 backdrop-blur-sm'
             id='backdrop'
           >
             {/* Modal */}

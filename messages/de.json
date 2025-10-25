@@ -7,8 +7,9 @@
       "contact": "Kontakt"
     },
     "aria": {
-      "toggleDarkMode": "Toggle dark mode",
-      "contactButton": "Zum Kontaktformular springen"
+      "toggleDarkMode": "Dunkelmodus umschalten",
+      "contactButton": "Zum Kontaktformular springen",
+      "toggleLanguage": "Sprache umschalten"
     }
   },
   "Hero": {

@@ -8,7 +8,8 @@
     },
     "aria": {
       "toggleDarkMode": "Toggle dark mode",
-      "contactButton": "Jump to contact form"
+      "contactButton": "Jump to contact form",
+      "toggleLanguage": "Toggle language"
     }
   },
   "Hero": {

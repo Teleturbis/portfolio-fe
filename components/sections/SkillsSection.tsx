@@ -37,9 +37,9 @@ export function SkillsSection() {
   }));
 
   return (
-    <section id='skills' className='relative'>
+    <section id='skills' className=''>
       <SectionHero title={t('title')} />
-      <div className='relative z-20 container mx-auto px-4 py-20'>
+      <div className='container mx-auto px-4 py-20'>
         <SectionWrapper>
           <div className='mx-auto grid max-w-6xl gap-6 md:grid-cols-2 lg:grid-cols-4'>
             {skills.map((skill, index) => (

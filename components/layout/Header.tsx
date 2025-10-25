@@ -5,6 +5,7 @@ import { motion } from 'motion/react';
 import { Menu, X, Moon, Sun } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { useThemeContext } from '@/components/providers/ThemeProvider';
+import { useLocale } from '@/hooks/use-locale';
 
 interface HeaderProps {
   onNavigate: (section: string) => void;
@@ -16,6 +17,7 @@ export function Header({ onNavigate, activeSection }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { theme, toggleTheme } = useThemeContext();
   const isDark = theme === 'dark';
+  const { locale, changeLocale } = useLocale();
 
   const navItems = ['about', 'skills', 'projects', 'contact'];
 
@@ -23,7 +25,7 @@ export function Header({ onNavigate, activeSection }: HeaderProps) {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className='bg-background/80 border-border fixed top-0 right-0 left-0 z-50 border-b backdrop-blur-lg'
+      className='bg-background/80 border-border fixed top-0 right-0 left-0 z-40 border-b backdrop-blur-lg'
     >
       <div className='container mx-auto px-4 py-4'>
         <div className='flex items-center justify-between'>
@@ -63,7 +65,7 @@ export function Header({ onNavigate, activeSection }: HeaderProps) {
               onClick={toggleTheme}
               className='bg-muted hover:bg-muted/80 relative h-7 w-14 rounded-full border p-1 transition-colors'
               whileTap={{ scale: 0.95 }}
-              aria-label='Toggle dark mode'
+              aria-label={t('Navigation.aria.toggleDarkMode')}
             >
               <motion.div
                 className='bg-primary flex h-5 w-5 items-center justify-center rounded-full'
@@ -98,6 +100,38 @@ export function Header({ onNavigate, activeSection }: HeaderProps) {
                 </motion.div>
               </motion.div>
             </motion.button>
+
+            {/* Language Toggle (Desktop) */}
+            <div
+              role='group'
+              aria-label={t('Navigation.aria.toggleLanguage')}
+              className='bg-muted relative flex h-7 items-center rounded-full border p-0.5'
+            >
+              <button
+                type='button'
+                onClick={() => changeLocale('de')}
+                className={`rounded-full px-3 py-1 text-xs transition-colors ${
+                  locale === 'de'
+                    ? 'bg-primary text-primary-foreground'
+                    : 'text-foreground hover:text-primary'
+                }`}
+                aria-pressed={locale === 'de'}
+              >
+                DE
+              </button>
+              <button
+                type='button'
+                onClick={() => changeLocale('en')}
+                className={`rounded-full px-3 py-1 text-xs transition-colors ${
+                  locale === 'en'
+                    ? 'bg-primary text-primary-foreground'
+                    : 'text-foreground hover:text-primary'
+                }`}
+                aria-pressed={locale === 'en'}
+              >
+                EN
+              </button>
+            </div>
           </div>
 
           {/* Mobile Menu Button and Theme Toggle */}
@@ -119,6 +153,15 @@ export function Header({ onNavigate, activeSection }: HeaderProps) {
                   <Sun size={20} className='text-primary' />
                 )}
               </motion.div>
+            </motion.button>
+            {/* Language Toggle (Mobile) */}
+            <motion.button
+              onClick={() => changeLocale(locale === 'de' ? 'en' : 'de')}
+              className='bg-muted hover:bg-muted/80 text-primary h-9 w-9 rounded-lg px-2 py-1 text-xs font-semibold transition-colors'
+              whileTap={{ scale: 0.95 }}
+              aria-label={t('Navigation.aria.toggleLanguage')}
+            >
+              {locale === 'de' ? 'DE' : 'EN'}
             </motion.button>
             <button
               className='text-foreground'
