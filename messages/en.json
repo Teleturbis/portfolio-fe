@@ -121,22 +121,90 @@
     "title": "Projects",
     "items": [
       {
-        "title": "E-Commerce Platform",
-        "description": "Complete e-commerce solution with React, Node.js and Stripe integration",
+        "title": "This Portfolio",
+        "description": "Fully featured fullstack portfolio with CI/CD, automated deployment via Docker Swarm and Traefik. Frontend in Next.js + TypeScript with i18n, dark/light mode and motion animations. Backend in Express with Zod validation, Nodemailer and rate limiting. Completely open source.",
         "image": "https://images.unsplash.com/photo-1546900703-cf06143d1239?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMGNvZGV8ZW58MXx8fHwxNzYwNjUwMzM5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-        "tags": ["React", "Node.js", "MongoDB", "Stripe"]
+        "type": "Privat",
+        "tags": [
+          "Next.js",
+          "TypeScript",
+          "TailwindCSS",
+          "Express.js",
+          "Zod",
+          "Docker Swarm",
+          "Traefik",
+          "CI/CD",
+          "Husky",
+          "ESLint",
+          "Prettier"
+        ],
+        "links": {
+          "fe": {
+            "label": "GitLab FE",
+            "url": "https://gitlab.com/teleturbis1/public/portfolio"
+          },
+          "be": {
+            "label": "GitLab BE",
+            "url": "https://gitlab.com/teleturbis1/public/portfolio-be"
+          }
+        }
       },
       {
-        "title": "SaaS Dashboard",
-        "description": "Modern admin dashboard with real-time data visualization",
-        "image": "https://images.unsplash.com/photo-1718220216044-006f43e3a9b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB0ZWNoJTIwd29ya3NwYWNlfGVufDF8fHx8MTc2MDYwOTU4MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-        "tags": ["Next.js", "TypeScript", "PostgreSQL"]
+        "title": "Homelab & Private Cloud",
+        "description": "Fully self-managed hybrid cluster of on-prem and cloud servers (Hetzner + on-prem) with Docker Swarm, Traefik routing and centralized auth via Keycloak. Services are automatically scheduled to nodes with matching labels. Security via oauth2-proxy, firewall (OpenWRT) and Netbird VPN. Centralized storage via NFS RAID5 (10 TB).",
+        "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+        "type": "Privat",
+        "tags": [
+          "Docker Swarm",
+          "Traefik",
+          "Keycloak",
+          "Netbird",
+          "OpenWRT",
+          "NFS",
+          "Hetzner Cloud",
+          "OAuth2-Proxy",
+          "DevOps",
+          "Self-Hosting",
+          "Home Assistant",
+          "GPU-Server"
+        ],
+        "links": {
+          "docs": {
+            "label": "Documentation",
+            "url": "https://github.com/teleturbis/homelab"
+          },
+          "architecture": {
+            "label": "Architecture diagram",
+            "url": "https://teleturbis.de/homelab"
+          }
+        }
       },
       {
-        "title": "Mobile-First App",
-        "description": "Progressive web app for fitness tracking with offline functionality",
-        "image": "https://images.unsplash.com/photo-1658953229625-aad99d7603b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzYwNjQ1NTMxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-        "tags": ["React", "PWA", "IndexedDB"]
+        "title": "Phoenix MasterTag",
+        "description": "Modular tracking container for 200+ advertisers. Introduced architecture modernization, Git standards and CI/CD. Scaled to >50 million requests per month.",
+        "employer": "Kupona GmbH",
+        "image": "/kupona.png",
+        "tags": [
+          "Node.js",
+          "Express",
+          "TypeScript",
+          "MongoDB",
+          "AWS S3",
+          "CI/CD",
+          "Next.js",
+          "TailwindCSS",
+          "Zod",
+          "Keycloak",
+          "Hetzner Cloud",
+          "Docker"
+        ],
+        "type": "Work Project",
+        "links": {
+          "website": {
+            "label": "Kupona GmbH",
+            "url": "https://kupona.de"
+          }
+        }
       }
     ]
   },

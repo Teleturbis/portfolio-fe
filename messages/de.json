@@ -1,10 +1,10 @@
 {
   "Navigation": {
     "nav": {
-      "about": "About",
-      "skills": "Skills",
-      "projects": "Projects",
-      "contact": "Contact"
+      "about": "Über mich",
+      "skills": "Fähigkeiten",
+      "projects": "Projekte",
+      "contact": "Kontakt"
     },
     "aria": {
       "toggleDarkMode": "Toggle dark mode",
@@ -121,22 +121,90 @@
     "title": "Projekte",
     "items": [
       {
-        "title": "E-Commerce Platform",
-        "description": "Vollständige E-Commerce-Lösung mit React, Node.js und Stripe Integration",
+        "title": "Dieses Portfolio",
+        "description": "Technisch voll ausgestattetes Fullstack-Portfolio mit CI/CD, automatisiertem Deployment via Docker Swarm und Traefik. Frontend in Next.js + TypeScript mit i18n, Dark/Light Mode und Motion-Animationen. Backend in Express mit Zod-Validierung, Nodemailer und Rate-Limiting. Komplett Open Source.",
         "image": "https://images.unsplash.com/photo-1546900703-cf06143d1239?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMGNvZGV8ZW58MXx8fHwxNzYwNjUwMzM5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-        "tags": ["React", "Node.js", "MongoDB", "Stripe"]
+        "type": "Privat",
+        "tags": [
+          "Next.js",
+          "TypeScript",
+          "TailwindCSS",
+          "Express.js",
+          "Zod",
+          "Docker Swarm",
+          "Traefik",
+          "CI/CD",
+          "Husky",
+          "ESLint",
+          "Prettier"
+        ],
+        "links": {
+          "fe": {
+            "label": "GitLab FE",
+            "url": "https://gitlab.com/teleturbis1/public/portfolio"
+          },
+          "be": {
+            "label": "GitLab BE",
+            "url": "https://gitlab.com/teleturbis1/public/portfolio-be"
+          }
+        }
       },
       {
-        "title": "SaaS Dashboard",
-        "description": "Modernes Admin-Dashboard mit Echtzeit-Datenvisualisierung",
-        "image": "https://images.unsplash.com/photo-1718220216044-006f43e3a9b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB0ZWNoJTIwd29ya3NwYWNlfGVufDF8fHx8MTc2MDYwOTU4MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-        "tags": ["Next.js", "TypeScript", "PostgreSQL"]
+        "title": "Homelab & Private Cloud",
+        "description": "Vollständig selbst verwaltetes Hybrid-Cluster aus lokalen und Cloud-Servern (Hetzner + On-Prem) mit Docker Swarm, Traefik-Routing und zentralem Auth über Keycloak. Services werden automatisch auf Nodes mit passenden Labels verteilt. Absicherung über oauth2-proxy, Firewall (OpenWRT) und Netbird-VPN. Zentrale Datenhaltung über NFS-RAID5 (10 TB).",
+        "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+        "type": "Privat",
+        "tags": [
+          "Docker Swarm",
+          "Traefik",
+          "Keycloak",
+          "Netbird",
+          "OpenWRT",
+          "NFS",
+          "Hetzner Cloud",
+          "OAuth2-Proxy",
+          "DevOps",
+          "Self-Hosting",
+          "Home Assistant",
+          "GPU-Server"
+        ],
+        "links": {
+          "docs": {
+            "label": "Dokumentation",
+            "url": "https://github.com/teleturbis/homelab"
+          },
+          "architecture": {
+            "label": "Architekturdiagramm",
+            "url": "https://teleturbis.de/homelab"
+          }
+        }
       },
       {
-        "title": "Mobile-First App",
-        "description": "Progressive Web App für Fitness-Tracking mit Offline-Funktionalität",
-        "image": "https://images.unsplash.com/photo-1658953229625-aad99d7603b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzYwNjQ1NTMxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-        "tags": ["React", "PWA", "IndexedDB"]
+        "title": "Phoenix MasterTag",
+        "description": "Modularer Tracking-Container für 200+ Advertiser. Architekturmodernisierung, Git-Standards und CI/CD eingeführt. Skalierung auf >50 Mio Requests/Monat.",
+        "employer": "Kupona GmbH",
+        "image": "/kupona.png",
+        "tags": [
+          "Node.js",
+          "Express",
+          "TypeScript",
+          "MongoDB",
+          "AWS S3",
+          "CI/CD",
+          "Next.js",
+          "TailwindCSS",
+          "Zod",
+          "Keycloak",
+          "Hetzner Cloud",
+          "Docker"
+        ],
+        "type": "Work Project",
+        "links": {
+          "website": {
+            "label": "Kupona GmbH",
+            "url": "https://kupona.de"
+          }
+        }
       }
     ]
   },

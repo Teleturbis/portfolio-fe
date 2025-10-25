@@ -8,6 +8,14 @@ interface ProjectItem {
   description: string;
   image: string;
   tags: string[];
+  type: 'Privat' | 'Work Project';
+  employer?: string;
+  links?: {
+    [key: string]: {
+      label: string;
+      url: string;
+    };
+  };
 }
 
 export function ProjectsSection() {
@@ -27,6 +35,9 @@ export function ProjectsSection() {
                   description={project.description}
                   image={project.image}
                   tags={project.tags}
+                  links={project.links}
+                  type={project.type}
+                  employer={project.employer}
                 />
               </div>
             ))}
