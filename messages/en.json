@@ -13,7 +13,7 @@
   },
   "Hero": {
     "title": "Fullstack WebDev with Passion",
-    "description": "I develop modern, accessible and performant web applications that inspire.",
+    "description": "I develop modern, accessible and high-performance web applications that inspire.",
     "cta": {
       "contact": "Get in touch",
       "projects": "View projects"
@@ -22,49 +22,123 @@
   "About": {
     "title": "About me",
     "paragraph1": "As a passionate fullstack developer, I combine technical expertise with creative design. My focus is on developing applications that are not only functional, but also intuitive and accessible.",
-    "paragraph2": "With several years of experience in modern web technologies, I develop customized solutions that meet the individual requirements of my clients.",
+    "paragraph2": "With several years of experience in modern web technologies, I develop tailored solutions that meet my clients' individual requirements.",
     "imageAlt": "Logo"
   },
   "Skills": {
     "title": "Skills & Expertise",
-    "categories": {
-      "frontend": {
+    "more": "...show more",
+    "items": [
+      {
         "name": "Frontend",
-        "items": ["React", "TypeScript", "Next.js", "Tailwind CSS", "Vue.js"]
+        "icon": "Code2",
+        "highlights": [
+          "React • Next.js (SSR/ISR)",
+          "Native Web Components",
+          "TailwindCSS + shadcn/ui",
+          "Turborepo • Webpack",
+          "Performance & Accessibility (A11y)"
+        ],
+        "items": [
+          "JavaScript (ES6+) & strong TypeScript knowledge",
+          "React Hooks, Context, Suspense, dynamic imports",
+          "Next.js with SEO, middleware, API routes, ISR/SSG/SSR",
+          "Native Web Components with Custom Elements & Shadow DOM",
+          "TailwindCSS, shadcn/ui, Framer Motion, Lucide Icons",
+          "Turborepo monorepo architecture (apps/*, packages/*)",
+          "Webpack multi-entry builds, caching & asset optimization",
+          "Lighthouse optimization, lazy loading, accessibility",
+          "Landing pages @ scale, Phoenix MasterTag integration"
+        ]
       },
-      "backend": {
+      {
         "name": "Backend",
-        "items": ["Node.js", "Python", "PostgreSQL", "MongoDB", "REST APIs"]
+        "icon": "Database",
+        "highlights": [
+          "Node.js • Express",
+          "Python • FastAPI",
+          "PostgreSQL + pgvector",
+          "Redis (Queue/Caching)",
+          "REST APIs"
+        ],
+        "items": [
+          "Node.js & Express services, middleware, rate limiting",
+          "Python FastAPI (CTranslate2 / MarianMT integration)",
+          "PostgreSQL schema design, indexes, batch writes",
+          "pgvector for semantic search (embeddings)",
+          "Redis for queueing, workers & caching",
+          "Feed processing: product data, translations, vectorization",
+          "Recommendation logic based on cosine similarity",
+          "RESTful API design with auth & logging",
+          "Automated data processing pipelines"
+        ]
       },
-      "design": {
-        "name": "Design",
-        "items": ["Figma", "UI/UX", "Responsive Design", "Accessibility"]
-      },
-      "devops": {
+      {
         "name": "DevOps",
-        "items": ["Docker", "CI/CD", "AWS", "Git", "Linux"]
+        "icon": "Layers",
+        "highlights": [
+          "Docker • Swarm • Portainer",
+          "Traefik (TLS/Wildcard)",
+          "CI/CD with Bitbucket",
+          "Hetzner + on-prem servers",
+          "Monitoring (Grafana / Wazuh)"
+        ],
+        "items": [
+          "Docker Compose & Swarm deployments with rolling updates",
+          "Traefik ingress, TLS termination, OAuth2-Proxy / Keycloak",
+          "Portainer management, Bitbucket pipelines, webhooks",
+          "Hetzner Cloud (CX instances) & HP DL380 homelab",
+          "Raspberry Pi cluster & mini-PC nodes",
+          "Networking: VLANs, WireGuard/Netbird, 2.5–10 Gbit LAN",
+          "Monitoring: Grafana, Loki, Promtail, Node Exporter, cAdvisor",
+          "Security: Wazuh, OPNsense, AdGuard, Fail2Ban",
+          "NFS storage, NAS, volumes, offsite backups"
+        ]
+      },
+      {
+        "name": "Soft skills",
+        "icon": "UsersRound",
+        "highlights": [
+          "Architecture & ownership",
+          "Team leadership (informal)",
+          "Communication & mentoring",
+          "Customer focus",
+          "Problem solving"
+        ],
+        "items": [
+          "Project leadership from architecture to go-live",
+          "Defining technical standards (linting, pipelines, repos)",
+          "Team enablement: brown-bags, guidelines, reviews",
+          "Direct, honest and solution-oriented communication",
+          "Fast learner & eager to experiment (AI, IoT, ML)",
+          "Responsible, strategic thinking",
+          "Balance of control & flexibility within the team"
+        ]
       }
-    }
+    ]
   },
   "Projects": {
     "title": "Projects",
-    "items": {
-      "ecommerce": {
+    "items": [
+      {
         "title": "E-Commerce Platform",
         "description": "Complete e-commerce solution with React, Node.js and Stripe integration",
+        "image": "https://images.unsplash.com/photo-1546900703-cf06143d1239?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMGNvZGV8ZW58MXx8fHwxNzYwNjUwMzM5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
         "tags": ["React", "Node.js", "MongoDB", "Stripe"]
       },
-      "dashboard": {
+      {
         "title": "SaaS Dashboard",
         "description": "Modern admin dashboard with real-time data visualization",
+        "image": "https://images.unsplash.com/photo-1718220216044-006f43e3a9b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB0ZWNoJTIwd29ya3NwYWNlfGVufDF8fHx8MTc2MDYwOTU4MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
         "tags": ["Next.js", "TypeScript", "PostgreSQL"]
       },
-      "mobileApp": {
+      {
         "title": "Mobile-First App",
         "description": "Progressive web app for fitness tracking with offline functionality",
+        "image": "https://images.unsplash.com/photo-1658953229625-aad99d7603b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzYwNjQ1NTMxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
         "tags": ["React", "PWA", "IndexedDB"]
       }
-    }
+    ]
   },
   "Contact": {
     "title": "Contact",
