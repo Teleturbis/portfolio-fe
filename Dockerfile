@@ -1,17 +1,21 @@
-# Multi-stage Dockerfile für Next.js 14 mit pnpm
+# Multi-stage Dockerfile für Next.js mit pnpm
 # Optimiert für Produktion mit kleinem Image
+# Node- und pnpm-Versionen werden dynamisch aus .nvmrc und package.json gelesen
 
 # Build Stage
-FROM node:18-alpine AS builder
+FROM node:22-alpine AS builder
 
 # Arbeitsverzeichnis setzen
 WORKDIR /app
 
-# pnpm installieren
-RUN corepack enable && corepack prepare pnpm@latest --activate
+# Kopiere zuerst .nvmrc und package.json für Version-Extraktion
+COPY .nvmrc package.json pnpm-lock.yaml ./
 
-# Package Files kopieren
-COPY package.json pnpm-lock.yaml ./
+# Extrahiere pnpm Version aus package.json und installiere
+RUN export PNPM_VERSION=$(node -e "const pkg=require('./package.json'); const pm=pkg.packageManager||'pnpm@10.15.0'; console.log(pm.split('@')[1])") && \
+    echo "📌 Using pnpm version: $PNPM_VERSION" && \
+    corepack enable && \
+    corepack prepare pnpm@${PNPM_VERSION} --activate
 
 # Dependencies installieren (nur production)
 RUN pnpm install --frozen-lockfile
@@ -23,7 +27,7 @@ COPY . .
 RUN pnpm build
 
 # Production Stage
-FROM node:18-alpine AS runner
+FROM node:22-alpine AS runner
 
 WORKDIR /app
 
