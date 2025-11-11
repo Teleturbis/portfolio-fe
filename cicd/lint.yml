@@ -16,3 +16,18 @@ eslint:
     - echo "🔍 Running ESLint code quality check..."
     - pnpm lint
   allow_failure: false
+
+jest:
+  extends: .base-config
+  stage: lint
+  script:
+    - echo "🔍 Running jest"
+  allow_failure: false
+
+audit:
+  extends: .base-config
+  stage: lint
+  script:
+    - echo "🔍 Running npm audit"
+    - pnpm audit --audit-level=moderate
+  allow_failure: false

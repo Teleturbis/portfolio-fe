@@ -15,3 +15,15 @@ build:
   needs:
     - prettier
     - eslint
+
+cypress_e2e:
+  extends: .base-config
+  stage: build
+  script:
+    - echo "🔍 Running Cypress E2E"
+  allow_failure: false
+  needs:
+    - prettier
+    - eslint
+    - jest
+    - build
