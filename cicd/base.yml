@@ -15,35 +15,20 @@
     NVM_DIR: /root/.nvm
   before_script:
     - echo "📦 Setting up environment from project configuration..."
-    # Read Node version from .nvmrc
     - export NODE_VERSION=$(cat .nvmrc)
     - echo "📌 Required Node.js version from .nvmrc v$NODE_VERSION"
-
-    # Install nvm if not cached
-    - |
-      if [ ! -d "$NVM_DIR" ]; then
-        echo "⬇️  Installing nvm..."
-        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
-      fi
-
-    # Load nvm and install/use the required Node version
+    - if [ ! -d "$NVM_DIR" ]; then echo "⬇️  Installing nvm..." && curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash; fi
     - export NVM_DIR="$HOME/.nvm"
     - '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"'
     - nvm install $NODE_VERSION
     - nvm use $NODE_VERSION
     - echo "✅ Node.js $(node --version) activated"
-
-    # Extract pnpm version from package.json packageManager field
     - export PNPM_VERSION=$(node -e "const pkg=require('./package.json'); const pm=pkg.packageManager||'pnpm@10.15.0'; console.log(pm.split('@')[1])")
-    - echo "📌 Required pnpm version from package.json: $PNPM_VERSION"
-
-    # Setup pnpm with exact version
+    - echo "📌 Required pnpm version from package.json - $PNPM_VERSION"
     - corepack enable
     - corepack prepare pnpm@${PNPM_VERSION} --activate
     - echo "✅ pnpm $(pnpm --version) activated"
     - pnpm config set store-dir $PNPM_CACHE_FOLDER
-
-    # Install dependencies
     - echo "📦 Installing dependencies with frozen lockfile..."
     - pnpm install --frozen-lockfile
     - echo "✅ Environment setup complete"
