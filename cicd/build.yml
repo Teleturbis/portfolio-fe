@@ -25,8 +25,4 @@ cypress_e2e:
     - echo "🔍 Running Cypress E2E"
   allow_failure: false
   needs:
-    - prettier
-    - eslint
-    - jest
-    - audit
     - build
