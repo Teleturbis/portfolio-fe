@@ -9,6 +9,10 @@
     "start": "next start",
     "prepare": "husky"
   },
+  "packageManager": "pnpm@10.15.0",
+  "engines": {
+    "node": ">=20.9.0"
+  },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
     "@radix-ui/react-accordion": "1.2.2",

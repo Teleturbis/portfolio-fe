@@ -2,7 +2,7 @@
 # Gemeinsame Einstellungen für Image, Cache, und Setup
 
 .base-config:
-  image: node:18-alpine
+  image: node:22-alpine
   cache:
     key: ${CI_COMMIT_REF_SLUG}
     paths:
@@ -11,9 +11,19 @@
   variables:
     PNPM_CACHE_FOLDER: .pnpm-store
   before_script:
-    - echo "📦 Setting up pnpm and dependencies..."
+    - echo "📦 Setting up environment from project configuration..."
+    # Read Node version from .nvmrc
+    - export NODE_VERSION=$(cat .nvmrc)
+    - echo "📌 Required Node.js version from .nvmrc: $NODE_VERSION"
+    - node --version
+    # Extract pnpm version from package.json packageManager field
+    - export PNPM_VERSION=$(node -e "const pkg=require('./package.json'); const pm=pkg.packageManager||'pnpm@10.15.0'; console.log(pm.split('@')[1])")
+    - echo "📌 Required pnpm version from package.json: $PNPM_VERSION"
+    # Setup pnpm with exact version
     - corepack enable
-    - corepack prepare pnpm@latest --activate
+    - corepack prepare pnpm@${PNPM_VERSION} --activate
+    - pnpm --version
     - pnpm config set store-dir $PNPM_CACHE_FOLDER
+    - echo "📦 Installing dependencies with frozen lockfile..."
     - pnpm install --frozen-lockfile
-    - echo "✅ Dependencies installed successfully"
+    - echo "✅ Environment setup complete"
