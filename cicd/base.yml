@@ -2,28 +2,48 @@
 # Gemeinsame Einstellungen für Image, Cache, und Setup
 
 .base-config:
-  image: node:22-alpine
+  # Verwende Debian-basiertes Image mit curl und bash für nvm
+  image: node:current-bookworm
   cache:
     key: ${CI_COMMIT_REF_SLUG}
     paths:
       - node_modules/
       - .pnpm-store/
+      - .nvm/
   variables:
     PNPM_CACHE_FOLDER: .pnpm-store
+    NVM_DIR: /root/.nvm
   before_script:
     - echo "📦 Setting up environment from project configuration..."
     # Read Node version from .nvmrc
     - export NODE_VERSION=$(cat .nvmrc)
-    - echo "📌 Required Node.js version from .nvmrc: $NODE_VERSION"
-    - node --version
+    - echo "📌 Required Node.js version from .nvmrc v$NODE_VERSION"
+
+    # Install nvm if not cached
+    - |
+      if [ ! -d "$NVM_DIR" ]; then
+        echo "⬇️  Installing nvm..."
+        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
+      fi
+
+    # Load nvm and install/use the required Node version
+    - export NVM_DIR="$HOME/.nvm"
+    - '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"'
+    - nvm install $NODE_VERSION
+    - nvm use $NODE_VERSION
+    - echo "✅ Node.js $(node --version) activated"
+
     # Extract pnpm version from package.json packageManager field
     - export PNPM_VERSION=$(node -e "const pkg=require('./package.json'); const pm=pkg.packageManager||'pnpm@10.15.0'; console.log(pm.split('@')[1])")
     - echo "📌 Required pnpm version from package.json: $PNPM_VERSION"
+
     # Setup pnpm with exact version
     - corepack enable
     - corepack prepare pnpm@${PNPM_VERSION} --activate
-    - pnpm --version
+    - echo "✅ pnpm $(pnpm --version) activated"
     - pnpm config set store-dir $PNPM_CACHE_FOLDER
+
+    # Install dependencies
     - echo "📦 Installing dependencies with frozen lockfile..."
     - pnpm install --frozen-lockfile
     - echo "✅ Environment setup complete"
