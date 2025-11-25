@@ -29,7 +29,7 @@ export default function ConsentManager() {
   useEffect(() => {
     setIsMounted(true);
 
-    // Prüfe initial den Consent-Status
+    // Check initial consent status
     const checkConsent = () => {
       if (
         window._iub?.cs?.consent?.purposes &&
@@ -42,15 +42,15 @@ export default function ConsentManager() {
       return false;
     };
 
-    // Initialer Check
+    // Initial check
     if (checkConsent()) {
       return;
     }
 
-    // Höre auf Consent-Änderungen - diese Events werden sofort gefeuert
+    // Listen for consent changes - these events fire immediately
     const handleConsentGiven = () => {
       if (checkConsent()) {
-        // Trigger re-render sofort
+        // Trigger re-render immediately
         setHasConsent(true);
       }
     };
@@ -63,7 +63,7 @@ export default function ConsentManager() {
       setHasConsent(false);
     };
 
-    // Events registrieren
+    // Register events
     window.addEventListener('iubenda_consent_given', handleConsentGiven);
     window.addEventListener(
       'iubenda_preference_expressed',
@@ -71,7 +71,7 @@ export default function ConsentManager() {
     );
     window.addEventListener('iubenda_consent_rejected', handleConsentRejected);
 
-    // Fallback: Polling für den Fall dass Events nicht funktionieren
+    // Fallback: Polling in case events don't work
     const interval = setInterval(() => {
       if (window._iub?.cs?.consent) {
         checkConsent();
@@ -92,12 +92,12 @@ export default function ConsentManager() {
     };
   }, []);
 
-  // Verhindere Hydration Mismatch
+  // Prevent hydration mismatch
   if (!isMounted) {
     return null;
   }
 
-  // Wenn kein Consent, zeige nichts
+  // If no consent, show nothing
   if (!hasConsent) {
     return null;
   }
