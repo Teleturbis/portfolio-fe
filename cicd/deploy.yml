@@ -6,7 +6,6 @@ variables:
   IMAGE_NAME: 'registry.teleturbis.de/portfolio'
   # Docker in Docker für Container Builds
   DOCKER_TLS_CERTDIR: '/certs'
-
 # Docker Build für Production
 docker-build-production:
   stage: deploy
@@ -15,18 +14,14 @@ docker-build-production:
     - docker:20.10.16-dind
   variables:
     IMAGE_TAG: 'v$CI_COMMIT_SHORT_SHA'
-  before_script:
-    - echo "Setting up Docker environment..."
-    - docker login -u $REGISTRY_USER -p $REGISTRY_PASSWORD $REGISTRY_URL
   script:
     - docker build -t $IMAGE_NAME:$IMAGE_TAG .
-    - docker build -t $IMAGE_NAME:latest .
     - docker push $IMAGE_NAME:$IMAGE_TAG
-    - docker push $IMAGE_NAME:latest
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
   needs:
     - build
+    - cypress_e2e
 
 # Docker Build für Staging
 docker-build-staging:
@@ -36,18 +31,14 @@ docker-build-staging:
     - docker:20.10.16-dind
   variables:
     IMAGE_TAG: 'staging-$CI_COMMIT_SHORT_SHA'
-  before_script:
-    - echo "Setting up Docker environment..."
-    - docker login -u $REGISTRY_USER -p $REGISTRY_PASSWORD $REGISTRY_URL
   script:
     - docker build -t $IMAGE_NAME:$IMAGE_TAG .
-    - docker build -t $IMAGE_NAME:staging .
     - docker push $IMAGE_NAME:$IMAGE_TAG
-    - docker push $IMAGE_NAME:staging
   rules:
     - if: $CI_COMMIT_BRANCH == "dev"
   needs:
     - build
+    - cypress_e2e
 
 # Trigger Portainer Service Update via Webhook
 trigger-deployment:

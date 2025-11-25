@@ -3,6 +3,7 @@ import './globals.css';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import Script from 'next/script';
+import ConsentManager from '@/components/ConsentManager';
 
 export default async function RootLayout({
   children,
@@ -21,6 +22,11 @@ export default async function RootLayout({
       />
       <body className='font-sans antialiased'>
         <NextIntlClientProvider messages={messages}>
+          <Script
+            src='https://embeds.iubenda.com/widgets/1a5b5ec3-7c2f-4a41-8aaf-df49136ce69d.js'
+            strategy='afterInteractive'
+          />
+          <ConsentManager />
           {children}
         </NextIntlClientProvider>
       </body>
