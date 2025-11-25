@@ -2,8 +2,8 @@
 
 variables:
   # Teleturbis Registry Konfiguration
-  REGISTRY_URL: 'registry.teleturbis.de'
-  IMAGE_NAME: 'registry.teleturbis.de/portfolio'
+  REGISTRY_URL: 'registry.teleturbis.com'
+  IMAGE_NAME: 'registry.teleturbis.com/portfolio'
   # Docker in Docker für Container Builds
   DOCKER_TLS_CERTDIR: '/certs'
 # Docker Build für Production
