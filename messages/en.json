@@ -152,31 +152,35 @@
       },
       {
         "title": "Homelab & Private Cloud",
-        "description": "Fully self-managed hybrid cluster of on-prem and cloud servers (Hetzner + on-prem) with Docker Swarm, Traefik routing and centralized auth via Keycloak. Services are automatically scheduled to nodes with matching labels. Security via oauth2-proxy, firewall (OpenWRT) and Netbird VPN. Centralized storage via NFS RAID5 (10 TB).",
+        "description": "Hybrid Cloud System Architecture & DevOps Lab. Fully automated cluster (on-prem & cloud) based on Docker Swarm and Ansible. Secured through a zero-trust strategy (Netbird, Keycloak) and monitored by a modern observability stack (Prometheus, Loki, Wazuh). Design focus: Maximum maintainability with minimal operational costs.",
         "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
         "type": "Personal",
         "tags": [
+          "DevOps",
+          "Ansible",
+          "IaC",
           "Docker Swarm",
           "Traefik",
           "Keycloak",
           "Netbird",
+          "Prometheus",
+          "Loki",
+          "Grafana",
+          "Wazuh",
+          "Infisical",
+          "Zero Trust",
+          "Self-Hosting",
+          "Hetzner Cloud",
           "OpenWRT",
           "NFS",
-          "Hetzner Cloud",
-          "OAuth2-Proxy",
-          "DevOps",
-          "Self-Hosting",
-          "Home Assistant",
-          "GPU-Server"
+          "GPU-Server",
+          "Kubernetes",
+          "Terraform"
         ],
         "links": {
           "docs": {
-            "label": "Documentation",
-            "url": "https://github.com/teleturbis/homelab"
-          },
-          "architecture": {
-            "label": "Architecture diagram",
-            "url": "https://teleturbis.de/homelab"
+            "label": "More Info",
+            "url": "https://gitlab.com/teleturbis1/public/kp-infrastructure"
           }
         }
       },

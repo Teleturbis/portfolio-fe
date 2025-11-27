@@ -16,7 +16,7 @@ const links = {
 
 export function AboutSocialLinks() {
   const [isMaltHovered, setIsMaltHovered] = useState(false);
-  const [isGulpHovered, setIsGulpHovered] = useState(false);
+  // const [isGulpHovered, setIsGulpHovered] = useState(false);
 
   return (
     <div className='mt-8 flex gap-4'>
@@ -56,7 +56,7 @@ export function AboutSocialLinks() {
           icon='malt'
         />
       </motion.a>
-      <motion.a
+      {/*  <motion.a
         href={links.gulp}
         target='_blank'
         rel='noopener noreferrer'
@@ -71,7 +71,7 @@ export function AboutSocialLinks() {
           color={isGulpHovered ? '#fff' : '#439aad'}
           icon='gulp'
         />
-      </motion.a>
+      </motion.a> */}
       <motion.a
         href={links.linkedin}
         target='_blank'
