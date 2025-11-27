@@ -1,0 +1,55 @@
+{
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    // Ihre gewünschten harten Regeln
+    "no-console": "error",
+    "no-unused-vars": "off", // Aus für JS, da TS-Regel verwendet wird
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_",
+        "caughtErrorsIgnorePattern": "^_"
+      }
+    ],
+
+    // Code Quality Regeln
+    "no-debugger": "error",
+    "no-alert": "error",
+    "no-var": "error",
+    "prefer-const": "error",
+    "no-duplicate-imports": "error",
+    "no-return-await": "error",
+
+    // TypeScript spezifische Regeln (ohne Type-checking)
+    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/no-non-null-assertion": "warn",
+    "@typescript-eslint/prefer-as-const": "error",
+    "@typescript-eslint/no-array-constructor": "error",
+
+    // React/Next.js spezifische Regeln
+    "react-hooks/exhaustive-deps": "error",
+    "react/jsx-no-target-blank": "error",
+    "react/no-unescaped-entities": "error",
+    "@next/next/no-img-element": "error",
+
+    // Import/Export Regeln
+    "import/no-anonymous-default-export": "error",
+    "import/no-duplicates": "error"
+  },
+  "overrides": [
+    {
+      "files": ["*.config.js", "*.config.mjs", "tailwind.config.js"],
+      "rules": {
+        "no-console": "off"
+      }
+    },
+    {
+      "files": ["**/*.test.ts", "**/*.test.tsx", "**/*.spec.ts", "**/*.spec.tsx"],
+      "rules": {
+        "no-console": "off",
+        "@typescript-eslint/no-explicit-any": "off"
+      }
+    }
+  ]
+}

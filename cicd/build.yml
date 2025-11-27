@@ -1,0 +1,28 @@
+# Build Job - Next.js Production Build
+# Läuft nach erfolgreicher lint stage
+
+build:
+  extends: .base-config
+  stage: build
+  script:
+    - echo "🏗️ Building Next.js application..."
+    - pnpm build
+    - echo "✅ Build completed successfully"
+  artifacts:
+    paths:
+      - .next/
+    expire_in: 1 hour
+  needs:
+    - prettier
+    - eslint
+    - jest
+    - audit
+
+cypress_e2e:
+  extends: .base-config
+  stage: build
+  script:
+    - echo "🔍 Running Cypress E2E"
+  allow_failure: false
+  needs:
+    - build

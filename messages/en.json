@@ -1,446 +1,246 @@
 {
   "Navigation": {
     "nav": {
-      "home": "Home",
-      "about": "About Me",
-      "projects": "Projects",
+      "about": "About",
       "skills": "Skills",
+      "projects": "Projects",
       "contact": "Contact"
     },
-    "home": {
-      "title": "Fullstack Web Developer",
-      "subtitle": "I develop modern web applications with a passion for clean code and user-friendly interfaces.",
-      "cta": "Contact Now",
-      "aboutPreview": "My Journey",
-      "aboutDescription": "From my first lines of code to today – discover my journey as a developer.",
-      "projectsPreview": "My Projects",
-      "projectsDescription": "A selection of my best work and projects that demonstrate my skills.",
-      "skillsPreview": "My Skills",
-      "skillsDescription": "The technologies and tools I work with daily and my expertise.",
-      "contactPreview": "Contact",
-      "contactDescription": "Let’s talk about your next project. I look forward to your message.",
-      "projectsCta": "View Projects",
-      "explorePortfolio": "Explore My Portfolio",
-      "explorePortfolioDescription": "Learn more about me, my projects, and skills",
-      "viewMore": "Learn More",
-      "CTASection": {
-        "title": "Ready for your next project?",
-        "subtitle": "Let’s bring your ideas to life together. Contact me for a no-obligation consultation.",
-        "button": "More About Me"
-      }
+    "aria": {
+      "toggleDarkMode": "Toggle dark mode",
+      "contactButton": "Jump to contact form",
+      "toggleLanguage": "Toggle language"
+    }
+  },
+  "Hero": {
+    "title": "Fullstack WebDev with Passion",
+    "description": "I develop modern, accessible and high-performance web applications that inspire.",
+    "cta": {
+      "contact": "Get in touch",
+      "projects": "View projects"
     }
   },
   "About": {
-    "title": "My Path as a Developer",
-    "subtitle": "A journey through my professional development",
-    "cta": "Contact Now",
-    "timelineEvents": [
-      {
-        "year": "2018",
-        "title": "First Steps in Programming",
-        "description": "The beginning of my journey with HTML, CSS, and JavaScript. First small projects and discovering my passion for web development.",
-        "location": "Self-study",
-        "image": "/person-learning-to-code-at-computer.jpg",
-        "tags": ["HTML", "CSS", "JavaScript"]
-      },
-      {
-        "year": "2019",
-        "title": "Frontend Specialization",
-        "description": "Deep dive into modern frontend frameworks like React and Vue.js. First commercial projects and freelance work.",
-        "location": "Freelance",
-        "image": "/modern-web-development-workspace-with-multiple-mon.jpg",
-        "tags": ["React", "Vue.js", "SASS", "Webpack"]
-      },
-      {
-        "year": "2020",
-        "title": "Fullstack Development",
-        "description": "Expanding knowledge into backend technologies. Node.js, Express, and database design became key building blocks.",
-        "location": "Remote Work",
-        "image": "/fullstack-developer-working-on-backend-code.jpg",
-        "tags": ["Node.js", "Express", "MongoDB", "PostgreSQL"]
-      },
-      {
-        "year": "2021",
-        "title": "Cloud & DevOps",
-        "description": "Focus on modern deployment strategies and cloud technologies. CI/CD pipelines and containerized applications.",
-        "location": "Tech Startup",
-        "image": "/cloud-infrastructure-and-devops-dashboard.jpg",
-        "tags": ["Docker", "AWS", "CI/CD", "Kubernetes"]
-      },
-      {
-        "year": "2022",
-        "title": "Team Leadership",
-        "description": "Taking on leadership responsibilities in development teams. Mentoring junior developers and project management.",
-        "location": "Senior Position",
-        "image": "/team-meeting-with-developers-discussing-code.jpg",
-        "tags": ["Leadership", "Mentoring", "Agile", "Scrum"]
-      },
-      {
-        "year": "2023-2024",
-        "title": "Modern Technologies",
-        "description": "Specialization in Next.js, TypeScript, and modern AI integration. Focus on performance and user experience.",
-        "location": "Freelance & Consulting",
-        "image": "/modern-web-development-with-ai-tools-and-next-js.jpg",
-        "tags": ["Next.js", "TypeScript", "AI Integration", "Performance"]
-      }
-    ],
-    "CTASection": {
-      "title": "Interested in working together?",
-      "subtitle": "My experience and passion for clean code can make your next project a success.",
-      "button": "View Projects"
-    }
+    "title": "About me",
+    "paragraph1": "As a passionate fullstack developer, I combine technical expertise with creative design. My focus is on developing applications that are not only functional, but also intuitive and accessible.",
+    "paragraph2": "With several years of experience in modern web technologies, I develop tailored solutions that meet my clients' individual requirements.",
+    "imageAlt": "Logo"
   },
-  "Projects": {
-    "title": "My Projects",
-    "subtitle": "A selection of my best work",
-    "cta": "Contact Now",
-    "highlights": "Highlights",
-    "projectCta": "Live Demo",
-    "codeCta": "Code",
-    "CTASection": {
-      "title": "Do you have a similar project in mind?",
-      "subtitle": "Let’s bring your idea to life together. I bring the experience and know-how to make your project a success.",
-      "button": "View My Skills"
-    },
-    "categories": [
-      "All",
-      "Fullstack",
-      "Frontend",
-      "Backend",
-      "Mobile",
-      "AI/ML"
-    ],
-    "projects": [
+  "Skills": {
+    "title": "Skills & Expertise",
+    "more": "...show more",
+    "items": [
       {
-        "title": "E-Commerce Platform",
-        "description": "A complete e-commerce solution with Next.js, Stripe integration, and admin dashboard. Supports multiple payment methods and provides an intuitive user experience.",
-        "image": "/modern-ecommerce-interface.png",
-        "technologies": [
-          "Next.js",
-          "TypeScript",
-          "Stripe",
-          "PostgreSQL",
-          "Tailwind CSS"
-        ],
-        "category": "Fullstack",
-        "year": "2024",
-        "team": "3 Developers",
-        "duration": "4 Months",
-        "status": "Live",
-        "links": {
-          "demo": "https://example.com",
-          "github": "https://github.com/example/ecommerce"
-        },
+        "name": "Frontend",
+        "icon": "Code2",
         "highlights": [
-          "Over 10,000 active users",
-          "99.9% uptime",
-          "Mobile-first design",
-          "SEO optimized"
+          "React • Next.js (SSR/ISR)",
+          "Native Web Components",
+          "TailwindCSS + shadcn/ui",
+          "Turborepo • Webpack",
+          "Performance & Accessibility (A11y)"
+        ],
+        "items": [
+          "JavaScript (ES6+) & strong TypeScript knowledge",
+          "React Hooks, Context, Suspense, dynamic imports",
+          "Next.js with SEO, middleware, API routes, ISR/SSG/SSR",
+          "Native Web Components with Custom Elements & Shadow DOM",
+          "TailwindCSS, shadcn/ui, Framer Motion, Lucide Icons",
+          "Turborepo monorepo architecture (apps/*, packages/*)",
+          "Webpack multi-entry builds, caching & asset optimization",
+          "Lighthouse optimization, lazy loading, accessibility",
+          "Landing pages @ scale, Phoenix MasterTag integration"
         ]
       },
       {
-        "title": "Task Management App",
-        "description": "A collaborative project management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-        "image": "/project-management-dashboard.png",
-        "technologies": [
-          "React",
-          "Node.js",
-          "Socket.io",
-          "MongoDB",
-          "Material-UI"
-        ],
-        "category": "Fullstack",
-        "year": "2023",
-        "team": "2 Developers",
-        "duration": "3 Months",
-        "status": "Live",
-        "links": {
-          "demo": "https://example.com",
-          "github": "https://github.com/example/taskmanager"
-        },
+        "name": "Backend",
+        "icon": "Database",
         "highlights": [
-          "Real-time synchronization",
-          "Offline functionality",
-          "Team collaboration",
-          "Mobile app available"
+          "Node.js • Express",
+          "Python • FastAPI",
+          "PostgreSQL + pgvector",
+          "Redis (Queue/Caching)",
+          "REST APIs"
+        ],
+        "items": [
+          "Node.js & Express services, middleware, rate limiting",
+          "Python FastAPI (CTranslate2 / MarianMT integration)",
+          "PostgreSQL schema design, indexes, batch writes",
+          "pgvector for semantic search (embeddings)",
+          "Redis for queueing, workers & caching",
+          "Feed processing: product data, translations, vectorization",
+          "Recommendation logic based on cosine similarity",
+          "RESTful API design with auth & logging",
+          "Automated data processing pipelines"
         ]
       },
       {
-        "title": "AI-Powered Analytics Dashboard",
-        "description": "An intelligent analytics dashboard with AI-powered insights and automated reports for enterprises.",
-        "image": "/ai-analytics-dashboard.png",
-        "technologies": [
-          "Vue.js",
-          "Python",
-          "TensorFlow",
-          "FastAPI",
-          "Chart.js"
-        ],
-        "category": "AI/ML",
-        "year": "2023",
-        "team": "4 Developers",
-        "duration": "6 Months",
-        "status": "Live",
-        "links": {
-          "demo": "https://example.com",
-          "github": "https://github.com/example/ai-dashboard"
-        },
+        "name": "DevOps",
+        "icon": "Layers",
         "highlights": [
-          "Machine learning integration",
-          "Predictive analytics",
-          "Automated reports",
-          "Enterprise-ready"
+          "Docker • Swarm • Portainer",
+          "Traefik (TLS/Wildcard)",
+          "CI/CD with Bitbucket",
+          "Hetzner + on-prem servers",
+          "Monitoring (Grafana / Wazuh)"
+        ],
+        "items": [
+          "Docker Compose & Swarm deployments with rolling updates",
+          "Traefik ingress, TLS termination, OAuth2-Proxy / Keycloak",
+          "Portainer management, Bitbucket pipelines, webhooks",
+          "Hetzner Cloud (CX instances) & HP DL380 homelab",
+          "Raspberry Pi cluster & mini-PC nodes",
+          "Networking: VLANs, WireGuard/Netbird, 2.5–10 Gbit LAN",
+          "Monitoring: Grafana, Loki, Promtail, Node Exporter, cAdvisor",
+          "Security: Wazuh, OPNsense, AdGuard, Fail2Ban",
+          "NFS storage, NAS, volumes, offsite backups"
         ]
       },
       {
-        "title": "Restaurant Booking System",
-        "description": "A comprehensive reservation system for restaurants with online booking, table management, and customer management.",
-        "image": "/restaurant-booking-system-interface.jpg",
-        "technologies": [
-          "Angular",
-          "NestJS",
-          "PostgreSQL",
-          "Redis",
-          "Bootstrap"
+        "name": "Soft skills",
+        "icon": "UsersRound",
+        "highlights": [
+          "Architecture & ownership",
+          "Team leadership (informal)",
+          "Communication & mentoring",
+          "Customer focus",
+          "Problem solving"
         ],
-        "category": "Fullstack",
-        "year": "2022",
-        "team": "Solo Project",
-        "duration": "2 Months",
-        "status": "Live",
-        "links": {
-          "demo": "https://example.com",
-          "github": "https://github.com/example/restaurant-booking"
-        },
-        "highlights": [
-          "Automatic confirmations",
-          "Waitlist management",
-          "Multi-restaurant support",
-          "SMS/Email notifications"
-        ]
-      },
-      {
-        "title": "Fitness Tracking App",
-        "description": "A mobile-first fitness app with workout tracking, nutrition planning, and social features for motivation.",
-        "image": "/fitness-tracking-app.png",
-        "technologies": [
-          "React Native",
-          "Express.js",
-          "MongoDB",
-          "AWS S3",
-          "Expo"
-        ],
-        "category": "Mobile",
-        "year": "2022",
-        "team": "3 Developers",
-        "duration": "5 Months",
-        "status": "Live",
-        "links": {
-          "demo": "https://example.com",
-          "github": "https://github.com/example/fitness-app"
-        },
-        "highlights": [
-          "Cross-platform app",
-          "Offline synchronization",
-          "Social features",
-          "50k+ downloads"
-        ]
-      },
-      {
-        "title": "Content Management System",
-        "description": "A flexible CMS with drag-and-drop editor, multi-site management, and extendable plugin architecture.",
-        "image": "/cms-interface.png",
-        "technologies": ["Laravel", "Vue.js", "MySQL", "Docker", "AWS"],
-        "category": "Backend",
-        "year": "2021",
-        "team": "5 Developers",
-        "duration": "8 Months",
-        "status": "Live",
-        "links": {
-          "demo": "https://example.com",
-          "github": "https://github.com/example/cms"
-        },
-        "highlights": [
-          "Plugin system",
-          "Multi-tenant architecture",
-          "Integrated SEO tools",
-          "White-label solution"
+        "items": [
+          "Project leadership from architecture to go-live",
+          "Defining technical standards (linting, pipelines, repos)",
+          "Team enablement: brown-bags, guidelines, reviews",
+          "Direct, honest and solution-oriented communication",
+          "Fast learner & eager to experiment (AI, IoT, ML)",
+          "Responsible, strategic thinking",
+          "Balance of control & flexibility within the team"
         ]
       }
     ]
   },
-  "Skills": {
-    "title": "My Skills",
-    "cta": "Contact Now",
-    "subtitle": "Technologies and tools I master",
-    "yearsOfExperience": "Years of Experience",
-    "yearsOfExperienceCount": "6+",
-    "projectsCompletedCount": "50+",
-    "projectsCompleted": "Projects Completed",
-    "technologiesCount": "20+",
-    "knownTechnologies": "Technologies Mastered",
-    "knowledge": "Knowledge Level",
-    "year": "Year",
-    "years": "Years",
-    "projects": "Projects",
-    "certificates": "Certificates",
-    "certificatesDescription": "Continuous learning and recognized qualifications",
-    "CTASection": {
-      "title": "Looking for a developer with these skills?",
-      "subtitle": "My diverse skills and years of experience can make your project a success. Let’s discuss your requirements.",
-      "button": "View Projects"
-    },
-    "skillCategories": [
+  "Projects": {
+    "title": "Projects",
+    "items": [
       {
-        "title": "Frontend Development",
-        "icon": "🎨",
-        "description": "Modern user interfaces and interactive web applications",
-        "skills": [
-          { "name": "React", "level": 95, "years": 5, "projects": 25 },
-          { "name": "Next.js", "level": 90, "years": 3, "projects": 15 },
-          { "name": "TypeScript", "level": 88, "years": 4, "projects": 20 },
-          { "name": "Tailwind CSS", "level": 92, "years": 3, "projects": 18 },
-          { "name": "Vue.js", "level": 85, "years": 3, "projects": 12 },
-          { "name": "Angular", "level": 80, "years": 2, "projects": 8 }
-        ]
+        "title": "This Portfolio",
+        "description": "Fully featured fullstack portfolio with CI/CD, automated deployment via Docker Swarm and Traefik. Frontend in Next.js + TypeScript with i18n, dark/light mode and motion animations. Backend in Express with Zod validation, Nodemailer and rate limiting. Completely open source.",
+        "image": "https://images.unsplash.com/photo-1546900703-cf06143d1239?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMGNvZGV8ZW58MXx8fHwxNzYwNjUwMzM5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+        "type": "Personal",
+        "tags": [
+          "Next.js",
+          "TypeScript",
+          "TailwindCSS",
+          "Express.js",
+          "Zod",
+          "Docker Swarm",
+          "Traefik",
+          "CI/CD",
+          "Husky",
+          "ESLint",
+          "Prettier"
+        ],
+        "links": {
+          "fe": {
+            "label": "GitLab FE",
+            "url": "https://gitlab.com/teleturbis1/public/portfolio"
+          },
+          "be": {
+            "label": "GitLab BE",
+            "url": "https://gitlab.com/teleturbis1/public/portfolio-be"
+          }
+        }
       },
       {
-        "title": "Backend Development",
-        "icon": "⚙️",
-        "description": "Robust server architectures and APIs",
-        "skills": [
-          { "name": "Node.js", "level": 90, "years": 4, "projects": 22 },
-          { "name": "Express.js", "level": 88, "years": 4, "projects": 20 },
-          { "name": "NestJS", "level": 85, "years": 2, "projects": 10 },
-          { "name": "Python", "level": 82, "years": 3, "projects": 15 },
-          { "name": "PHP/Laravel", "level": 80, "years": 3, "projects": 12 },
-          { "name": "GraphQL", "level": 78, "years": 2, "projects": 8 }
-        ]
+        "title": "Homelab & Private Cloud",
+        "description": "Hybrid Cloud System Architecture & DevOps Lab. Fully automated cluster (on-prem & cloud) based on Docker Swarm and Ansible. Secured through a zero-trust strategy (Netbird, Keycloak) and monitored by a modern observability stack (Prometheus, Loki, Wazuh). Design focus: Maximum maintainability with minimal operational costs.",
+        "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+        "type": "Personal",
+        "tags": [
+          "DevOps",
+          "Ansible",
+          "IaC",
+          "Docker Swarm",
+          "Traefik",
+          "Keycloak",
+          "Netbird",
+          "Prometheus",
+          "Loki",
+          "Grafana",
+          "Wazuh",
+          "Infisical",
+          "Zero Trust",
+          "Self-Hosting",
+          "Hetzner Cloud",
+          "OpenWRT",
+          "NFS",
+          "GPU-Server",
+          "Kubernetes",
+          "Terraform"
+        ],
+        "links": {
+          "docs": {
+            "label": "More Info",
+            "url": "https://gitlab.com/teleturbis1/public/kp-infrastructure"
+          }
+        }
       },
       {
-        "title": "Database & Cloud",
-        "icon": "☁️",
-        "description": "Data management and cloud infrastructure",
-        "skills": [
-          { "name": "PostgreSQL", "level": 88, "years": 4, "projects": 18 },
-          { "name": "MongoDB", "level": 85, "years": 3, "projects": 15 },
-          { "name": "AWS", "level": 82, "years": 3, "projects": 12 },
-          { "name": "Docker", "level": 80, "years": 3, "projects": 14 },
-          { "name": "Redis", "level": 78, "years": 2, "projects": 10 },
-          { "name": "Kubernetes", "level": 75, "years": 2, "projects": 6 }
-        ]
-      },
-      {
-        "title": "Tools & Workflow",
-        "icon": "🛠️",
-        "description": "Development tools and project management",
-        "skills": [
-          { "name": "Git/GitHub", "level": 95, "years": 6, "projects": 30 },
-          { "name": "VS Code", "level": 92, "years": 5, "projects": 30 },
-          { "name": "Figma", "level": 85, "years": 3, "projects": 20 },
-          { "name": "Jest/Testing", "level": 82, "years": 3, "projects": 15 },
-          { "name": "CI/CD", "level": 80, "years": 2, "projects": 12 },
-          { "name": "Agile/Scrum", "level": 88, "years": 4, "projects": 25 }
-        ]
-      }
-    ],
-    "certifications": [
-      {
-        "title": "AWS Certified Developer",
-        "issuer": "Amazon Web Services",
-        "year": "2023",
-        "badge": "aws"
-      },
-      {
-        "title": "React Professional Certificate",
-        "issuer": "Meta",
-        "year": "2022",
-        "badge": "react"
-      },
-      {
-        "title": "Google Cloud Professional",
-        "issuer": "Google Cloud",
-        "year": "2023",
-        "badge": "gcp"
+        "title": "Phoenix MasterTag",
+        "description": "Modular tracking container for 200+ advertisers. Introduced architecture modernization, Git standards and CI/CD. Scaled to >50 million requests per month.",
+        "employer": "Kupona GmbH",
+        "image": "/kupona.png",
+        "tags": [
+          "Node.js",
+          "Express",
+          "TypeScript",
+          "MongoDB",
+          "AWS S3",
+          "CI/CD",
+          "Next.js",
+          "TailwindCSS",
+          "Zod",
+          "Keycloak",
+          "Hetzner Cloud",
+          "Docker"
+        ],
+        "type": "Work Project",
+        "links": {
+          "website": {
+            "label": "Kupona GmbH",
+            "url": "https://kupona.de"
+          }
+        }
       }
     ]
   },
   "Contact": {
     "title": "Contact",
-    "subtitle": "Let’s work together",
+    "intro": "Do you have an exciting project in mind? Let's talk about it!",
     "form": {
-      "name": "Name",
-      "namePlaceholder": "Your full name",
-      "email": "Email",
-      "emailPlaceholder": "your.email@example.com",
-      "message": "Message",
-      "messagePlaceholder": "Describe your project or inquiry...",
-      "send": "Send Message",
+      "name": {
+        "label": "Name",
+        "placeholder": "John Doe"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "john@example.com"
+      },
+      "subject": {
+        "label": "Subject",
+        "placeholder": "Project inquiry"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Tell me about your project..."
+      },
+      "submit": "Send message",
+      "success": "Message sent successfully! I'll get back to you soon.",
+      "failure": "Failed to send. Please try again.",
       "sending": "Sending...",
-      "success": "Message sent successfully!",
-      "error": "Error sending the message."
-    },
-    "rightSection": {
-      "title": "Contact Information",
-      "description": "Reach me through these channels",
-      "email": "Email",
-      "phone": "Phone",
-      "location": "Location",
-      "contactinfo": [
-        {
-          "icon": "Mail",
-          "label": "Email",
-          "value": "hello@developer.com",
-          "href": "mailto:hello@developer.com",
-          "color": "text-blue-600 dark:text-blue-400"
-        },
-        {
-          "icon": "Phone",
-          "label": "Phone",
-          "value": "+49 123 456 7890",
-          "href": "tel:+491234567890",
-          "color": "text-green-600 dark:text-green-400"
-        },
-        {
-          "icon": "MapPin",
-          "label": "Location",
-          "value": "Germany",
-          "href": null,
-          "color": "text-orange-600 dark:text-orange-400"
-        }
-      ],
-      "socials": [
-        {
-          "icon": "Github",
-          "label": "GitHub",
-          "href": "https://github.com/developer",
-          "color": "hover:text-gray-900 dark:hover:text-gray-100"
-        },
-        {
-          "icon": "Linkedin",
-          "label": "LinkedIn",
-          "href": "https://linkedin.com/in/developer",
-          "color": "hover:text-blue-600"
-        },
-        {
-          "icon": "Twitter",
-          "label": "Twitter",
-          "href": "https://twitter.com/developer",
-          "color": "hover:text-blue-400"
-        }
-      ],
-      "availability": {
-        "title": "Availability",
-        "description1": "Available for new projects",
-        "description2": "Fully equipped home office",
-        "description3": "Response within 24h"
-      }
-    },
-    "CTASection": {
-      "title": "Ready for the next step?",
-      "subtitle": "Check out my previous work or learn more about my skills.",
-      "button1": "View Projects",
-      "button2": "Discover Skills"
+      "sent": "Sent!"
     }
+  },
+  "Footer": {
+    "copyright": "Kevin Poppe. All rights reserved."
   }
 }
